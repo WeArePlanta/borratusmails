@@ -1,0 +1,76 @@
+/**
+ * Main Styles for theme.
+ */
+
+// sass --watch main.scss ../style.min.css --style=compressed
+// sass main.scss ../style.min.css --style=compressed
+
+$breakpoint-mobile: 340px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-wide: 1500px;
+
+$theme-dark-blue: #1A1030;
+$theme-light-blue: #65AFFF;
+$theme-violet: #744FC6;
+$theme-coral: #EF6461;
+$theme-yellow: #FFBA49;
+$theme-lila: #9E94E5;
+$theme-dark-lila: #744FC6;
+
+$theme-main-font: "Archivo", sans-serif;
+$theme-second-font: "Erica One", sans-serif;
+
+/* Max-width */
+$max-width-1: 700px;
+$max-width-2: 1200px;
+
+$img-directory: "img/";
+
+/* Mixins */
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Media queries */
+@mixin media-mobile {
+    @media screen and (max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
+@mixin media-tablet{
+    @media screen and (min-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin media-desktop{
+    @media screen and (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}
+
+@mixin media-wide{
+    @media screen and (min-width: $breakpoint-wide) {
+        @content;
+    }
+}
+
+
+@import 'mixins';
+@import "swiper-bundle";
+@import "swiper-custom";
+@import "swiper";
+@import 'normalize';
+@import 'fonts';
+@import 'skeleton';
+@import 'body-changes';
+@import 'header';
+@import 'footer';
+@import 'pages';
+@import 'single';
+@import 'home';

@@ -1,0 +1,122 @@
+/*mobile first*/
+footer {
+	section.go-to-delete-footer {
+		background: linear-gradient(to right, #dd5353, #c05277, #904ca3);
+		display: flex;
+		flex-direction: row;
+		padding: 20px 40px;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 66px;
+		p {
+			font-size: 16px;
+			color: white;
+			padding-right: 24px;
+		}
+		a {
+			@include lila-button;
+			background-color: $theme-dark-blue;
+			top: 0;
+			width: 111px;
+			text-align: center;
+			margin: 0;
+		}
+	}
+
+	section.contact-footer {
+		padding: 0 39px;
+		p:nth-of-type(1) {
+			color: white;
+			font-size: 28px;
+			text-align: left;
+			margin-bottom: 30px;
+			font-family: $theme-second-font;
+			text-transform: uppercase;
+			padding-right: 50px;
+		}
+		p:nth-of-type(2) {
+			font-size: 16px;
+			margin-bottom: 50px;
+
+			a {
+				color: $theme-yellow;
+			}
+		}
+	}
+
+	section.menu-footer {
+		padding: 0 39px;
+		ul {
+			list-style-type: disc; /* Viñetas estándar */
+			margin: 0;
+			padding: 0 20px; /* Espaciado a la izquierda */
+			li {
+				padding-bottom: 15px;
+			}
+		}
+	}
+	section.social-media-footer {
+		padding: 0 39px;
+		ul {
+			display: flex;
+			align-items: center;
+			justify-content: left;
+			margin-top: 50px;
+			margin-bottom: 66px;
+
+			li {
+				margin-right: 15px;
+				width: 23px;
+				height: 23px;
+				font-size: 16px;
+			}
+		}
+	}
+	section.copy-footer {
+		margin-bottom: 66px;
+		padding: 0 39px;
+
+		p {
+			font-size: 16px;
+			&:nth-of-type(2) {
+				color: $theme-dark-lila;
+			}
+		}
+	}
+
+	/*DESKTOP*/
+
+	@media (min-width: 1200px) {
+		div.inner-container-footer-sections {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			padding: 66px 105px;
+			section {
+				padding: 0;
+				width: 400px;
+
+				ul {
+					align-items: center;
+					justify-content: center;
+				}
+
+				&.menu-footer {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+		}
+	}
+	section.copy-footer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		p:nth-of-type(1) {
+			padding-right: 15px;
+		}
+	}
+}

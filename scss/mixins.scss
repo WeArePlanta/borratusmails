@@ -1,0 +1,36 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media queries */
+@mixin media-tablet {
+    @media screen and (min-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin media-desktop {
+    @media screen and (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}
+
+@mixin lila-button {
+    display: block;
+    top: 381px;
+    position: relative;
+    color: #fff;
+    background-color: #744fc6;
+    padding: 15px;
+    border-radius: 60px;
+    width: 167px;
+    margin: 0 auto;
+}
+
+@mixin aqui-la-fuente {
+    color: $theme-lila;
+    text-decoration: underline;
+    font-style: italic;
+}

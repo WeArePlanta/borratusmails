@@ -1,0 +1,38 @@
+section.swiper {
+
+
+	article div.swiper-slide-inner {
+		width: calc(100% - 75px);
+		margin: 50px auto 10px;
+
+		button.swiper-button-next,
+		a.swiper-exit {
+			margin-bottom: 40px;
+
+			&:after {
+				display: none;
+			}
+		}
+
+		a.swiper-exit {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		span.swiper-button-prev,
+		span.swiper-button-next {
+			color: pink;
+
+			&:after {
+				font-size: 30px;
+			}
+		}
+	}
+
+	div.swiper-pagination {
+		span.swiper-pagination-bullet-active {
+			background-color: pink;
+		}
+	}
+}
