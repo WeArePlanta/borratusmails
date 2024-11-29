@@ -652,6 +652,7 @@ div.cards-section {
       margin-bottom: 20px;
       font-family: $theme-second-font;
       text-transform: uppercase;
+
       @media (min-width: 1200px) {
         font-size: 95px;
       }
@@ -686,6 +687,8 @@ div.cards-section {
             font-size: 28px;
             font-family: $theme-second-font;
             text-transform: uppercase;
+            -webkit-text-stroke: 0.2px #1A1030; /* Grosor y color del borde */
+
           }
           p:nth-of-type(1) {
             font-size: 25px;
