@@ -9,7 +9,7 @@
  */
 
 if (! defined('EMPTY_BASE_VERSION')) {
-	define('EMPTY_BASE_VERSION', '1.5.1');
+	define('EMPTY_BASE_VERSION', '1.5.2');
 }
 
 add_action(
