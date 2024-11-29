@@ -33,30 +33,58 @@ get_header();
 
     <section class="banners">
         <div class="paragraphs-inner-container">
-            <figure>
-                <div class="first-figure-inner-container">
-                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/not-cloude.png'); ?>" alt="Ilustración de una nube con expresión facial">
-                    <figcaption>
-                        <h2>Borra tus mails</h2>
-                        <p> porque, aunque se llame “nube”, ni flota ni es ligera.</p>
-                    </figcaption>
+
+            <section class="swiper generic-swiper">
+                <div class="swiper-wrapper">
+                    <!-- SLIDE 1 -->
+                    <article class="swiper-slide">
+
+                        <figure class="slider-one-figure">
+                            <div class="first-figure-inner-container">
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/img/not-cloude.png'); ?>" alt="Ilustración de una nube con expresión facial">
+                                <figcaption>
+                                    <h2>Borra tus mails</h2>
+                                    <p> porque, aunque se llame “nube”, ni flota ni es ligera.</p>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </article>
+
+                    <!-- SLIDE 2 -->
+                    <article class="swiper-slide">
+
+
+                        <figure class="slider-two-figure">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/img/sourprise-cloude.png'); ?>" alt="Ilustración de una nube con expresión facial">
+
+                            <h2>Borra tus mails</h2>
+
+                            <p> porque cada mail es como una luz encendida. Y puedes apagarla.</p>
+
+                        </figure>
+                    </article>
+
+
+                    <!-- SLIDE 3 -->
+                    <article class="swiper-slide">
+
+                        <figure class="slider-three-figure">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/img/smiling-cloude.png'); ?>" alt="Ilustración de una nube con expresión facial">
+
+                            <h2>Borra tus mails</h2>
+
+                            <p>porque ordenar da un poquito de placer, y si tiene impacto positivo, mejor.</p>
+                        </figure>
+                    </article>
+
+
+
                 </div>
-            </figure>
-            <figure>
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/img/smiling-cloude.png'); ?>" alt="Ilustración de una nube con expresión facial">
+                <div class="swiper-pagination"> swiper </div>
 
-                <h2>Borra tus mails</h2>
+            </section>
 
-                <p>porque ordenar da un poquito de placer, y si tiene impacto positivo, mejor.</p>
-            </figure>
-            <figure>
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/img/sourprise-cloude.png'); ?>" alt="Ilustración de una nube con expresión facial">
 
-                <h2>Borra tus mails</h2>
-
-                <p> porque cada mail es como una luz encendida. Y puedes apagarla.</p>
-
-            </figure>
             <a href="#divider-take-action">Empieza a limpiar</a>
         </div>
 
@@ -211,7 +239,7 @@ get_header();
                 <article class="swiper-slide">
 
                     <div class="content-div one">
-                        <p><span> Porque se envían 361.000 millones de mails al día,</span> que equivalen a que pongas la lavadora 13 millones de veces.</p>
+                        <p><span> Porque se envían 361,6 mil millones de mails al día,</span> que equivalen a que pongas la lavadora 1600 millones de veces.</p>
                         <p>Que sí, que siempre tengo fuente, <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"> aquí. </a></p>
                     </div>
                 </article>
@@ -229,8 +257,8 @@ get_header();
                 <article class="swiper-slide">
 
                     <div class="content-div three">
-                        <p><span> Porque Black Friday es el día del año que más mails se envían,</span> y la mayoría se quedan gastando energía.</p>
-                        <p>Lee la fuente <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"> aquí </a>  y ya tienes un motivo más para tomar acción. </p>
+                        <p><span> Porque Black Friday es el día del año que más mails se envían,</span> y cuando la promoción expire seguirá gastando energía.</p>
+                        <p>Lee la fuente <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"> aquí </a> y ya tienes un motivo más para tomar acción. </p>
                     </div>
                 </article>
 
