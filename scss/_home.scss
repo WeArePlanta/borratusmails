@@ -11,10 +11,12 @@
       color: $theme-coral;
       font-size: 50px;
       text-transform: uppercase;
-      padding: 20px 0;
       display: block;
       font-family: $theme-second-font;
       text-align: center;
+      @media (min-width: 1200px) {
+        font-size: 220px;
+      }
     }
 
     img.only-dkp {
@@ -23,7 +25,8 @@
         display: block;
         margin: 0 auto;
         width: 170px;
-      }
+        margin-top: 85px;
+      } 
     }
   }
 
@@ -33,6 +36,7 @@
       display: block;
       padding-top: 152px;
       margin: 0 auto;
+      max-width: 1200px;
       img {
         width: 334px;
       }
@@ -591,6 +595,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
         article {
           figure {
             width: 390px;
@@ -676,7 +682,7 @@ div.cards-section {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        max-width: 1022px;
+        max-width: 1200px;
         margin: 0 auto;
       }
       article.swiper-slide {

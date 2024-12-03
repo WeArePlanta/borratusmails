@@ -72,6 +72,12 @@ footer {
 				font-size: 16px;
 			}
 		}
+
+		div {
+			summary {
+				cursor: pointer;
+			}
+		}
 	}
 	section.copy-footer {
 		margin-bottom: 66px;

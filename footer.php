@@ -50,9 +50,9 @@
 		</section>
 		<section class="social-media-footer">
 			<div>
-				<p>Idioma:</p><details>English
+				<p>Idioma:</p><details><a href="https://deleteryouremails.weareplanta.com/">English</a> 
 					<summary>
-					Español
+					Español <img src="<?php echo esc_url(get_template_directory_uri() . '/img/icono-espanol.png'); ?>" alt="Español">
 					</summary>
 				</details>
 			</div>

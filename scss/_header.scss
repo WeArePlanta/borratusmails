@@ -20,9 +20,21 @@ header {
                 align-items: flex-end;
 
                 li {
+                    position: relative;
+                    display: inline-block; /* Para ajustar al tamaño del texto o contenido */
                     &.current-menu-item,
                     &:hover {
-                        font-weight: 700;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -10px; /* Ajusta la distancia según prefieras */
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 8px; /* Tamaño del punto */
+                            height: 8px; /* Tamaño del punto */
+                            background-color: $theme-yellow; /* Color del punto */
+                            border-radius: 50%; /* Hace que sea circular */
+                        }
                     }
                 }
             }
