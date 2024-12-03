@@ -39,7 +39,7 @@
       figcaption {
         display: flex;
         flex-direction: row;
-        padding-bottom: 200px;
+        padding-bottom: 150px;
         h2 {
           font-family: $theme-second-font;
           color: $theme-yellow;
@@ -54,7 +54,7 @@
       a {
         @include lila-button;
         top: 0;
-        margin-bottom: 250px;
+        margin-bottom: 150px;
         text-align: center;
       }
     }
