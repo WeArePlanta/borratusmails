@@ -250,7 +250,7 @@ get_header();
                 <article class="swiper-slide">
 
                     <div class="content-div two">
-                        <p><span> Porque la basura digital sigue siendo basura:</span> 1000 mails innecesarios guardados por un año consumen como 10 secadoras. </p>
+                        <p><span> Porque la basura digital sigue siendo basura:</span> 1000 mails consumen como una bombilla LED de 10W encendida durante 29 días. </p>
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>">Y aquí la fuente.</a>
                     </div>
                 </article>

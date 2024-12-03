@@ -110,13 +110,13 @@ footer {
 				}
 			}
 		}
-	}
-	section.copy-footer {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		p:nth-of-type(1) {
-			padding-right: 15px;
+		section.copy-footer {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			p:nth-of-type(1) {
+				padding-right: 15px;
+			}
 		}
 	}
 }

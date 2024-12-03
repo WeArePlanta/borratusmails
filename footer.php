@@ -49,6 +49,13 @@
 			</ul>
 		</section>
 		<section class="social-media-footer">
+			<div>
+				<p>Idioma:</p><details>English
+					<summary>
+					Español
+					</summary>
+				</details>
+			</div>
 			<ul>
 				<li><a href="https://www.facebook.com/people/Borra-Tus-Mails/"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/facebook.png'); ?>" alt="Facebook"></a></li>
 				<li><a href="https://www.instagram.com/borratusmails/"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/instagram.png'); ?>" alt="Instagram"></a></li>
