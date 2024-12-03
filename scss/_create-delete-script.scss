@@ -65,3 +65,47 @@ body.page.page-crea-tu-limpiador-de-mails {
     }
   }
 }
+
+body.page.page-desinstala-tu-script {
+  padding-top: 60px;
+  main {
+    min-height: auto;
+
+    section.mobile-only {
+      padding: 130px 30px;
+      h1 {
+        font-family: $theme-second-font;
+        text-transform: uppercase;
+        font-size: 32px;
+        text-align: center;
+        color: $theme-coral;
+        margin-bottom: 30px;
+        line-height: 37px;
+        -webkit-text-stroke: 0.2px #1a1030; 
+        span {
+          color: white;
+          display: block;
+        }
+      }
+      p {
+        font-size: 16px;
+        text-align: center;
+      }
+      p:nth-of-type(2) {
+        font-weight: bold;
+        text-decoration: underline;
+        padding-top: 30px;
+      }
+      @media (min-width: 1450px) {
+        display: none;
+      }
+    }
+
+    section.delete-script {
+      display: none;
+      @media (min-width: 1450px) {
+        display: block;
+      }
+    }
+  }
+}

@@ -15,11 +15,15 @@ get_header();
 
 <main>
 
+   <section class="mobile-only">
+      <h1><span>¿Necesitas</span> desinstalar tu script?</h1>
+      <p>Para desinstalar el script, necesitas una computadora.</p>
+      <p> Abre tu computadora para seguir los 3 pasos.</p>
+   </section>
 
-   <h1>¿Necesitas desinstalar tu script?</h1>
-   <p>Para desinstalar el script, necesitas una computadora.
-
-      Abre tu computadora para seguir los 3 pasos.</p>
+   <section class="delete-script">
+   <p>desinstala el script</p>
+   </section>
 </main>
 
 
