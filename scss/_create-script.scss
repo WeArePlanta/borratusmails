@@ -1,22 +1,67 @@
-section.mobile-only {
+body.page.page-crea-tu-limpiador-de-mails {
+  padding-top: 60px;
+  main {
+    min-height: auto;
 
+    section.mobile-only {
+      padding: 150px 30px;
+      p:nth-of-type(1) {
+        font-size: 28px;
+        text-align: center;
+        @media (min-width: 1450px) {
+          width: 776px;
+          font-size: 26px;
+          margin: 0 auto;
+        }
+      }
+      p:nth-of-type(2) {
+        font-family: $theme-second-font;
+        text-transform: uppercase;
+        font-size: 36px;
+        text-align: center;
+        color: $theme-coral;
+        padding: 20px 0 50px;
+        @media (min-width: 1450px) {
+          width: 776px;
+          font-size: 95px;
+          margin: 0 auto;
+        }
+      }
+      p:nth-of-type(3) {
+        font-size: 28px;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      p:nth-of-type(4) {
+        font-family: $theme-second-font;
+        text-transform: uppercase;
+        font-size: 36px;
+        text-align: center;
+        color: $theme-yellow;
+        @media (min-width: 1450px) {
+          width: 776px;
+          font-size: 95px;
+          margin: 0 auto;
+        }
+      }
 
+      @media (min-width: 1450px) {
+        display: none;
+      }
+    }
 
-  @media (min-width: 1450px) {
-    display: none;
-  }
-}
+    section#programa-su-eliminacion {
+      display: none;
+      @media (min-width: 1450px) {
+        display: block;
+      }
+    }
 
-section#programa-su-eliminacion {
-   display: none;
-    @media (min-width: 1450px) {
-    display: block;
-  }
-}
-
-section.desktop-create-script {
-  display: none;
-   @media (min-width: 1450px) {
-    display: block;
+    section.desktop-create-script {
+      display: none;
+      @media (min-width: 1450px) {
+        display: block;
+      }
+    }
   }
 }
