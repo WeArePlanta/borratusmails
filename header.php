@@ -31,6 +31,24 @@
 				<img src="<?php echo esc_url(get_template_directory_uri() . '/img/logo_web.png'); ?>">
 			</a>
 			<?php empty_base_print_menu('header'); ?>
+			<section class="social-media-footer header">
+
+				<div class="languages">
+					<p>Idioma:</p>
+					<details>
+						<summary>
+							<img src="<?php echo esc_url(get_template_directory_uri() . '/img/icono-espanol.png'); ?>" alt="Español">
+							Español
+							<img src="<?php echo esc_url(get_template_directory_uri() . '/img/Icon-arrow.png'); ?>" alt="flecha que indica apertura de un elemento" class="arrow-icon">
+						</summary>
+						<ul>
+							<li><a href="https://deleteryouremails.weareplanta.com/"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/icono-espanol.png'); ?>" alt="English" class="en">English</a></li>
+
+						</ul>
+					</details>
+				</div>
+			</section>
+
 			<button id="hamburger-menu-toggler">
 				<div class="bar"></div>
 				<div class="bar"></div>

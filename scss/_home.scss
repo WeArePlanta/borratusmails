@@ -16,14 +16,14 @@
       text-align: center;
       -webkit-text-stroke: 0.1px #1a1030; 
 
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         font-size: 220px;
       }
     }
 
     img.only-dkp {
       display: none;
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         display: block;
         margin: 0 auto;
         width: 170px;
@@ -34,7 +34,7 @@
 
   section.only-dkp-banner {
     display: none;
-    @media (min-width: 1200px) {
+    @media (min-width: 1450px) {
       display: block;
       padding-top: 152px;
       margin: 0 auto;
@@ -74,7 +74,7 @@
     background-color: $theme-dark-lila;
     height: 500px;
     padding-top: 40px;
-    @media (min-width: 1200px) {
+    @media (min-width: 1450px) {
       display: none;
     }
 
@@ -218,7 +218,7 @@
         font-size: 50px;
         text-align: center;
         color: $theme-dark-lila;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           color: $theme-yellow;
           width: 776px;
           font-size: 95px;
@@ -232,7 +232,7 @@
       p:nth-of-type(1) {
         font-size: 20px;
         text-align: center;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           width: 776px;
           font-size: 26px;
           margin: 0 auto;
@@ -244,7 +244,7 @@
         font-size: 50px;
         text-align: center;
         color: $theme-coral;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           width: 776px;
           font-size: 95px;
           margin: 0 auto;
@@ -263,7 +263,7 @@
       p:nth-of-type(1) {
         font-size: 20px;
         text-align: center;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           width: 776px;
           font-size: 26px;
           margin: 0 auto;
@@ -275,7 +275,7 @@
         font-size: 28px;
         text-align: center;
         color: $theme-light-blue;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           width: 776px;
           font-size: 50px;
           margin: 0 auto;
@@ -287,7 +287,7 @@
         font-size: 50px;
         text-align: center;
         color: $theme-light-blue;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           width: 776px;
           font-size: 95px;
           margin: 0 auto;
@@ -296,7 +296,7 @@
       p:nth-of-type(4) {
         font-size: 16px;
         text-align: center;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           width: 776px;
           font-size: 20px;
           margin: 0 auto;
@@ -313,14 +313,14 @@
   .section-alert {
     text-align: center;
     margin-bottom: 100px;
-    @media (min-width: 1200px) {
+    @media (min-width: 1450px) {
       margin-bottom: 109px;
     }
     span {
       font-size: 16px;
       display: block;
       font-style: italic;
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         font-size: 26px;
         font-weight: bold;
       }
@@ -331,7 +331,7 @@
       margin: 0 auto;
       font-family: $theme-second-font;
       text-transform: uppercase;
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         width: 776px;
         font-size: 95px;
         margin: 0 auto;
@@ -346,7 +346,7 @@
     p:nth-of-type(2) {
       font-size: 16px;
       padding: 0 20px;
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         font-size: 26px;
         width: 776px;
         margin: 0 auto;
@@ -355,21 +355,21 @@
       }
     }
     p:nth-of-type(3) {
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         font-size: 40px;
       }
     }
     p:nth-of-type(4) {
       font-size: 16px;
       padding-top: 20px;
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         font-size: 26px;
       }
     }
   }
 
   section.section-statistics {
-    @media (min-width: 1200px) {
+    @media (min-width: 1450px) {
       width: 776px;
       margin: 0 auto;
     }
@@ -385,14 +385,14 @@
       }
       p:nth-of-type(1) {
         font-size: 20px;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           font-size: 26px;
         }
       }
       p:nth-of-type(2) {
         font-size: 20px;
         margin-bottom: 20px;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           font-size: 26px;
           width: 578px;
           margin: 0 auto;
@@ -402,7 +402,7 @@
       p:nth-of-type(3) {
         font-size: 16px;
         margin-bottom: 20px;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           font-size: 20px;
         }
       }
@@ -410,13 +410,13 @@
         font-size: 50px;
         display: block;
         font-family: $theme-second-font;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           font-size: 95px;
         }
       }
       a {
         @include aqui-la-fuente;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           font-size: 20px;
         }
       }
@@ -430,7 +430,7 @@
     div:nth-of-type(3) {
       p:nth-of-type(1) {
         font-size: 20px;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           font-size: 26px;
           width: 400px;
           margin: 0 auto;
@@ -444,7 +444,7 @@
         text-transform: uppercase;
         font-size: 63px;
         margin: 24px 0 32px;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           font-size: 95px;
           width: 400px;
           margin: 0 auto;
@@ -454,7 +454,7 @@
       p:nth-of-type(3) {
         font-size: 16px;
         margin-bottom: 20px;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           font-size: 20px;
         }
       }
@@ -483,7 +483,7 @@
         padding: 0 30px;
         font-family: $theme-second-font;
         color: $theme-yellow;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           font-size: 95px;
           width: 866px;
           margin: 0 auto;
@@ -495,7 +495,7 @@
         font-size: 20px;
         padding: 0 30px;
         margin-bottom: 88px;
-        @media (min-width: 1200px) {
+        @media (min-width: 1450px) {
           font-size: 40px;
           width: 860px;
           margin: 0 auto;
@@ -535,14 +535,14 @@
         p:nth-of-type(3) {
           font-size: 28px;
           margin-bottom: 25px;
-          @media (min-width: 1200px) {
+          @media (min-width: 1450px) {
             height: 90px;
           }
         }
         p:nth-of-type(4) {
           font-size: 16px;
           margin-bottom: 60px;
-          @media (min-width: 1200px) {
+          @media (min-width: 1450px) {
             height: 150px;
           }
         }
@@ -592,7 +592,7 @@
     }
 
     div.inner-container-actions {
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -621,7 +621,7 @@
       margin-bottom: 24px;
       font-family: $theme-second-font;
       text-transform: uppercase;
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         font-size: 95px;
         width: 638px;
         margin: 0 auto;
@@ -631,7 +631,7 @@
     p:nth-of-type(2) {
       font-size: 28px;
       margin-bottom: 24px;
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         width: 333px;
         margin: 0 auto;
         margin-bottom: 24px;
@@ -654,7 +654,7 @@ div.cards-section {
     p:nth-of-type(1) {
       font-size: 20px;
       margin-bottom: 20px;
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         font-size: 26px;
       }
     }
@@ -665,14 +665,14 @@ div.cards-section {
       font-family: $theme-second-font;
       text-transform: uppercase;
 
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         font-size: 95px;
       }
     }
     p:nth-of-type(3) {
       font-size: 20px;
       margin-bottom: 62px;
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         font-size: 26px;
         margin-bottom: 100px;
       }
@@ -680,7 +680,7 @@ div.cards-section {
   }
   section.swiper.generic-swiper {
     div.swiper-wrapper {
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -739,7 +739,7 @@ section.three-steps-section {
   p {
     font-size: 28px;
     padding: 73px 54px 40px;
-    @media (min-width: 1200px) {
+    @media (min-width: 1450px) {
       font-size: 40px;
       padding-top: 100px;
     }
@@ -758,7 +758,7 @@ section.fuentes-section {
   padding: 180px 10px;
   margin: 0 20px;
   border-radius: 15px;
-  @media (min-width: 1200px) {
+  @media (min-width: 1450px) {
     padding-top: 150px;
     padding-bottom: 150px;
   }
@@ -767,7 +767,7 @@ section.fuentes-section {
     font-family: $theme-second-font;
     text-transform: uppercase;
     padding-bottom: 20px;
-    @media (min-width: 1200px) {
+    @media (min-width: 1450px) {
       font-size: 95px;
       width: 725px;
       margin: 0 auto;
@@ -776,7 +776,7 @@ section.fuentes-section {
   p {
     font-size: 20px;
     padding-bottom: 43px;
-    @media (min-width: 1200px) {
+    @media (min-width: 1450px) {
       font-size: 28px;
     }
   }
@@ -798,7 +798,7 @@ section.sponsors {
     padding-bottom: 60px;
     color: $theme-light-blue;
     text-align: center;
-    @media (min-width: 1200px) {
+    @media (min-width: 1450px) {
       font-size: 50px;
     }
   }
@@ -816,7 +816,7 @@ section.newsletter {
   p:nth-of-type(1) {
     font-size: 20px;
     margin-bottom: 20px;
-    @media (min-width: 1200px) {
+    @media (min-width: 1450px) {
       font-size: 26px;
     }
   }
@@ -827,14 +827,14 @@ section.newsletter {
     font-family: $theme-second-font;
     text-transform: uppercase;
     padding: 0 50px;
-    @media (min-width: 1200px) {
+    @media (min-width: 1450px) {
       font-size: 95px;
     }
   }
   p:nth-of-type(3) {
     font-size: 20px;
     margin-bottom: 34px;
-    @media (min-width: 1200px) {
+    @media (min-width: 1450px) {
       font-size: 26px;
     }
   }
@@ -845,7 +845,7 @@ section.newsletter {
       margin-bottom: 34px;
       font-style: italic;
       padding: 34px 0;
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         width: 456px;
         margin: 0 auto;
         text-align: center;
@@ -862,7 +862,7 @@ section.newsletter {
       padding: 13px 20px;
       border-radius: 50px;
       width: 100%;
-      @media (min-width: 1200px) {
+      @media (min-width: 1450px) {
         width: 456px;
         margin: 0 auto;
       }
@@ -895,7 +895,7 @@ section.newsletter {
 }
 /*DESKTOP*/
 
-@media (min-width: 1200px) {
+@media (min-width: 1450px) {
   #main-home {
     .title-section {
       h1 {

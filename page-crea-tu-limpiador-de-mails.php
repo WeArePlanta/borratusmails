@@ -16,13 +16,20 @@ get_header();
 <main>
 
 
-    <article id="programa-su-eliminacion">
-        <?php echo do_shortcode('[email_script_generator]'); ?>
-    </article>
+    <section class="mobile-only">
+        <p>Para ser hacker de la contaminación digital,</p>
+        <p>necesitas una computadora.</p>
+        <p>Abre tu computadora y</p>
+        <p>sigue los 3 sencillos pasos.</p>
     </section>
 
 
-    <section>
+    <section id="programa-su-eliminacion">
+        <?php echo do_shortcode('[email_script_generator]'); ?>
+    </section>
+
+
+    <section class="desktop-create-script">
         <h2>4. Las etiquetas ya están capturando tus mails. Ahora tan solo te queda borrarlos.</h2>
         <p>Revisa los mails etiquetados y elimínalos.</p>
         <br><br>

@@ -1,0 +1,22 @@
+section.mobile-only {
+
+
+
+  @media (min-width: 1450px) {
+    display: none;
+  }
+}
+
+section#programa-su-eliminacion {
+   display: none;
+    @media (min-width: 1450px) {
+    display: block;
+  }
+}
+
+section.desktop-create-script {
+  display: none;
+   @media (min-width: 1450px) {
+    display: block;
+  }
+}

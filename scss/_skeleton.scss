@@ -110,7 +110,7 @@ section.swiper.generic-swiper {
 			left: 13%;
 		}
 
-		@media (min-width: 1200px) {
+		@media (min-width: 1450px) {
 			width: 51%;
 			position: absolute;
 			left: 0;
@@ -128,7 +128,7 @@ section.swiper.generic-swiper {
 			max-width: calc(85%);
 			margin-left: 0;
 
-			@media (min-width: 1200px) {
+			@media (min-width: 1450px) {
 				font-size: 50px;
 			}
 			span {
@@ -156,7 +156,7 @@ section.swiper.generic-swiper {
 			@media (min-width: 550px) {
 				width: 290px;
 			}
-			@media (min-width: 1200px) {
+			@media (min-width: 1450px) {
 				width: 51%;
 			}
 		}
