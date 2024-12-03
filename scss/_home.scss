@@ -16,6 +16,8 @@
       text-align: center;
       @media (min-width: 1200px) {
         font-size: 220px;
+        -webkit-text-stroke: 0.1px #1a1030; 
+
       }
     }
 
@@ -697,7 +699,7 @@ div.cards-section {
             font-size: 28px;
             font-family: $theme-second-font;
             text-transform: uppercase;
-            -webkit-text-stroke: 0.2px #1a1030; /* Grosor y color del borde */
+            -webkit-text-stroke: 0.2px #1a1030; 
           }
           p:nth-of-type(1) {
             font-size: 25px;

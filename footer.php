@@ -49,13 +49,22 @@
 			</ul>
 		</section>
 		<section class="social-media-footer">
-			<div>
-				<p>Idioma:</p><details><a href="https://deleteryouremails.weareplanta.com/">English</a> 
+			<div class="languages">
+				<p>Idioma:</p>
+				<details>
 					<summary>
-					Español <img src="<?php echo esc_url(get_template_directory_uri() . '/img/icono-espanol.png'); ?>" alt="Español">
+						<img src="<?php echo esc_url(get_template_directory_uri() . '/img/icono-espanol.png'); ?>" alt="Español" >
+						Español
+						<img src="<?php echo esc_url(get_template_directory_uri() . '/img/Icon-arrow.png'); ?>" alt="flecha que indica apertura de un elemento" class="arrow-icon">
 					</summary>
+					<ul>
+						<li><a href="https://deleteryouremails.weareplanta.com/"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/icono-espanol.png'); ?>" alt="English" class="en">English</a></li>
+						
+					</ul>
 				</details>
 			</div>
+
+
 			<ul>
 				<li><a href="https://www.facebook.com/people/Borra-Tus-Mails/"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/facebook.png'); ?>" alt="Facebook"></a></li>
 				<li><a href="https://www.instagram.com/borratusmails/"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/instagram.png'); ?>" alt="Instagram"></a></li>
