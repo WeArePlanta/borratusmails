@@ -1,19 +1,53 @@
-/**
- * Styles for pages.
- */
+body.page.error404 {
+	padding-top: 60px;
+	@media (min-width: 1450px) {
+		padding-top: 120px;
+	}
 
-body {
-	/*
-	* Generic styles for every page except for Home.
-	*/
-	&.page {
+	section.error-section {
+		padding: 80px 20px;
 
-        &.blog-page {
-			/* Styles for blog page */
-			
+		p:nth-of-type(1) {
+			font-family: $theme-second-font;
+			text-transform: uppercase;
+			font-size: 38px;
+			text-align: center;
+			color: $theme-coral;
+			-webkit-text-stroke: 0.2px #1a1030;
+		}
+		h1 {
+			font-family: $theme-second-font;
+			text-transform: uppercase;
+			font-size: 122px;
+			text-align: center;
+			color: $theme-coral;
+			margin-bottom: 90px;
+			margin-top: 28px;
+			-webkit-text-stroke: 0.2px #1a1030;
+		}
+		p:nth-of-type(2) {
+			font-family: $theme-second-font;
+			text-transform: uppercase;
+			font-size: 30px;
+			text-align: center;
+			color: $theme-lila;
+			-webkit-text-stroke: 0.2px #1a1030;
+			margin-bottom: 60px;
+		}
+		p {
+			font-size: 28px;
+			text-align: center;
+		}
+
+		img {
+			padding: 60px 0 90px;
+		}
+
+		a {
+			@include lila-button;
+			top: 0;
+			margin-top: 50px;
+			text-align: center;
 		}
 	}
 }
-
-
-
