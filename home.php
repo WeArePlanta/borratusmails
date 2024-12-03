@@ -113,7 +113,7 @@ get_header();
     <div class="divider">
         <picture>
             <!-- Desktop -->
-            <source media="(min-width:1200px)" srcset="<?php echo esc_url(get_template_directory_uri() . '/img/divider-dkp.png'); ?>" alt="Logo Carpinteria Zubillaga">
+            <source media="(min-width:1200px)" srcset="<?php echo esc_url(get_template_directory_uri() . '/img/divider-dkp.png'); ?>" alt="divider">
             <!-- Mobile  -->
             <img src="<?php echo esc_url(get_template_directory_uri() . '/img/divider.png'); ?>" alt="Lineas divisorias de un sector a otro">
         </picture>
@@ -155,7 +155,7 @@ get_header();
     <div class="divider" id="divider-take-action">
         <picture>
             <!-- Desktop -->
-            <source media="(min-width:1200px)" srcset="<?php echo esc_url(get_template_directory_uri() . '/img/divider-dkp.png'); ?>" alt="Logo Carpinteria Zubillaga">
+            <source media="(min-width:1200px)" srcset="<?php echo esc_url(get_template_directory_uri() . '/img/divider-dkp.png'); ?>" alt="divider">
             <!-- Mobile  -->
             <img src="<?php echo esc_url(get_template_directory_uri() . '/img/divider.png'); ?>" alt="Lineas divisorias de un sector a otro">
         </picture>
@@ -284,8 +284,11 @@ get_header();
         <a target="_blank" href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>">Ver todas las fuentes</a>
 
     </section>
+    <section class="sponsors">
+        <h5> Marcas que forman parte del movimiento</h5>
+        <div><img src="<?php echo esc_url(get_template_directory_uri() . '/img/calendar.png'); ?>" alt=""></div>
 
-    <br><br>
+    </section>
     <section class="newsletter">
         <p> Compártenos tu mail para recibir </p>
         <p> más tips</p>
