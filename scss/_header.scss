@@ -75,7 +75,7 @@ header {
             }
 
             #menu-hamburger {
-                height: 100%;
+                height: 70%;
 
                 ul {
                     text-align: right;
@@ -139,6 +139,13 @@ header.main-theme-header .inner-container #menu-hamburger ul {
         padding-bottom: 30px;
         text-align: left;
     }
+}
+
+section.social-media-footer {
+    @include social-media-languages;
+}
+section.social-media-footer {
+    padding: 0;
 }
 
 /*DESKTOP*/
