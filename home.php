@@ -14,7 +14,9 @@ get_header();
 <main id="main-home">
 
     <section class="title-section">
-        <h1>Los mails que envías, recibes y guardas <span> consumen <br> energía </span> como las luces de tu casa encendidas todo el día.</h1>
+        <p>Los mails que envías, recibes y guardas</p>
+        <h1> consumen <br> energía </h1>
+        <p>como las luces de tu casa encendidas todo el día.</p>
         <img src="<?php echo esc_url(get_template_directory_uri() . '/img/arrows-dkp.png'); ?>" alt="Flechas que indican seguir hacia abajo" class="only-dkp">
     </section>
 
@@ -143,7 +145,7 @@ get_header();
             <p>¿Sigues sin creerme? Sin problema, </p>
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>">aquí la fuente</a>
         </div>
-        <div>
+        <div class="years-div">
             <p>Equivale a dejar una bombilla LED de 10 W encendida durante</p>
             <p>4 años</p>
             <p>En serio, me sobran <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>">las fuentes. </a></p>

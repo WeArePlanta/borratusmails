@@ -1,19 +1,22 @@
 #main-home {
   .title-section {
-    h1 {
+    padding: 136px 13px 120px;
+    p {
       font-size: 28px;
       font-weight: normal;
       text-align: center;
-      padding: 120px 0 120px;
-      span {
-        color: $theme-coral;
-        font-size: 50px;
-        text-transform: uppercase;
-        padding: 20px 0;
-        display: block;
-        font-family: $theme-second-font;
-      }
     }
+    h1 {
+      margin: 0;
+      color: $theme-coral;
+      font-size: 50px;
+      text-transform: uppercase;
+      padding: 20px 0;
+      display: block;
+      font-family: $theme-second-font;
+      text-align: center;
+    }
+
     img.only-dkp {
       display: none;
       @media (min-width: 1200px) {
@@ -60,9 +63,8 @@
   /* animaciones css */
 
   section.banners {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     text-align: center;
-    margin-bottom: 200px;
     background-color: $theme-dark-lila;
     height: 500px;
     padding-top: 40px;
@@ -73,6 +75,7 @@
     a {
       @include lila-button;
       background-color: $theme-dark-blue;
+      top: 0;
     }
     div.paragraphs-inner-container {
       position: relative;
@@ -250,7 +253,6 @@
       }
     }
     div:nth-of-type(3) {
-      margin-bottom: 180px;
       padding: 0 14px;
       p:nth-of-type(1) {
         font-size: 20px;
@@ -304,7 +306,7 @@
 
   .section-alert {
     text-align: center;
-    margin-bottom: 180px;
+    margin-bottom: 100px;
     @media (min-width: 1200px) {
       margin-bottom: 109px;
     }
@@ -333,11 +335,10 @@
       font-size: 28px;
       max-width: 330px;
       margin: 0 auto;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     p:nth-of-type(2) {
       font-size: 16px;
-      margin-bottom: 130px;
       padding: 0 20px;
       @media (min-width: 1200px) {
         font-size: 26px;
@@ -354,7 +355,7 @@
     }
     p:nth-of-type(4) {
       font-size: 16px;
-      margin-bottom: 180px;
+      padding-top: 20px;
       @media (min-width: 1200px) {
         font-size: 26px;
       }
@@ -373,6 +374,9 @@
       text-align: center;
       margin-bottom: 105px;
       padding: 0 30px;
+      &.years-div {
+        margin-bottom: 150px;
+      }
       p:nth-of-type(1) {
         font-size: 20px;
         @media (min-width: 1200px) {
@@ -459,13 +463,8 @@
     display: block;
     width: 100%;
     margin: 0 auto;
-    // margin-top: 100px;
-    margin-bottom: 180px;
+    margin: 150px 0;
     text-align: center;
-    @media (min-width: 1200px) {
-      margin-top: 200px;
-      margin-bottom: 200px;
-    }
   }
 
   section.section-actions {
@@ -501,8 +500,13 @@
     }
 
     article {
+      &.activist {
+        figure {
+          padding-bottom: 0;
+        }
+      }
       figure {
-        padding: 0 20px 200px;
+        padding: 0 20px 150px;
         text-align: center;
         img {
           padding: 0 0 37px;
@@ -638,7 +642,7 @@ div.cards-section {
   text-align: center;
 
   .intro-cards {
-    padding: 200px 20px 0;
+    padding: 150px 20px 0;
     p:nth-of-type(1) {
       font-size: 20px;
       margin-bottom: 20px;
@@ -659,10 +663,10 @@ div.cards-section {
     }
     p:nth-of-type(3) {
       font-size: 20px;
-      margin-bottom: 69px;
+      margin-bottom: 62px;
       @media (min-width: 1200px) {
         font-size: 26px;
-        margin-bottom: 120px;
+        margin-bottom: 100px;
       }
     }
   }
@@ -687,8 +691,7 @@ div.cards-section {
             font-size: 28px;
             font-family: $theme-second-font;
             text-transform: uppercase;
-            -webkit-text-stroke: 0.2px #1A1030; /* Grosor y color del borde */
-
+            -webkit-text-stroke: 0.2px #1a1030; /* Grosor y color del borde */
           }
           p:nth-of-type(1) {
             font-size: 25px;
@@ -724,12 +727,13 @@ div.cards-section {
 }
 section.three-steps-section {
   text-align: center;
-  margin-bottom: 245px;
+  margin-bottom: 150px;
   p {
     font-size: 28px;
     padding: 73px 54px 40px;
     @media (min-width: 1200px) {
       font-size: 40px;
+      padding-top: 100px;
     }
   }
   a {
@@ -777,11 +781,8 @@ section.fuentes-section {
 }
 
 section.newsletter {
-  padding: 180px 34px 80px;
+  padding: 140px 34px 80px;
   text-align: center;
-  @media (min-width: 1200px) {
-    padding-bottom: 180px;
-  }
 
   p:nth-of-type(1) {
     font-size: 20px;
