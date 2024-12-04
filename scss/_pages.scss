@@ -1,5 +1,6 @@
 body.page.error404 {
 	padding-top: 60px;
+	font-family: $theme-main-font;
 	@media (min-width: 1450px) {
 		padding-top: 120px;
 	}
@@ -66,5 +67,78 @@ body.page.error404 {
 			margin-top: 50px;
 			text-align: center;
 		}
+	}
+}
+
+body.page.page-fuentes {
+	padding-top: 60px;
+	font-family: $theme-main-font;
+	@media (min-width: 1450px) {
+		padding-top: 120px;
+	}
+	main {
+		padding: 130px 30px;
+
+		h1 {
+			font-family: $theme-second-font;
+			text-transform: uppercase;
+			font-size: 28x;
+			text-align: center;
+			color: $theme-yellow;
+			margin: 0 auto;
+			margin-bottom: 17px;
+			-webkit-text-stroke: 0.2px #1a1030;
+			@media (min-width: 1450px) {
+				font-size: 95px;
+				max-width: 572px;
+			}
+		}
+		span {
+			text-align: center;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+			max-width: 572px;
+			display: block;
+		}
+	section.source-inner-container {
+		margin-top: 130px 0 30px;
+
+		article.source-card {
+			margin-bottom: 100px;
+			p:nth-of-type(1) {
+				font-size: 16px;
+				text-align: center;
+				color: $theme-yellow;
+				margin-bottom: 20px;
+				@media (min-width: 1450px) {
+					font-size: 27px;
+				}
+			}
+			p:nth-of-type(2) {
+				font-size: 28px;
+				text-align: center;
+				color: $theme-lila;
+				margin-bottom: 12px;
+				@media (min-width: 1450px) {
+					font-size: 50px;
+				}
+			}
+			p:nth-of-type(3) {
+				font-size: 20px;
+				text-align: center;
+				color: white;
+				margin-bottom: 20px;
+				@media (min-width: 1450px) {
+					font-size: 34px;
+				}
+			}
+			a {
+				@include aqui-la-fuente;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
 	}
 }

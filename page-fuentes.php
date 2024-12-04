@@ -12,10 +12,9 @@ get_header();
 ?>
 
 
-<main>
 
    <h1> Tenemos la data</h1>
-   <p> noticias y estudios sobre la basura que generan los mails que guardas </p>
+   <span> noticias y estudios sobre la basura que generan los mails que guardas </span>
 
    <section class="source-inner-container">
       <article class="source-card">
@@ -63,7 +62,6 @@ get_header();
          <a href="https://www.digit.fyi/emails-business-climate-impact-16800-plastic-bags/" target="_blank">Ir a la data</a>
       </article>
    </section>
-</main>
 
 <?php
 get_footer();

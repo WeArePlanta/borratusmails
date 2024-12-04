@@ -1,5 +1,7 @@
 /*mobile first*/
 footer {
+	font-family: $theme-main-font;
+
 	section.go-to-delete-footer {
 		background: linear-gradient(to right, #dd5353, #c05277, #904ca3);
 		display: flex;
