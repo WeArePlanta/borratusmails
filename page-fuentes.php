@@ -23,14 +23,14 @@ get_header();
          <p>How Many Emails Are Sent Per Day in 2024? </p>
          <a href="https://www.demandsage.com/how-many-emails-are-sent-per-day/" target="_blank">Ir a la data</a>
       </article>
-      <br><br>
+      
       <article class="source-card">
          <p>2020.</p>
          <p>Mike Berners-Lee.</p>
          <p>How Bad Are Bananas? </p>
          <a href="https://profilebooks.com/wp-content/uploads/wpallimport/files/PDFs/9781788163811_preview.pdf" target="_blank">Ir a la data</a>
       </article>
-      <br><br>
+      
 
       <article class="source-card">
          <p>2019.</p>
@@ -38,7 +38,7 @@ get_header();
          <p>Lean ICT</p>
          <a href="https://theshiftproject.org/en/lean-ict-2/" target="_blank">Ir a la data</a>
       </article>
-      <br><br>
+      
 
       <article class="source-card">
          <p>2024.</p>
@@ -46,7 +46,7 @@ get_header();
          <p>Empreinte carbone d'un e-mail : mythes, réalités et solution. </p>
          <a href="https://www.sami.eco/blog/empreinte-carbone-email" target="_blank">Ir a la data</a>
       </article>
-      <br><br>
+      
 
       <article class="source-card">
          <p>2019.</p>

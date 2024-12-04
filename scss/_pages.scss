@@ -102,47 +102,66 @@ body.page.page-fuentes {
 			display: block;
 			margin: 0 auto;
 			margin-bottom: 100px;
-
+			@media (min-width: 1450px) {
+				max-width: 333px;
+			}
 		}
-	section.source-inner-container {
-		margin-top: 130px 0 30px;
+		section.source-inner-container {
+			margin-top: 130px 0 30px;
 
-		article.source-card {
-			margin-bottom: 100px;
-			p:nth-of-type(1) {
-				font-size: 16px;
-				text-align: center;
-				color: $theme-yellow;
-				margin-bottom: 20px;
-				@media (min-width: 1450px) {
-					font-size: 27px;
-				}
-			}
-			p:nth-of-type(2) {
-				font-size: 28px;
-				text-align: center;
-				color: $theme-lila;
-				margin-bottom: 12px;
-				@media (min-width: 1450px) {
-					font-size: 50px;
-				}
-			}
-			p:nth-of-type(3) {
-				font-size: 20px;
-				text-align: center;
-				color: white;
-				margin-bottom: 20px;
-				@media (min-width: 1450px) {
-					font-size: 34px;
-				}
-			}
-			a {
-				@include aqui-la-fuente;
-				display: block;
+			@media (min-width: 1450px) {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+				width: 1336px;
+				flex-wrap: wrap;
 				margin: 0 auto;
-				text-align: center;
+				margin-top: 135px;
+				
+			}
+
+			article.source-card {
+				margin-bottom: 100px;
+				@media (min-width: 1450px) {
+					height: 250px;
+					width: 562px;
+					margin-bottom: 135px;
+				}
+				p:nth-of-type(1) {
+					font-size: 16px;
+					text-align: center;
+					color: $theme-yellow;
+					margin-bottom: 20px;
+					@media (min-width: 1450px) {
+						font-size: 27px;
+					}
+				}
+				p:nth-of-type(2) {
+					font-size: 28px;
+					text-align: center;
+					color: $theme-lila;
+					margin-bottom: 12px;
+					@media (min-width: 1450px) {
+						font-size: 50px;
+					}
+				}
+				p:nth-of-type(3) {
+					font-size: 20px;
+					text-align: center;
+					color: white;
+					margin-bottom: 20px;
+					@media (min-width: 1450px) {
+						font-size: 34px;
+					}
+				}
+				a {
+					@include aqui-la-fuente;
+					display: block;
+					margin: 0 auto;
+					text-align: center;
+				}
 			}
 		}
-	}
 	}
 }
