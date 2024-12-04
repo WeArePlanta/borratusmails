@@ -100,6 +100,9 @@ body.page.page-fuentes {
 			font-size: 20px;
 			max-width: 572px;
 			display: block;
+			margin: 0 auto;
+			margin-bottom: 100px;
+
 		}
 	section.source-inner-container {
 		margin-top: 130px 0 30px;
@@ -137,6 +140,7 @@ body.page.page-fuentes {
 				@include aqui-la-fuente;
 				display: block;
 				margin: 0 auto;
+				text-align: center;
 			}
 		}
 	}
