@@ -54,13 +54,22 @@ body.page.error404 {
 			}
 		}
 
-		img {
+		img{
 			padding: 60px 0 90px;
 			display: block;
 			margin: 0 auto;
 			width: 352px;
 		}
-
+		iframe {
+			width: 352px;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+		div {
+			width: 352px;
+			margin: 0 auto;
+		}
 		a {
 			@include lila-button;
 			top: 0;

@@ -15,16 +15,9 @@
 
 	<section class="go-to-delete-footer">
 		<p>Cada correo olvidado usa energía. ¿Borramos?</p>
-		<?php
-		$current_url = home_url(add_query_arg(array(), $wp->request)); // Obtiene la URL actual
-		$home_url = esc_url(get_permalink(get_page_by_path('home'))); // Obtiene la URL de la página "home"
-
-		if ($current_url === $home_url) :
-		?>
-			<a href="#divider-take-action" onclick="scrollToSection(event, '#divider-take-action')">Empezar</a>
-		<?php else : ?>
-			<a target="_blank" href="<?php echo $home_url . '#divider-take-action'; ?>">Empezar</a>
-		<?php endif; ?>
+	
+			<a href="<?php bloginfo('url'); ?>#divider-take-action">Empezar</a>
+	
 
 	</section>
 	<div class="inner-container-footer-sections">
