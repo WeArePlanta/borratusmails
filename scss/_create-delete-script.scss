@@ -1,7 +1,9 @@
 body.page.page-crea-tu-limpiador-de-mails {
-  padding-top: 60px;
+  margin-top: 60px;
   font-family: $theme-main-font;
-
+  @media (min-width: 1450px) {
+    margin-top: 120px;
+  }
   main {
     min-height: auto;
 
@@ -69,9 +71,11 @@ body.page.page-crea-tu-limpiador-de-mails {
 }
 
 body.page.page-desinstala-tu-script {
-  padding-top: 60px;
+  margin-top: 60px;
   font-family: $theme-main-font;
-
+  @media (min-width: 1450px) {
+    margin-top: 120px;
+  }
   main {
     min-height: auto;
 
@@ -85,7 +89,7 @@ body.page.page-desinstala-tu-script {
         color: $theme-coral;
         margin-bottom: 30px;
         line-height: 37px;
-        -webkit-text-stroke: 0.2px #1a1030; 
+        -webkit-text-stroke: 0.2px #1a1030;
         span {
           color: white;
           display: block;

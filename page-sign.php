@@ -13,8 +13,8 @@ get_header();
 
 <!-- <h1 class="page-title">Campaña Delete your emails</h1> -->
 
-<main>
 
+<p class="top-title-pages">Firma la petición</p>
 
     <section class="section-count-signers">
         <p>Ya somos más de</p>

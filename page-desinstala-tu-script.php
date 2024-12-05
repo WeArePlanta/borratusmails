@@ -13,7 +13,7 @@ get_header();
 
 <!-- <h1 class="page-title">Campaña Delete your emails</h1> -->
 
-<main>
+<p class="top-title-pages">desinstala tu script</p>
 
    <section class="mobile-only">
       <h1><span>¿Necesitas</span> desinstalar tu script?</h1>
@@ -22,7 +22,6 @@ get_header();
    </section>
 
    <section class="delete-script">
-   <p>desinstala el script</p>
    </section>
 </main>
 

@@ -1,3 +1,16 @@
+p.top-title-pages {
+	font-family: $theme-second-font;	
+	@include mob-smaller-title; 
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: $theme-darker-lila;
+	padding: 10px 0;
+	@media (min-width: 1450px) {
+		@include dkp-smaller-title;
+	}
+}
+
 body.page.error404 {
 	padding-top: 60px;
 	font-family: $theme-main-font;
@@ -87,6 +100,14 @@ body.page.page-fuentes {
 	}
 	main {
 		padding: 130px 30px;
+		position: relative;
+
+		p.top-title-pages {
+			position: absolute;
+			top: 0px;
+			width: 100%;
+			left: 0;
+		}
 
 		h1 {
 			font-family: $theme-second-font;
@@ -175,7 +196,10 @@ body.page.page-fuentes {
 }
 
 body.page.page-sign {
-	margin-top: 150px;
+	margin-top: 60px;
+	@media (min-width: 1450px) {
+		margin-top: 120px;
+	}
 
 	section.section-count-signers {
 		display: none;

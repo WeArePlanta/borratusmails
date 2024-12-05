@@ -13,7 +13,7 @@ get_header();
 
 <!-- <h1 class="page-title">Campaña Delete your emails</h1> -->
 
-<main>
+<p class="top-title-pages">crea tu script</p>
 
 
     <section class="mobile-only">
