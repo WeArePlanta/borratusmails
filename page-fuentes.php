@@ -14,7 +14,7 @@ get_header();
 
 
    <h1> Tenemos la data</h1>
-   <span> noticias y estudios sobre la basura que generan los mails que guardas </span>
+   <span>Noticias y estudios sobre la basura que generan los mails que guardas </span>
 
    <section class="source-inner-container">
       <article class="source-card">

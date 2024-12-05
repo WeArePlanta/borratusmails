@@ -734,7 +734,7 @@ function menu_admin_firmas()
 {
 	add_menu_page(
 		'Firmas del Petitorio',
-		'Firmas',
+		'Firmas Petitorio',
 		'manage_options',
 		'admin_firmas',
 		'mostrar_firmas_admin',
@@ -895,7 +895,7 @@ add_action('after_switch_theme', 'crear_tabla_correos'); // Cambiar a `register_
 function agregar_pagina_admin_correos() {
     add_menu_page(
         'Lista de Correos',       // Título de la página
-        'Correos',                // Texto del menú
+        'Correos de Mas tips',                // Texto del menú
         'manage_options',         // Capacidad
         'lista_correos',          // Slug
         'mostrar_lista_correos',  // Callback

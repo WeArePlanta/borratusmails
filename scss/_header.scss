@@ -175,12 +175,12 @@ body.page.page-fuentes {
 
 /* CUSTOM HEADER */
 header {
-    .main-theme-header {
+    &.main-theme-header {
         background-color: $theme-dark-blue;
         .inner-container {
             .site-icon {
                 img {
-                    width: 272px;
+                    width: 259px;
                 }
             }
         }
