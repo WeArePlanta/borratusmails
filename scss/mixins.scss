@@ -109,3 +109,90 @@
         }
     }
 }
+
+/* FONTS MOBILE */
+
+@mixin mob-smaller-title {
+    font-weight: 900;
+    line-height: 130%;
+    font-size: 16px;
+}
+@mixin mob-small-title {
+    font-weight: 900;
+    line-height: 100%;
+    font-size: 28px;
+}
+@mixin mob-middle-title {
+    font-weight: 900;
+    line-height: 90%;
+    font-size: 43px;
+}
+
+@mixin mob-biger-title {
+    font-weight: 900;
+    line-height: 90%;
+    font-size: 90px;
+}
+@mixin mob-big-title {
+    font-weight: 900;
+    line-height: 90%;
+    font-size: 60px;
+}
+@mixin mob-card-font {
+    font-weight: bold;
+    line-height: 100%;
+    font-size: 33px;
+}
+@mixin mob-error-font {
+    font-weight: 900;
+    line-height: 100%;
+    font-size: 160px;
+}
+/* FONTS DESKTOP */
+
+@mixin dkp-smaller-title {
+    font-weight: 900;
+    line-height: 110%;
+    font-size: 26px;
+}
+@mixin dkp-small-title {
+    font-weight: 900;
+    line-height: 110%;
+    font-size: 30px;
+}
+@mixin dkp-middle-title {
+    font-weight: 900;
+    line-height: 100%;
+    font-size: 36px;
+}
+@mixin dkp-big-title {
+    font-weight: 900;
+    line-height: 100%;
+    font-size: 115px;
+}
+@mixin dkp-big-two-title {
+    font-weight: 900;
+    line-height: 100%;
+    font-size: 60px;
+}
+@mixin dkp-biger-title {
+    font-weight: 900;
+    line-height: 120%;
+    font-size: 75px;
+}
+@mixin dkp-biger-two-title {
+    font-weight: 900;
+    line-height: 120%;
+    font-size: 68px;
+}
+@mixin dkp-card-font {
+    font-weight: bold;
+    line-height: 110%;
+    font-size: 40px;
+}
+@mixin dkp-error-font {
+    font-weight: 900;
+    line-height: 100%;
+    font-size: 300px;
+}
+

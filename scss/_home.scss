@@ -9,15 +9,13 @@
     h1 {
       margin: 0;
       color: $theme-coral;
-      font-size: 50px;
       text-transform: uppercase;
       display: block;
       font-family: $theme-second-font;
+      @include mob-big-title;
       text-align: center;
-      -webkit-text-stroke: 0.1px #1a1030; 
-
       @media (min-width: 1450px) {
-        font-size: 220px;
+        font-size: 260px;
       }
     }
 
@@ -28,7 +26,7 @@
         margin: 0 auto;
         width: 170px;
         margin-top: 85px;
-      } 
+      }
     }
   }
 
@@ -48,8 +46,8 @@
         padding-bottom: 150px;
         h2 {
           font-family: $theme-second-font;
+          @include mob-big-title;
           color: $theme-yellow;
-          font-size: 50px;
           width: 632px;
         }
         p {
@@ -85,8 +83,6 @@
     }
     div.paragraphs-inner-container {
       position: relative;
-      // height: 500px;
-      // border: solid 25px $theme-violet;
       width: 282px;
       height: 358px;
       margin: 0 auto;
@@ -99,20 +95,19 @@
         text-align: center;
         margin: 0 auto;
         background-color: $theme-dark-blue;
-        // animation: fade-cycle 9s infinite;
-        // opacity: 0; // Default invisible
         border-radius: 15px;
         border: solid 1px transparent;
         font-family: $theme-second-font;
         text-align: left;
         h2 {
           color: $theme-yellow;
-          font-size: 14px;
+          @include mob-smaller-title;
           text-transform: uppercase;
           padding: 0 13px 0 14px;
         }
         p {
-          font-size: 20px;
+          @include mob-small-title;
+
           text-transform: uppercase;
           padding: 0 13px 0 14px;
         }
@@ -162,14 +157,15 @@
       padding: 0 15px;
       p {
         font-family: $theme-second-font;
+        @include mob-big-title;
         text-transform: uppercase;
-        font-size: 50px;
         text-align: center;
         color: $theme-dark-lila;
         @media (min-width: 1450px) {
+          @include dkp-big-title;
           color: $theme-yellow;
           width: 776px;
-          font-size: 95px;
+
           margin: 0 auto;
         }
       }
@@ -184,26 +180,30 @@
           width: 776px;
           font-size: 26px;
           margin: 0 auto;
+          padding-bottom: 20px;
         }
       }
       p:nth-of-type(2) {
         font-family: $theme-second-font;
         text-transform: uppercase;
-        font-size: 50px;
+        @include mob-big-title;
         text-align: center;
         color: $theme-coral;
         @media (min-width: 1450px) {
           width: 776px;
-          font-size: 95px;
+          @include dkp-big-title;
           margin: 0 auto;
         }
       }
       p:nth-of-type(3) {
         font-family: $theme-second-font;
         text-transform: uppercase;
-        font-size: 28px;
+        @include mob-small-title;
         text-align: center;
         color: $theme-coral;
+        @media (min-width: 1450px) {
+          @include dkp-big-two-title;
+        }
       }
     }
     div:nth-of-type(3) {
@@ -215,29 +215,30 @@
           width: 776px;
           font-size: 26px;
           margin: 0 auto;
+          padding-bottom: 14px;
         }
       }
       p:nth-of-type(2) {
         font-family: $theme-second-font;
         text-transform: uppercase;
-        font-size: 28px;
+        @include mob-small-title;
         text-align: center;
         color: $theme-light-blue;
         @media (min-width: 1450px) {
           width: 776px;
-          font-size: 50px;
+          @include dkp-big-two-title;
           margin: 0 auto;
         }
       }
       p:nth-of-type(3) {
         font-family: $theme-second-font;
         text-transform: uppercase;
-        font-size: 50px;
+        @include mob-big-title;
         text-align: center;
         color: $theme-light-blue;
         @media (min-width: 1450px) {
           width: 776px;
-          font-size: 95px;
+          @include dkp-big-title;
           margin: 0 auto;
         }
       }
@@ -248,6 +249,7 @@
           width: 776px;
           font-size: 20px;
           margin: 0 auto;
+          padding-bottom: 5px;
         }
       }
       a {
@@ -273,23 +275,22 @@
         font-weight: bold;
       }
     }
-    h3 {
-      color: $theme-yellow;
-      font-size: 50px;
-      margin: 0 auto;
-      font-family: $theme-second-font;
-      text-transform: uppercase;
-      @media (min-width: 1450px) {
-        width: 776px;
-        font-size: 95px;
-        margin: 0 auto;
-      }
-    }
     p:nth-of-type(1) {
       font-size: 28px;
-      max-width: 330px;
       margin: 0 auto;
       margin-bottom: 30px;
+    }
+    p.la-nube {
+      font-family: $theme-second-font;
+      color: $theme-yellow;
+      @include mob-big-title;
+      margin: 0 auto;
+      text-transform: uppercase;
+      @media (min-width: 1450px) {
+        @include dkp-big-title;
+        margin: 0 auto;
+        width: 776px;
+      }
     }
     p:nth-of-type(2) {
       font-size: 16px;
@@ -298,13 +299,14 @@
         font-size: 26px;
         width: 776px;
         margin: 0 auto;
-        margin-bottom: 150px;
-        margin-top: 80px;
       }
     }
     p:nth-of-type(3) {
       @media (min-width: 1450px) {
-        font-size: 40px;
+        font-size: 26px;
+        width: 776px;
+        margin: auto;
+        padding-top: 40px;
       }
     }
     p:nth-of-type(4) {
@@ -355,11 +357,11 @@
         }
       }
       span {
-        font-size: 50px;
         display: block;
         font-family: $theme-second-font;
+        @include mob-big-title;
         @media (min-width: 1450px) {
-          font-size: 95px;
+          @include dkp-big-title;
         }
       }
       a {
@@ -390,10 +392,10 @@
         font-family: $theme-second-font;
         color: $theme-coral;
         text-transform: uppercase;
-        font-size: 63px;
-        margin: 24px 0 32px;
+        @include mob-big-title;
         @media (min-width: 1450px) {
-          font-size: 95px;
+          margin: 24px 0 32px;
+          @include dkp-big-title;
           width: 400px;
           margin: 0 auto;
           margin-bottom: 30px;
@@ -426,13 +428,13 @@
       text-align: center;
       p:nth-of-type(1) {
         margin-bottom: 20px;
-        font-size: 38px;
+        @include mob-middle-title;
         text-transform: uppercase;
         padding: 0 30px;
         font-family: $theme-second-font;
         color: $theme-yellow;
         @media (min-width: 1450px) {
-          font-size: 95px;
+          @include dkp-big-title;
           width: 866px;
           margin: 0 auto;
           margin-bottom: 30px;
@@ -470,7 +472,7 @@
           padding-bottom: 60px;
         }
         p:nth-of-type(1) {
-          font-size: 28px;
+          @include dkp-middle-title;
           font-family: $theme-second-font;
           text-transform: uppercase;
           margin-bottom: 10px;
@@ -565,12 +567,12 @@
     text-align: center;
     p:nth-of-type(1) {
       color: $theme-light-blue;
-      font-size: 50px;
+      @include mob-big-title;
       margin-bottom: 24px;
       font-family: $theme-second-font;
       text-transform: uppercase;
       @media (min-width: 1450px) {
-        font-size: 95px;
+        @include dkp-big-title;
         width: 638px;
         margin: 0 auto;
         margin-bottom: 24px;
@@ -608,13 +610,13 @@ div.cards-section {
     }
     p:nth-of-type(2) {
       color: $theme-yellow;
-      font-size: 50px;
+      @include mob-big-title;
       margin-bottom: 20px;
       font-family: $theme-second-font;
       text-transform: uppercase;
 
       @media (min-width: 1450px) {
-        font-size: 95px;
+        @include dkp-big-title;
       }
     }
     p:nth-of-type(3) {
@@ -643,18 +645,26 @@ div.cards-section {
           margin: 0 20px;
           width: 303px;
           height: 370px;
-          span {
-            font-size: 28px;
-            font-family: $theme-second-font;
-            text-transform: uppercase;
-            -webkit-text-stroke: 0.2px #1a1030; 
+          @media (min-width: 1450px) {
+            width: 363px;
+            height: 443px;
           }
-          p:nth-of-type(1) {
-            font-size: 25px;
-            font-weight: bold;
-            margin: 23px 25px;
+          p.highlight-text {
+            font-family: $theme-second-font;
+            @include mob-card-font;
+            text-transform: uppercase;
+            margin: 23px 25px 0;
+            text-align: center;
+            @media (min-width: 1450px) {
+              @include dkp-card-font;
+            }
           }
           p:nth-of-type(2) {
+            font-size: 25px;
+            font-weight: bold;
+            margin: 0 25px;
+          }
+          p:nth-of-type(3) {
             font-size: 16px;
           }
           a {
@@ -662,17 +672,21 @@ div.cards-section {
           }
 
           &.one {
-            span {
+            p.highlight-text {
               color: $theme-yellow;
             }
           }
           &.two {
-            span {
+            p.highlight-text {
               color: $theme-coral;
+            }
+            a {
+              margin-top: 25px;
+              display: block;
             }
           }
           &.three {
-            span {
+            p.highlight-text {
               color: $theme-lila;
             }
           }
@@ -689,7 +703,7 @@ section.three-steps-section {
     padding: 73px 54px 40px;
     @media (min-width: 1450px) {
       font-size: 40px;
-      padding-top: 100px;
+      padding-top: 85px;
     }
   }
   a {
@@ -711,12 +725,12 @@ section.fuentes-section {
     padding-bottom: 150px;
   }
   h4 {
-    font-size: 36px;
     font-family: $theme-second-font;
+    @include mob-middle-title;
     text-transform: uppercase;
     padding-bottom: 20px;
     @media (min-width: 1450px) {
-      font-size: 95px;
+      @include dkp-big-title;
       width: 725px;
       margin: 0 auto;
     }
@@ -740,14 +754,14 @@ section.sponsors {
   display: none;
   padding: 150px 30px 0;
   h5 {
-    font-size: 36px;
     font-family: $theme-second-font;
+    @include mob-middle-title;
     text-transform: uppercase;
     padding-bottom: 60px;
     color: $theme-light-blue;
     text-align: center;
     @media (min-width: 1450px) {
-      font-size: 50px;
+      @include dkp-big-two-title;
     }
   }
   img {
@@ -770,13 +784,13 @@ section.newsletter {
   }
   p:nth-of-type(2) {
     color: $theme-yellow;
-    font-size: 70px;
     margin-bottom: 20px;
     font-family: $theme-second-font;
+    @include mob-biger-title;
     text-transform: uppercase;
     padding: 0 50px;
     @media (min-width: 1450px) {
-      font-size: 95px;
+      @include dkp-big-title;
     }
   }
   p:nth-of-type(3) {
@@ -853,4 +867,8 @@ section.newsletter {
       }
     }
   }
+}
+
+.instagram-section {
+  display: none;
 }

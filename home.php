@@ -121,10 +121,10 @@ get_header();
 
     <section class="section-alert">
         <span>SPOILER ALERT:</span>
-        <h3> La nube no existe,</h3>
+        <p class="la-nube"> La nube no existe,</p>
         <p> son servidores refrigerados 24/7</p>
-        <p>Es como si tu correo estuviera enchufado a la corriente. Cada mail que envías, recibes y guardas usa electricidad, y como resultado, lanza gases de efecto invernadero que calientan el planeta.</p>
-        <p>¿Te suena exagerado?</p>
+        <p>Es como si tu correo estuviera enchufado a la corriente. Cada mail que envías, recibes y guardas usa electricidad, y como resultado, lanza gases de efecto invernadero que calientan el planeta. ¿Te suena exagerado?
+        </p>
         <p> Pues no lo es, tengo la data: </p>
     </section>
 
@@ -203,7 +203,7 @@ get_header();
                         <p> Opción 3.</p>
                         <p> Una voz entre la multitud:</p>
                         <p>Firma la petición para que las grandes marcas tomen acción y reduzcan su huella </p>
-                        <p>Demostremos que cada vez somos más personas que no queremos seguir acumulando residuos y queremos que las marcas comuniquen que su mail pueda ser borrado cuando no lo necesitemos.</p>
+                        <p>Demostremos que somos cada vez más quienes queremos reducir residuos digitales e invitemos a las marcas a comunicar prácticas sostenibles, como cuando nos piden reciclar un producto</p>
                         <a target="_blank" href="<?php echo esc_url(get_permalink(get_page_by_path('sign'))); ?>">Súmate al contador</a>
                     </figcaption>
                 </figure>
@@ -241,7 +241,7 @@ get_header();
                 <article class="swiper-slide">
 
                     <div class="content-div one">
-                        <p><span> Porque se envían 361,6 mil millones de mails al día,</span> que equivalen a que pongas la lavadora 1600 millones de veces.</p>
+                        <p class="highlight-text">Porque se envían 361,6 mil millones de mails al día,</p><p> que equivalen a que pongas la lavadora 1600 millones de veces.</p>
                         <p>Que sí, que siempre tengo fuente, <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"> aquí. </a></p>
                     </div>
                 </article>
@@ -250,7 +250,7 @@ get_header();
                 <article class="swiper-slide">
 
                     <div class="content-div two">
-                        <p><span> Porque la basura digital sigue siendo basura:</span> 1000 mails consumen como una bombilla LED de 10W encendida durante 29 días. </p>
+                        <p class="highlight-text">Porque la basura digital sigue siendo basura:</p> <p>1000 mails consumen como una bombilla LED de 10W encendida durante 29 días. </p>
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>">Y aquí la fuente.</a>
                     </div>
                 </article>
@@ -259,7 +259,7 @@ get_header();
                 <article class="swiper-slide">
 
                     <div class="content-div three">
-                        <p><span> Porque Black Friday es el día del año que más mails se envían,</span> y cuando la promoción expire seguirá gastando energía.</p>
+                        <p class="highlight-text">Porque Black Friday es el día del año que más mails se envían,</p><p> y cuando la promoción expire seguirá gastando energía.</p>
                         <p>Lee la fuente <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"> aquí </a> y ya tienes un motivo más para tomar acción. </p>
                     </div>
                 </article>
