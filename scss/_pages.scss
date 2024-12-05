@@ -11,38 +11,38 @@ body.page.error404 {
 		p:nth-of-type(1) {
 			font-family: $theme-second-font;
 			text-transform: uppercase;
-			font-size: 38px;
+			@include mob-middle-title;
 			text-align: center;
 			color: $theme-coral;
 			-webkit-text-stroke: 0.2px #1a1030;
 			@media (min-width: 1450px) {
-				font-size: 50px;
+				@include dkp-big-two-title;
 			}
 		}
 		h1 {
 			font-family: $theme-second-font;
 			text-transform: uppercase;
-			font-size: 122px;
+			@include mob-error-font;
 			text-align: center;
 			color: $theme-coral;
 			margin-bottom: 90px;
 			margin-top: 28px;
 			-webkit-text-stroke: 0.2px #1a1030;
 			@media (min-width: 1450px) {
-				font-size: 235px;
+				@include dkp-error-font;
 			}
 		}
 		p:nth-of-type(2) {
 			font-family: $theme-second-font;
 			text-transform: uppercase;
-			font-size: 30px;
+			@include mob-small-title;
 			text-align: center;
 			color: $theme-lila;
 			-webkit-text-stroke: 0.2px #1a1030;
 			margin: 0 auto;
 			margin-bottom: 60px;
 			@media (min-width: 1450px) {
-				font-size: 50px;
+				@include dkp-big-two-title;
 				max-width: 740px;
 			}
 		}
@@ -54,7 +54,7 @@ body.page.error404 {
 			}
 		}
 
-		img{
+		img {
 			padding: 60px 0 90px;
 			display: block;
 			margin: 0 auto;
@@ -91,14 +91,14 @@ body.page.page-fuentes {
 		h1 {
 			font-family: $theme-second-font;
 			text-transform: uppercase;
-			font-size: 28x;
+			@include mob-small-title;
 			text-align: center;
 			color: $theme-yellow;
 			margin: 0 auto;
 			margin-bottom: 17px;
 			-webkit-text-stroke: 0.2px #1a1030;
 			@media (min-width: 1450px) {
-				font-size: 95px;
+				@include dkp-big-title;
 				max-width: 572px;
 			}
 		}
@@ -127,7 +127,6 @@ body.page.page-fuentes {
 				flex-wrap: wrap;
 				margin: 0 auto;
 				margin-top: 135px;
-				
 			}
 
 			article.source-card {
