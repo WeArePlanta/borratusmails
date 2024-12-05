@@ -12,14 +12,26 @@ if (! defined('EMPTY_BASE_VERSION')) {
 	define('EMPTY_BASE_VERSION', '1.5.6');
 }
 
-add_action(
-	'wp_enqueue_scripts',
-	function () {
-		wp_enqueue_style('empty_base', get_stylesheet_directory_uri() . '/style.min.css', array(), EMPTY_BASE_VERSION);
-		wp_enqueue_script('empty_base', get_stylesheet_directory_uri() . '/js/main.js', array(), EMPTY_BASE_VERSION, true);
-		wp_enqueue_script('empty_base', get_stylesheet_directory_uri() . '/js/calculator.js', array(), EMPTY_BASE_VERSION, true);
-	}
-);
+add_action('wp_enqueue_scripts', function () {
+    // Encolar el estilo principal
+    wp_enqueue_style('empty_base', get_stylesheet_directory_uri() . '/style.min.css', array(), EMPTY_BASE_VERSION);
+
+    // Encolar el script principal
+    wp_enqueue_script('empty_base', get_stylesheet_directory_uri() . '/js/main.js', array(), EMPTY_BASE_VERSION, true);
+
+    // Encolar el script del formulario de peticiones
+    wp_enqueue_script('firma_petitorio', get_stylesheet_directory_uri() . '/js/firma-petitorio.js', array(), EMPTY_BASE_VERSION, true);
+
+    // Obtener el contador actual de firmas
+    $contador_firmas = get_option('contador_firmas', 0);
+
+    // Localizar datos para el script
+    wp_localize_script('firma_petitorio', 'ajax_obj', array(
+        'ajax_url' => admin_url('admin-ajax.php'),
+        'contador_firmas' => $contador_firmas, // Agrega el contador aquí
+    ));
+});
+
 
 add_action(
 	'init',
@@ -773,72 +785,42 @@ add_action('wp_enqueue_scripts', 'cargar_script_petitorio');
 
 function procesar_formulario_firma()
 {
-	global $wpdb;
+    global $wpdb;
 
-	// Validación de los datos
-	$nombre = sanitize_text_field($_POST['nombre'] ?? '');
-	$email = sanitize_email($_POST['email'] ?? '');
+    $nombre = sanitize_text_field($_POST['nombre'] ?? '');
+    $email = sanitize_email($_POST['email'] ?? '');
 
-	if (empty($nombre) || empty($email)) {
-		wp_send_json_error(array('mensaje' => 'Por favor, completa todos los campos.'));
-	}
+    if (empty($nombre) || empty($email)) {
+        wp_send_json_error(array('mensaje' => 'Por favor, completa todos los campos.'));
+    }
 
-	// Guardar en la tabla personalizada
-	$tabla_firmas = $wpdb->prefix . 'firmas';
-	$wpdb->insert(
-		$tabla_firmas,
-		array(
-			'nombre' => $nombre,
-			'email' => $email,
-			'fecha' => current_time('mysql')
-		)
-	);
+    // Guardar la firma en la base de datos
+    $tabla_firmas = $wpdb->prefix . 'firmas';
+    $wpdb->insert(
+        $tabla_firmas,
+        array(
+            'nombre' => $nombre,
+            'email' => $email,
+            'fecha' => current_time('mysql')
+        )
+    );
 
-	// Actualizar contador de firmas
-	$contador_firmas = (int) get_option('contador_firmas', 0);
-	update_option('contador_firmas', $contador_firmas + 1);
+    // Actualizar contador de firmas
+    $contador_firmas = (int) get_option('contador_firmas', 0) + 1;
+    update_option('contador_firmas', $contador_firmas);
 
-	wp_send_json_success(array('mensaje' => '¡Gracias por firmar el petitorio!'));
+    // Enviar respuesta al cliente
+    wp_send_json_success(array(
+        'mensaje' => '¡Gracias por firmar el petitorio!',
+        'contador_firmas' => $contador_firmas
+    ));
 }
 add_action('wp_ajax_procesar_formulario_firma', 'procesar_formulario_firma');
 add_action('wp_ajax_nopriv_procesar_formulario_firma', 'procesar_formulario_firma');
+
 //*hasta acáa*/ */
 
-/* contado custom-form */
 
-// function count_custom_forms_ajax() {
-//     $args = array(
-//         'post_type'   => 'custom-form',
-//         'post_status' => array('draft', 'publish'),
-//         'numberposts' => -1
-//     );
-//     $all_posts = get_posts($args);
-//     $count_all = count($all_posts);
-
-//     echo $count_all;
-//     wp_die();
-// }
-// add_action('wp_ajax_count_forms', 'count_custom_forms_ajax');
-// add_action('wp_ajax_nopriv_count_forms', 'count_custom_forms_ajax');
-
-// function enqueue_custom_script() {
-//     wp_enqueue_script('custom-ajax-script', get_template_directory_uri() . '/js/custom-ajax.js', array('jquery'), null, true);
-//     wp_localize_script('custom-ajax-script', 'customAjax', array('ajaxurl' => admin_url('admin-ajax.php')));
-// }
-// add_action('wp_enqueue_scripts', 'enqueue_custom_script');
-
-// function count_custom_forms() {
-//     $args = array(
-//         'post_type'   => 'custom-form',
-//         'post_status' => 'draft',
-//         'numberposts'  => -1 // Para obtener todos los posts
-//     );
-//     $draft_posts = get_posts($args);
-//     $count_draft = count($draft_posts);
-
-//     return "Ya firmaron el petitorio " . $count_draft . " personas.";
-// }
-// add_shortcode('count_forms', 'count_custom_forms');
 
 function count_custom_forms()
 {

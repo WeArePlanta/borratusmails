@@ -19,10 +19,7 @@ get_header();
     <section class="section-count-signers">
         <p>Ya somos más de</p>
         <?php echo do_shortcode('[count_forms]'); ?>
-
         <p>personas pidiendo a las empresas que tomen acción para unas bandejas de mail más limpias</p>
-        <br>
-        <br>
         <p>Somos un movimiento de personas que, como tú, acumula basura en sus bandejas de entrada con mails de empresas que ya no necesita. Eso lo estamos pagando con servidores refrigerados 24/7 que van consumiendo energía.</p>
     </section>
 
@@ -45,25 +42,16 @@ get_header();
     </section>
 
 
-
-    <section>
-        <?php echo do_shortcode('[codeable_test_form]'); ?>
-        <!-- <div>
-			Ya firmaron el petitorio <span id="form-count">0</span> personas.
-		</div> -->
-
-    </section>
-
-    <br><br><br>
+    
     <section class="counter-section">
         <form id="form-petitorio">
             <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
             <input type="email" id="email" name="email" placeholder="Tu email" required>
             <button type="submit">Firmar Petitorio</button>
         </form>
-        <br><br>
-        <p id="contador-firmas"></p>
-        <br><br><br><br>
+        
+        <p id="contador-firmas">acá</p>
+        
     </section>
 </main>
 
