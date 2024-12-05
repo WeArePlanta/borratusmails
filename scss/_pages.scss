@@ -1,6 +1,6 @@
 p.top-title-pages {
-	font-family: $theme-second-font;	
-	@include mob-smaller-title; 
+	font-family: $theme-second-font;
+	@include mob-smaller-title;
 	font-size: 18px;
 	text-align: center;
 	text-transform: uppercase;
@@ -202,6 +202,93 @@ body.page.page-sign {
 	}
 
 	section.section-count-signers {
-		display: none;
+		background: linear-gradient(to right, #dd5353, #c05277, #904ca3);
+		padding: 84px 32px 29px;
+		article.article-counter {
+			display: none;
+		}
+		article.article-intro-counter {
+			p {
+				font-size: 20px;
+				text-align: center;
+			}
+		}
+	}
+
+	section.section-what-how-why {
+		padding: 150px 30px 80px;
+		article {
+			padding-bottom: 70px;
+			@media (min-width: 1450px) {
+				width: 391px;
+			}
+			h5 {
+				@include mob-cap-title;
+				font-family: $theme-second-font;
+				text-align: center;
+				text-transform: uppercase;
+				color: $theme-yellow;
+				padding-bottom: 30px;
+				@media (min-width: 1450px) {
+					font-size: 36px;
+				}
+			}
+			p {
+				font-size: 16px;
+				text-align: center;
+				line-height: 130%;
+				@media (min-width: 1450px) {
+					font-size: 20px;
+				}
+			}
+		}
+		@media (min-width: 1450px) {
+			display: flex;
+			align-items: first baseline;
+			justify-content: space-between;
+			width: 1400px;
+			margin: 0 auto;
+		}
+	}
+	section.mail-to {
+		text-align: center;
+		padding: 0 30px 150px;
+		@media (min-width: 1450px) {
+		font-size: 20px;
+		}
+	}
+
+	section.sumate-section {
+		text-align: center;
+		padding: 0 40px;
+		p:nth-of-type(1) {
+			@include mob-big-title;
+			color: $theme-yellow;
+			margin-bottom: 20px;
+			font-family: $theme-second-font;
+			text-transform: uppercase;
+			@media (min-width: 1450px) {
+				@include dkp-big-title;
+				width: 638px;
+				margin: 0 auto;
+				margin-bottom: 24px;
+			}
+		}
+		p:nth-of-type(2) {
+			font-size: 28px;
+			margin-bottom: 30px;
+			@media (min-width: 1450px) {
+				width: 333px;
+				margin: 0 auto;
+				margin-bottom: 24px;
+			}
+		}
+		p:nth-of-type(3) {
+			font-size: 16px;
+		}
+	}
+
+	section.form-section {
+		padding: 30px 40px;
 	}
 }

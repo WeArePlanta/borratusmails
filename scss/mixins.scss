@@ -122,21 +122,26 @@
     line-height: 100%;
     font-size: 28px;
 }
+@mixin mob-cap-title {
+    font-weight: 900;
+    line-height: 130%;
+    font-size: 35px;
+}
 @mixin mob-middle-title {
     font-weight: 900;
     line-height: 90%;
     font-size: 43px;
 }
 
-@mixin mob-biger-title {
-    font-weight: 900;
-    line-height: 90%;
-    font-size: 90px;
-}
 @mixin mob-big-title {
     font-weight: 900;
     line-height: 90%;
     font-size: 60px;
+}
+@mixin mob-biger-title {
+    font-weight: 900;
+    line-height: 90%;
+    font-size: 90px;
 }
 @mixin mob-card-font {
     font-weight: bold;
