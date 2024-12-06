@@ -204,6 +204,9 @@ body.page.page-sign {
 	section.section-count-signers {
 		background: linear-gradient(to right, #dd5353, #c05277, #904ca3);
 		padding: 84px 32px 29px;
+		@media (min-width: 1450px) {
+			padding: 120px 340px;
+		}
 		article.article-counter {
 			display: none;
 		}
@@ -211,6 +214,9 @@ body.page.page-sign {
 			p {
 				font-size: 20px;
 				text-align: center;
+				@media (min-width: 1450px) {
+					font-size: 40px;
+				}
 			}
 		}
 	}
@@ -254,7 +260,7 @@ body.page.page-sign {
 		text-align: center;
 		padding: 0 30px 150px;
 		@media (min-width: 1450px) {
-		font-size: 20px;
+			font-size: 20px;
 		}
 	}
 
@@ -290,5 +296,20 @@ body.page.page-sign {
 
 	section.form-section {
 		padding: 30px 40px;
+		form#form-petitorio {
+			input {
+				background-color: transparent;
+				border-radius: 20px;
+				border: solid 1px white;
+				padding: 13px 20px;
+				margin-bottom: 30px
+			}
+			button {
+				@include lila-button;
+				top: 0;
+				text-align: center;
+				border: none;
+			}
+		}
 	}
 }

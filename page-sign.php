@@ -63,10 +63,7 @@ get_header();
         <input type="email" id="email" name="email" placeholder="Tu email" required>
         <button type="submit">Firmar Petitorio</button>
     </form>
-
-
 </section>
-</main>
 
 
 
