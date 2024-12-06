@@ -19,9 +19,9 @@ body.page.page-crea-tu-limpiador-de-mails {
         }
       }
       p:nth-of-type(2) {
+        @include mob-middle-title;
         font-family: $theme-second-font;
         text-transform: uppercase;
-        @include mob-middle-title;
         text-align: center;
         color: $theme-coral;
         padding: 20px 0 50px;
@@ -65,6 +65,74 @@ body.page.page-crea-tu-limpiador-de-mails {
       display: none;
       @media (min-width: 1450px) {
         display: block;
+      }
+    }
+
+    section.desktop-create-script {
+      padding: 100px 16px 150px;
+      h1 {
+        @include dkp-big-two-title;
+        font-family: $theme-second-font;
+        text-transform: uppercase;
+        text-align: center;
+        color: $theme-light-blue;
+        width: 822px;
+        margin: auto;
+      }
+      p:nth-of-type(1) {
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 55px;
+      }
+      p:nth-of-type(2) {
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 55px;
+        width: 862px;
+        margin: auto;
+      }
+      p:nth-of-type(3) {
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 55px;
+        width: 862px;
+        margin: auto;
+      }
+      div.inner-intro-article-div {
+        display: flex;
+        flex-direction: row;
+        width: 1182px;
+        align-items: baseline;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-bottom: 200px;
+        div.steps-inner-div {
+          p:nth-of-type(1) {
+            @include dkp-biger-title;
+            font-family: $theme-second-font;
+            text-transform: uppercase;
+            text-align: center;
+            color: $theme-yellow;
+            padding-bottom: 0;
+          }
+          p:nth-of-type(2) {
+            @include dkp-biger-title;
+            font-weight: 400;
+            font-size: 40px;
+            text-align: center;
+            width: 380px;
+          }
+          &:nth-of-type(2) {
+            p:nth-of-type(1) {
+              color: $theme-lila;
+            }
+          }
+          &:nth-of-type(3) {
+            p:nth-of-type(1) {
+              color: $theme-coral;
+            }
+          }
+        }
       }
     }
   }

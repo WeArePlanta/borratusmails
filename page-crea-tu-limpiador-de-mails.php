@@ -13,38 +13,58 @@ get_header();
 
 <!-- <h1 class="page-title">Campaña Delete your emails</h1> -->
 
-<p class="top-title-pages">crea tu script</p>
+<p class="top-title-pages">crea tu limpiador de mails</p>
 
 
-    <section class="mobile-only">
-        <p>Para ser hacker de la contaminación digital,</p>
-        <p>necesitas una computadora.</p>
-        <p>Abre tu computadora y</p>
-        <p>sigue los 3 sencillos pasos.</p>
-    </section>
+<section class="mobile-only">
+    <p>Para ser hacker de la contaminación digital,</p>
+    <p>necesitas una computadora.</p>
+    <p>Abre tu computadora y</p>
+    <p>sigue los 3 sencillos pasos.</p>
+</section>
 
+<section class="desktop-create-script">
+    <article class="intro-article">
+        <h1>
+            vamos a Crear tu propio limpiador de mails automático
+        </h1>
+        <p>
+            y reducir tu huella digital
+        </p>
+        <p>
+            Hoy, en Hacker por un Ratito, aprenderás a hacer un script. ¿Y qué es eso? Tranqui, es más fácil de lo que parece: vas a darle unas indicaciones a tu computadora para que seleccione todos los correos con las palabras que tú elijas, (por ejemplo, “OFERTA” o el nombre de tu ex) los junte y te ponga fácil borrarlos.
+        </p>
+        <p>Tan solo tienes que seguir estos 3 pasos:</p>
+        <div class="inner-intro-article-div">
+            <div class="steps-inner-div">
+                <p>1.</p>
+                <p>Crea tu script</p>
+            </div>
+            <div class="steps-inner-div">
+                <p>2.</p>
+                <p>Pégalo en tu mail</p>
+            </div>
+            <div class="steps-inner-div">
+                <p>3.</p>
+                <p>Borra tus mails</p>
+            </div>
+        </div>
+    </article>
 
-    <section id="programa-su-eliminacion">
-        <?php echo do_shortcode('[email_script_generator]'); ?>
-    </section>
-
-
-    <section class="desktop-create-script">
+    <article>
         <h2>4. Las etiquetas ya están capturando tus mails. Ahora tan solo te queda borrarlos.</h2>
         <p>Revisa los mails etiquetados y elimínalos.</p>
-        <br><br>
 
         <p>
             <i>
                 [contador etiquetas, columna 1]
             </i>
             ¡Ya hemos capturado xxx mails!
-            <br>
-            <br>
+
+
             <i> [contador etiquetas, columna 2] </i>
             Eso son un ahorro del CO2 equivalente a xx bolsas de plástico.
         </p>
-        <br><br>
         <p>
             <strong> Y tú, ¿cuántos mails capturaste y eliminaste?
             </strong>
@@ -56,12 +76,13 @@ get_header();
 
         <p id="result-grco2e">GrCO2e: -</p>
         <p id="result-km">Kilómetros en auto: -</p>
-        <br>
-        <br> <br>
-        <br> <br>
-        <br>
+    </article>
 
-    </section>
+</section>
+
+<section id="programa-su-eliminacion">
+    <?php echo do_shortcode('[email_script_generator]'); ?>
+</section>
 
 </main>
 
