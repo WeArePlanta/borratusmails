@@ -51,7 +51,7 @@
 						<img src="<?php echo esc_url(get_template_directory_uri() . '/img/Icon-arrow.png'); ?>" alt="flecha que indica apertura de un elemento" class="arrow-icon">
 					</summary>
 					<ul>
-						<li><a href="https://deleteryouremails.weareplanta.com/"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/icono-espanol.png'); ?>" alt="English" class="en">English</a></li>
+						<li><a href="https://deleteryouremails.weareplanta.com/"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/icono-ingles.png'); ?>" alt="English" class="en">English</a></li>
 						
 					</ul>
 				</details>

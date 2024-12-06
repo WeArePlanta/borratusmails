@@ -30,7 +30,7 @@ window.addEventListener('load', function () {
 	/* SWIPER */
 
 
-	let slidesPerPage = screen.width < 1200 ? 1 : 4;
+	let slidesPerPage = window.innerWidth < 1200 ? 1 : 4;
 	let welcomeSwiper = new Swiper('.generic-swiper', {
 		spaceBetween: 30,
 		loop: false,
