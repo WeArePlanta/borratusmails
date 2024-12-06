@@ -36,7 +36,7 @@
 		<section class="menu-footer">
 			<ul>
 				<li><a href="<?php echo esc_url(get_permalink(get_page_by_path('crea-tu-limpiador-de-mails'))); ?>">Crea tu limpiador de mails</a></li>
-				<li><a href="<?php echo esc_url(get_permalink(get_page_by_path('sign'))); ?>">Empresas, tomen acción</a></li>
+				<li><a href="<?php echo esc_url(get_permalink(get_page_by_path('sign'))); ?>">Empresas y comunidad unidas</a></li>
 				<li><a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>">Fuentes e info</a></li>
 				<li><a href="<?php echo esc_url(get_permalink(get_page_by_path('desinstala-tu-script'))); ?>">Desinstala tu script</a></li>
 			</ul>

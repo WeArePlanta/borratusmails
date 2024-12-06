@@ -79,7 +79,7 @@
     a {
       @include lila-button;
       background-color: $theme-dark-blue;
-      top: 0;
+      top: -86px;
     }
     div.paragraphs-inner-container {
       position: relative;

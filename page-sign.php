@@ -59,7 +59,9 @@ get_header();
 
 <section class="form-section">
     <form id="form-petitorio">
+        <label>Tu nombre</label>
         <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        <label>Tu email</label>
         <input type="email" id="email" name="email" placeholder="Tu email" required>
         <button type="submit">Firmar Petitorio</button>
     </form>
