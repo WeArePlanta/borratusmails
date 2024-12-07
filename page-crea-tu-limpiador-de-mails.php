@@ -75,9 +75,9 @@ get_header();
     </div>
 
     <ul class="bullets">
-        <li><a href="#slide-1">slide 1</a></li>
-        <li><a href="#slide-2">slide 2</a></li>
-        <li><a href="#slide-3">slide 3</a></li>
+        <li class="slide-one-li"><a href="#slide-1">slide 1</a></li>
+        <li class="slide-two-li"><a href="#slide-2">slide 2</a></li>
+        <li class="slide-three-li"><a href="#slide-3">slide 3</a></li>
     </ul>
 
 

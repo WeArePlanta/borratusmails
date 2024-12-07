@@ -568,18 +568,19 @@ function email_script_generator_shortcode()
 	$html .= '<p>Elige las palabras clave</p>';
 	$html .= '<p>y detecta los mails que ya no te sirven</p>';
 	$html .= '<p>Aquí tienes una lista de las palabras clave más habituales de mails que no aportan nada y que se pueden utilizar para detectar el mail que puedes borrar.</p>';
+	$html .= '<div class="checkboxs-div">';
+	$html .= '<label for="promo" id="labelPromo"><input type="checkbox" id="promo" name="keywords[]" value="promociones"> Promociones</label>';
+	$html .= '<label for="oferta" id="labelOfer"><input type="checkbox" id="oferta" name="keywords[]" value="Oferta"> Oferta</label>';
+	$html .= '<label for="boletin" id="labelBol"><input type="checkbox" id="boletin" name="keywords[]" value="Boletín"> Boletín</label>';
+	$html .= '<label for="publicidad" id="labelPubli"><input type="checkbox" id="publicidad" name="keywords[]" value="Publicidad"> Publicidad</label>';
+	$html .= '<label for="reunion" id="labelReu"><input type="checkbox" id="reunion" name="keywords[]" value="Reunión"> Reunión</label>';
+	$html .= '<label for="novedades" id="labelNove"><input type="checkbox" id="novedades" name="keywords[]" value="novedades"> Novedades</label>';
+	$html .= '<label for="evento" id="labelEvento"><input type="checkbox" id="evento" name="keywords[]" value="Evento"> Evento</label>';
+	$html .= '<label for="newsletter" id="labelNews"><input type="checkbox" id="newsletter" name="keywords[]" value="Newsletter"> Newsletter</label>';
+	$html .= '<label for="descuentos" id="labelDesc"><input type="checkbox" id="descuentos" name="keywords[]" value="Descuentos"> Descuentos</label>';
+	$html .= '<label for="invitacion" id="labelInvitacion"><input type="checkbox" id="invitacion" name="keywords[]" value="Invitación"> Invitación</label>';
 
-	$html .= '<label><input type="checkbox" name="keywords[]" value="promociones"> Promociones</label>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="Oferta"> Oferta</label>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="Boletín"> Boletín</label>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="Publicidad"> Publicidad</label>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="Reunión"> Reunión</label>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="novedades"> Novedades</label>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="Evento"> Evento</label>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="Newsletter"> Newsletter</label>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="Descuentos"> Descuentos</label>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="Invitación"> Invitación</label>';
-
+	$html .= '</div>';
 	$html .= '<p>¿Se te ocurre alguna más? Agrégala aquí:</p>';
 	$html .= '<p>Por ejemplo, aquel gurú que ya te aburre, una marca que ya no va contigo, o el nombre de tu ex.</p>';
 	for ($i = 1; $i <= 4; $i++) {
@@ -591,7 +592,7 @@ function email_script_generator_shortcode()
 	<label>Aceptas enviar una notificación cuando uses el script.</label>';
 	$html .= '<input type="submit" id="generate-script-button" value="Generar Script">';
 	$html .= '</form>';
-	
+
 
 	return $html; // Devolver el HTML concatenado
 }

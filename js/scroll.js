@@ -23,8 +23,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Observe each slide
     slides.forEach((slide) => observer.observe(slide));
+
+
+
+    // Función para manejar el cambio de estado de los checkboxes
+    function setupCheckbox(labelId, checkboxId) {
+        const checkbox = document.getElementById(checkboxId);
+        const label = document.getElementById(labelId);
+
+        checkbox.addEventListener('change', function () {
+            if (checkbox.checked) {
+                label.style.backgroundColor = '#FFBA49'; // Fondo amarillo si está marcado
+                label.style.color = '#1A1030'; // Color de texto
+            } else {
+                label.style.backgroundColor = '#1A1030'; // Fondo original si no está marcado
+                label.style.color = 'white'; // Color de texto original
+            }
+        });
+    }
+
+    // Configuración para todos los checkboxes
+    setupCheckbox('labelPromo', 'promo');
+    setupCheckbox('labelOfer', 'oferta');
+    setupCheckbox('labelBol', 'boletin');
+    setupCheckbox('labelPubli', 'publicidad');
+    setupCheckbox('labelReu', 'reunion');
+    setupCheckbox('labelNove', 'novedades');
+    setupCheckbox('labelEvento', 'evento');
+    setupCheckbox('labelNews', 'newsletter');
+    setupCheckbox('labelDesc', 'descuentos');
+    setupCheckbox('labelInvitacion', 'invitacion');
+
 });
- 
 
 
 // // Fix passive event
