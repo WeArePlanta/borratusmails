@@ -13,23 +13,26 @@ if (! defined('EMPTY_BASE_VERSION')) {
 }
 
 add_action('wp_enqueue_scripts', function () {
-    // Encolar el estilo principal
-    wp_enqueue_style('empty_base', get_stylesheet_directory_uri() . '/style.min.css', array(), EMPTY_BASE_VERSION);
+	// Encolar el estilo principal
+	wp_enqueue_style('empty_base', get_stylesheet_directory_uri() . '/style.min.css', array(), EMPTY_BASE_VERSION);
 
-    // Encolar el script principal
-    wp_enqueue_script('empty_base', get_stylesheet_directory_uri() . '/js/main.js', array(), EMPTY_BASE_VERSION, true);
+	// Encolar el script principal
+	wp_enqueue_script('empty_base', get_stylesheet_directory_uri() . '/js/main.js', array(), EMPTY_BASE_VERSION, true);
 
-    // Encolar el script del formulario de peticiones
-    wp_enqueue_script('firma_petitorio', get_stylesheet_directory_uri() . '/js/firma-petitorio.js', array(), EMPTY_BASE_VERSION, true);
+	// Encolar el script del formulario de peticiones
+	wp_enqueue_script('firma_petitorio', get_stylesheet_directory_uri() . '/js/firma-petitorio.js', array(), EMPTY_BASE_VERSION, true);
 
-    // Obtener el contador actual de firmas
-    $contador_firmas = get_option('contador_firmas', 0);
+	// Encolar el script del scroll de create your script
+	wp_enqueue_script('firma_petitorio', get_stylesheet_directory_uri() . '/js/scroll.js', array(), EMPTY_BASE_VERSION, true);
 
-    // Localizar datos para el script
-    wp_localize_script('firma_petitorio', 'ajax_obj', array(
-        'ajax_url' => admin_url('admin-ajax.php'),
-        'contador_firmas' => $contador_firmas, // Agrega el contador aquí
-    ));
+	// Obtener el contador actual de firmas
+	$contador_firmas = get_option('contador_firmas', 0);
+
+	// Localizar datos para el script
+	wp_localize_script('firma_petitorio', 'ajax_obj', array(
+		'ajax_url' => admin_url('admin-ajax.php'),
+		'contador_firmas' => $contador_firmas, // Agrega el contador aquí
+	));
 });
 
 
@@ -558,40 +561,37 @@ function email_script_generator_shortcode()
 {
 	$html = '';
 	$html .= '<div class="email-script-generator">';
-	$html .= '<h2>Crea tu propio limpiador de tus mails automático y reduce tu huella digital</h2><br>';
-	$html .= '<form id="email-script-form" action="" method="post"><br>';
-	$html .= '<p><strong>1. Elige las palabras clave que están en tus mails y que quieras deshacerte</strong></p><br>';
+	$html .= '<p>¡Comencemos!</p>';
+	$html .= '<h2>Crea tu script</h2>';
+	$html .= '<form id="email-script-form" action="" method="post">';
+	$html .= '<p>Paso 1.</p>';
+	$html .= '<p>Elige las palabras clave</p>';
+	$html .= '<p>y detecta los mails que ya no te sirven</p>';
+	$html .= '<p>Aquí tienes una lista de las palabras clave más habituales de mails que no aportan nada y que se pueden utilizar para detectar el mail que puedes borrar.</p>';
 
-	$html .= '<label><input type="checkbox" name="keywords[]" value="promociones"> Promociones</label><br>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="invitación"> Invitación</label><br>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="Evento"> Evento</label><br>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="Novedades"> Novedades</label><br>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="Reunión"> Reunión</label><br>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="novedades"> Novedades</label><br>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="reunión"> Reunión</label><br>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="publicidad"> Publicidad</label><br>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="boletín"> Boletín</label><br>';
-	$html .= '<label><input type="checkbox" name="keywords[]" value="oferta"> Oferta</label><br>';
+	$html .= '<label><input type="checkbox" name="keywords[]" value="promociones"> Promociones</label>';
+	$html .= '<label><input type="checkbox" name="keywords[]" value="Oferta"> Oferta</label>';
+	$html .= '<label><input type="checkbox" name="keywords[]" value="Boletín"> Boletín</label>';
+	$html .= '<label><input type="checkbox" name="keywords[]" value="Publicidad"> Publicidad</label>';
+	$html .= '<label><input type="checkbox" name="keywords[]" value="Reunión"> Reunión</label>';
+	$html .= '<label><input type="checkbox" name="keywords[]" value="novedades"> Novedades</label>';
+	$html .= '<label><input type="checkbox" name="keywords[]" value="Evento"> Evento</label>';
+	$html .= '<label><input type="checkbox" name="keywords[]" value="Newsletter"> Newsletter</label>';
+	$html .= '<label><input type="checkbox" name="keywords[]" value="Descuentos"> Descuentos</label>';
+	$html .= '<label><input type="checkbox" name="keywords[]" value="Invitación"> Invitación</label>';
 
-	$html .= '<br><p>¿Se te ocurre alguna más? Agrégala aquí:</p><br>';
+	$html .= '<p>¿Se te ocurre alguna más? Agrégala aquí:</p>';
+	$html .= '<p>Por ejemplo, aquel gurú que ya te aburre, una marca que ya no va contigo, o el nombre de tu ex.</p>';
 	for ($i = 1; $i <= 4; $i++) {
-		$html .= '<input type="text" name="additionalKeyword[]" placeholder="Palabra clave adicional ' . $i . '"><br><br>';
+		$html .= '<input type="text" name="additionalKeyword[]" placeholder="Añade tu palabra ' . $i . '">';
 	}
-	$html .= '<p><strong>2. Crea tu script</strong>
-	<br>Un script es como una receta de cocina: le comunicas a la computadora el paso a paso que tendrá que hacer para programar
-	 el borrado de tus mails con etiquetas.</p><br><br>';
 
-	$html .= '<br><input type="checkbox" id="generate-script-acept" value="Aceptar" required>
-	<label>Para recibir tu script, aceptas enviar una notificación con la creación del script. </label>';
-	$html .= '<br><input type="submit" id="generate-script-button" value="Generar Script">';
+
+	$html .= '<input type="checkbox" id="generate-script-acept" value="Aceptar" required>
+	<label>Aceptas enviar una notificación cuando uses el script.</label>';
+	$html .= '<input type="submit" id="generate-script-button" value="Generar Script">';
 	$html .= '</form>';
-	$html .= '<h3>Script Generado:</h3>';
-	$html .= '<textarea id="generated-script" readonly style="width: 100%; height: 200px;"></textarea>';
-	$html .= '</div><br><br>';
-
-	$html .= '<p><strong>3. Cópialo en tu mail para capturar los mails que no necesitas.</strong>
-	<br><a href="https://docs.google.com/document/d/18EXx4gf8il6-Ek4OC4Bkz_ad__RLHVNXOFaznkzHBNs/edit#heading=h.v1tmckeawqor">
-	Sigue estos pasos para copiar tu script</a></p><br><br>';
+	
 
 	return $html; // Devolver el HTML concatenado
 }
@@ -785,35 +785,35 @@ add_action('wp_enqueue_scripts', 'cargar_script_petitorio');
 
 function procesar_formulario_firma()
 {
-    global $wpdb;
+	global $wpdb;
 
-    $nombre = sanitize_text_field($_POST['nombre'] ?? '');
-    $email = sanitize_email($_POST['email'] ?? '');
+	$nombre = sanitize_text_field($_POST['nombre'] ?? '');
+	$email = sanitize_email($_POST['email'] ?? '');
 
-    if (empty($nombre) || empty($email)) {
-        wp_send_json_error(array('mensaje' => 'Por favor, completa todos los campos.'));
-    }
+	if (empty($nombre) || empty($email)) {
+		wp_send_json_error(array('mensaje' => 'Por favor, completa todos los campos.'));
+	}
 
-    // Guardar la firma en la base de datos
-    $tabla_firmas = $wpdb->prefix . 'firmas';
-    $wpdb->insert(
-        $tabla_firmas,
-        array(
-            'nombre' => $nombre,
-            'email' => $email,
-            'fecha' => current_time('mysql')
-        )
-    );
+	// Guardar la firma en la base de datos
+	$tabla_firmas = $wpdb->prefix . 'firmas';
+	$wpdb->insert(
+		$tabla_firmas,
+		array(
+			'nombre' => $nombre,
+			'email' => $email,
+			'fecha' => current_time('mysql')
+		)
+	);
 
-    // Actualizar contador de firmas
-    $contador_firmas = (int) get_option('contador_firmas', 0) + 1;
-    update_option('contador_firmas', $contador_firmas);
+	// Actualizar contador de firmas
+	$contador_firmas = (int) get_option('contador_firmas', 0) + 1;
+	update_option('contador_firmas', $contador_firmas);
 
-    // Enviar respuesta al cliente
-    wp_send_json_success(array(
-        'mensaje' => '¡Gracias por firmar el petitorio!',
-        'contador_firmas' => $contador_firmas
-    ));
+	// Enviar respuesta al cliente
+	wp_send_json_success(array(
+		'mensaje' => '¡Gracias por firmar el petitorio!',
+		'contador_firmas' => $contador_firmas
+	));
 }
 add_action('wp_ajax_procesar_formulario_firma', 'procesar_formulario_firma');
 add_action('wp_ajax_nopriv_procesar_formulario_firma', 'procesar_formulario_firma');
@@ -839,115 +839,121 @@ add_shortcode('count_forms', 'count_custom_forms');
 
 /* FORM NEWSLETTER */
 
-function correo_formulario_shortcode() {
-    global $wpdb;
-    $mensaje = '';
+function correo_formulario_shortcode()
+{
+	global $wpdb;
+	$mensaje = '';
 
-    if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['correo_usuario'])) {
-        $correo = sanitize_email($_POST['correo_usuario']);
-        if (is_email($correo)) {
-            $tabla_correos = $wpdb->prefix . 'correos';
-            $resultado = $wpdb->insert($tabla_correos, ['email' => $correo]);
+	if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['correo_usuario'])) {
+		$correo = sanitize_email($_POST['correo_usuario']);
+		if (is_email($correo)) {
+			$tabla_correos = $wpdb->prefix . 'correos';
+			$resultado = $wpdb->insert($tabla_correos, ['email' => $correo]);
 
-            if ($resultado) {
-                $mensaje = '<p style="color: white; font-size: 20px; padding-top: 25px;">Correo guardado exitosamente, muchas gracias.</p>';
-            } else {
-                $mensaje = '<p style="color: red; font-size: 20px; padding-top: 25px;">Error al enviar el correo.</p>';
-            }
-        } else {
-            $mensaje = '<p style="color: red; font-size: 20px; padding-top: 25px;">Por favor, ingresa un correo válido.</p>';
-        }
-    }
+			if ($resultado) {
+				$mensaje = '<p style="color: white; font-size: 20px; padding-top: 25px;">Correo guardado exitosamente, muchas gracias.</p>';
+			} else {
+				$mensaje = '<p style="color: red; font-size: 20px; padding-top: 25px;">Error al enviar el correo.</p>';
+			}
+		} else {
+			$mensaje = '<p style="color: red; font-size: 20px; padding-top: 25px;">Por favor, ingresa un correo válido.</p>';
+		}
+	}
 
-    ob_start();
-    ?>
-    <form method="post" class="form-newsletter" id="form-newsletter" action="#form-newsletter">
-        <input type="email" name="correo_usuario" placeholder="Ingresa tu correo" required>
-        <p>Disclaimer: No te enviaremos bullshit, contenido promocional ni usaremos tu correo para usos comerciales. Te ayudaremos a entrenar buenas prácticas digitales: <a href=""> léela y bórrala.</a></p>
-        <button type="submit">Añade tu correo</button>
-    </form>
-    <?php echo $mensaje; ?>
-    <?php
-    return ob_get_clean();
+	ob_start();
+?>
+	<form method="post" class="form-newsletter" id="form-newsletter" action="#form-newsletter">
+		<input type="email" name="correo_usuario" placeholder="Ingresa tu correo" required>
+		<p>Disclaimer: No te enviaremos bullshit, contenido promocional ni usaremos tu correo para usos comerciales. Te ayudaremos a entrenar buenas prácticas digitales: <a href=""> léela y bórrala.</a></p>
+		<button type="submit">Añade tu correo</button>
+	</form>
+	<?php echo $mensaje; ?>
+<?php
+	return ob_get_clean();
 }
 add_shortcode('correo_formulario', 'correo_formulario_shortcode');
 
 
 
 // Crear la tabla en la base de datos al activar el tema/plugin
-function crear_tabla_correos() {
-    global $wpdb;
-    $tabla_correos = $wpdb->prefix . 'correos';
-    $charset_collate = $wpdb->get_charset_collate();
+function crear_tabla_correos()
+{
+	global $wpdb;
+	$tabla_correos = $wpdb->prefix . 'correos';
+	$charset_collate = $wpdb->get_charset_collate();
 
-    $sql = "CREATE TABLE IF NOT EXISTS $tabla_correos (
+	$sql = "CREATE TABLE IF NOT EXISTS $tabla_correos (
         id mediumint(9) NOT NULL AUTO_INCREMENT,
         email varchar(255) NOT NULL,
         PRIMARY KEY (id)
     ) $charset_collate;";
 
-    require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-    dbDelta($sql);
+	require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+	dbDelta($sql);
 }
 add_action('after_switch_theme', 'crear_tabla_correos'); // Cambiar a `register_activation_hook` si es un plugin
 
 // Mostrar los correos en el admin
-function agregar_pagina_admin_correos() {
-    add_menu_page(
-        'Lista de Correos',       // Título de la página
-        'Correos de Mas tips',                // Texto del menú
-        'manage_options',         // Capacidad
-        'lista_correos',          // Slug
-        'mostrar_lista_correos',  // Callback
-        'dashicons-email-alt',    // Icono
-        20                        // Posición
-    );
+function agregar_pagina_admin_correos()
+{
+	add_menu_page(
+		'Lista de Correos',       // Título de la página
+		'Correos de Mas tips',                // Texto del menú
+		'manage_options',         // Capacidad
+		'lista_correos',          // Slug
+		'mostrar_lista_correos',  // Callback
+		'dashicons-email-alt',    // Icono
+		20                        // Posición
+	);
 }
 add_action('admin_menu', 'agregar_pagina_admin_correos');
 
 // Callback para mostrar los correos
-function mostrar_lista_correos() {
-    global $wpdb;
-    $tabla_correos = $wpdb->prefix . 'correos';
-    $correos = $wpdb->get_results("SELECT * FROM $tabla_correos");
+function mostrar_lista_correos()
+{
+	global $wpdb;
+	$tabla_correos = $wpdb->prefix . 'correos';
+	$correos = $wpdb->get_results("SELECT * FROM $tabla_correos");
 
-    echo '<div class="wrap"><h1>Lista de Correos</h1><table class="widefat">';
-    echo '<thead><tr><th>ID</th><th>Correo</th></tr></thead><tbody>';
-    if ($correos) {
-        foreach ($correos as $correo) {
-            echo "<tr><td>{$correo->id}</td><td>{$correo->email}</td></tr>";
-        }
-    } else {
-        echo '<tr><td colspan="2">No hay correos registrados.</td></tr>';
-    }
-    echo '</tbody></table></div>';
+	echo '<div class="wrap"><h1>Lista de Correos</h1><table class="widefat">';
+	echo '<thead><tr><th>ID</th><th>Correo</th></tr></thead><tbody>';
+	if ($correos) {
+		foreach ($correos as $correo) {
+			echo "<tr><td>{$correo->id}</td><td>{$correo->email}</td></tr>";
+		}
+	} else {
+		echo '<tr><td colspan="2">No hay correos registrados.</td></tr>';
+	}
+	echo '</tbody></table></div>';
 }
 
-function crear_tabla_correos_manual() {
-    global $wpdb;
-    $tabla_correos = $wpdb->prefix . 'correos';
+function crear_tabla_correos_manual()
+{
+	global $wpdb;
+	$tabla_correos = $wpdb->prefix . 'correos';
 
-    // Comprobar si la tabla ya existe
-    $tabla_existe = $wpdb->get_var("SHOW TABLES LIKE '$tabla_correos'");
+	// Comprobar si la tabla ya existe
+	$tabla_existe = $wpdb->get_var("SHOW TABLES LIKE '$tabla_correos'");
 
-    // Si la tabla no existe, crearla
-    if ($tabla_existe !== $tabla_correos) {
-        $charset_collate = $wpdb->get_charset_collate();
-        $sql = "CREATE TABLE $tabla_correos (
+	// Si la tabla no existe, crearla
+	if ($tabla_existe !== $tabla_correos) {
+		$charset_collate = $wpdb->get_charset_collate();
+		$sql = "CREATE TABLE $tabla_correos (
             id mediumint(9) NOT NULL AUTO_INCREMENT,
             email varchar(255) NOT NULL,
             PRIMARY KEY (id)
         ) $charset_collate;";
 
-        require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-        dbDelta($sql); // Crear la tabla si no existe
-    }
+		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+		dbDelta($sql); // Crear la tabla si no existe
+	}
 }
-function ejecutar_creacion_tabla() {
-    if (isset($_GET['crear_tabla_correos']) && $_GET['crear_tabla_correos'] == '1') {
-        crear_tabla_correos_manual();
-        echo 'La tabla se ha creado exitosamente.';
-        exit;
-    }
+function ejecutar_creacion_tabla()
+{
+	if (isset($_GET['crear_tabla_correos']) && $_GET['crear_tabla_correos'] == '1') {
+		crear_tabla_correos_manual();
+		echo 'La tabla se ha creado exitosamente.';
+		exit;
+	}
 }
 add_action('wp_head', 'ejecutar_creacion_tabla');

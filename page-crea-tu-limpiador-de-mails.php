@@ -51,6 +51,45 @@ get_header();
         </div>
     </article>
 
+
+    <div class="slide-container">
+        <div class="slide" id="slide-1">
+            <section id="programa-su-eliminacion">
+                <?php echo do_shortcode('[email_script_generator]'); ?>
+            </section>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div class="slide" id="slide-2">
+            <span>SLIDE 2</span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quas eaque molestias esse nemo quod in consectetur aliquam qui laborum repudiandae, quam unde nam, aut fugit placeat. Eligendi, culpa iusto.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quas eaque molestias esse nemo quod in consectetur aliquam qui laborum repudiandae, quam unde nam, aut fugit placeat. Eligendi, culpa iusto.</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div class="slide" id="slide-3">
+            <span>SLIDE 3</span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quas eaque molestias esse nemo quod in consectetur aliquam qui laborum repudiandae, quam unde nam, aut fugit placeat. Eligendi, culpa iusto.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quas eaque molestias esse nemo quod in consectetur aliquam qui laborum repudiandae, quam unde nam, aut fugit placeat. Eligendi, culpa iusto.</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+      
+    </div>
+
+    <ul class="bullets">
+        <li><a href="#slide-1">slide 1</a></li>
+        <li><a href="#slide-2">slide 2</a></li>
+        <li><a href="#slide-3">slide 3</a></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <article>
         <h2>4. Las etiquetas ya están capturando tus mails. Ahora tan solo te queda borrarlos.</h2>
         <p>Revisa los mails etiquetados y elimínalos.</p>
@@ -80,9 +119,7 @@ get_header();
 
 </section>
 
-<section id="programa-su-eliminacion">
-    <?php echo do_shortcode('[email_script_generator]'); ?>
-</section>
+
 
 </main>
 

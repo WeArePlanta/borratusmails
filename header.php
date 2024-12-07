@@ -21,6 +21,7 @@
 	<?php wp_site_icon(); ?>
 	<?php wp_head(); ?>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/calculator.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/scroll.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/swiper-bundle.min.js"></script>
 </head>
 
