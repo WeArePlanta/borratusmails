@@ -17,8 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         },
         {
-            threshold: [0.1, 0.5, 0.9], // Evalúa múltiples puntos de visibilidad
-            
+            threshold: Array.from({ length: 21 }, (_, i) => i / 20), // Evalúa puntos más precisos de 0 a 1             
         }
     );
 
