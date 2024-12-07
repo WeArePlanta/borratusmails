@@ -36,6 +36,8 @@ jQuery(document).ready(function($) {
                 if (response.success) {
                     // Mostrar el script generado en el textarea
                     $('#generated-script').val(response.data);
+                    $('#generated-script').addClass('generated');
+                    $('#horabuena').text('¡Enhorabuena! Has generado tu script'); // Cambia el contenido del h3
                 } else {
                     alert('Error: ' + response.data);
                 }
