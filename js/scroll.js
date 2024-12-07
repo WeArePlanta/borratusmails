@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         },
         {
-            threshold: 0.5, // Trigger when at least 50% of the slide is visible
+            threshold: 0.3, // Trigger when at least 50% of the slide is visible
         }
     );
 

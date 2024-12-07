@@ -581,17 +581,24 @@ function email_script_generator_shortcode()
 	$html .= '<label for="invitacion" id="labelInvitacion"><input type="checkbox" id="invitacion" name="keywords[]" value="Invitación"> Invitación</label>';
 
 	$html .= '</div>';
+	$html .= '<div class="more-words-div">';
 	$html .= '<p>¿Se te ocurre alguna más? Agrégala aquí:</p>';
 	$html .= '<p>Por ejemplo, aquel gurú que ya te aburre, una marca que ya no va contigo, o el nombre de tu ex.</p>';
+	$html .= '<div class="more-words-div-conteiner">';
+	$html .= '<label>Añade tus palabras</label>';
+
 	for ($i = 1; $i <= 4; $i++) {
 		$html .= '<input type="text" name="additionalKeyword[]" placeholder="Añade tu palabra ' . $i . '">';
 	}
+	$html .= '</div>';
+	$html .= '</div>';
 
-
-	$html .= '<input type="checkbox" id="generate-script-acept" value="Aceptar" required>
-	<label>Aceptas enviar una notificación cuando uses el script.</label>';
+	$html .= '<label class="condition-label"><input type="checkbox" id="generate-script-acept" value="Aceptar" required>Aceptas enviar una notificación cuando uses el script.</label>';
 	$html .= '<input type="submit" id="generate-script-button" value="Generar Script">';
 	$html .= '</form>';
+	$html .= '<h3>Script Generado:</h3>';
+	$html .= '<textarea id="generated-script" readonly style="width: 100%; height: 200px;"></textarea>';
+	$html .= '</div>';
 
 
 	return $html; // Devolver el HTML concatenado

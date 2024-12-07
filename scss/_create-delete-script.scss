@@ -179,6 +179,7 @@ body.page.page-crea-tu-limpiador-de-mails {
       p:nth-of-type(1) {
         font-size: 17px;
         padding: 0;
+        padding-top: 130px;
       }
       h2 {
         @include dkp-biger-title;
@@ -243,6 +244,79 @@ body.page.page-crea-tu-limpiador-de-mails {
             border: solid 1px white;
           }
         }
+        div.more-words-div {
+          p:nth-of-type(1) {
+            text-align: left;
+            font-size: 28px;
+            color: $theme-yellow;
+            font-family: $theme-main-font;
+            text-transform: none;
+            font-weight: 400;
+          }
+          p:nth-of-type(2) {
+            text-align: left;
+            padding: 0;
+            color: white;
+            font-size: 20px;
+            font-family: $theme-main-font;
+            text-transform: none;
+            font-weight: 400;
+            width: 580px;
+            padding: 25px 0 77px;
+            margin-left: 0;
+          }
+          div.more-words-div-conteiner {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            label {
+              margin-bottom: 13px;
+            }
+            input {
+              padding: 10px 10px;
+              border: solid 1px white;
+              background-color: transparent;
+              color: #d7e9f4;
+              display: inline-block;
+              border-radius: 60px;
+              margin-bottom: 13px;
+              width: 345px;
+            }
+          }
+        }
+        #generate-script-acept {
+          width: 20px; /* Ajusta según el tamaño deseado */
+          height: 20px;
+          border-radius: 50%; /* Cambia a '50%' para hacerlos completamente redondos */
+          appearance: none; /* Elimina el estilo por defecto del checkbox */
+          outline: 2px solid white; /* Opcional: agrega un contorno visible */
+          cursor: pointer;
+          margin-right: 13px;
+        }
+        .condition-label {
+          display: flex;
+          align-items: center;
+          margin: 20px 0;
+          font-size: 20px;
+          input[type="checkbox"]:checked {
+            background-color: #61efa3;
+            width: 30px !important;
+            height: 30px !important;
+          }
+        }
+        input[type="submit"] {
+          display: block;
+          margin-top: 49px;
+          margin-bottom: 49px;
+          padding: 12px 30px;
+          background-color: $theme-yellow;
+          border-radius: 60px;
+          color: black;
+          font-size: 16px;
+          text-align: center;
+          border: none;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -251,7 +325,8 @@ body.page.page-crea-tu-limpiador-de-mails {
 body {
   &.slide-1-active {
     #slide-1 {
-      scroll-margin-top: 100px; /* Ajusta según lo que necesites */
+      padding-bottom: 350px;
+      scroll-margin-top: 50px; /* Ajusta según lo que necesites */
       opacity: 1;
       background: linear-gradient(
         to bottom,
