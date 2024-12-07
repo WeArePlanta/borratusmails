@@ -598,6 +598,12 @@ function email_script_generator_shortcode()
 	$html .= '</form>';
 	$html .= '<h3 id="horabuena"></h3>';
 	$html .= '<textarea id="generated-script" readonly style="width: 100%;"></textarea>';
+	$html .= '<button id="copy-script-button" type="button" >Copiar al portapapeles</button>';
+	$html .= '<p id="copy-success-message" ></p>';
+	$html .= '<div id="copy-container">';
+	$html .= '<p id="text-viva"></p>';
+	$html .= '<p id="text-viva-card"></p>';
+	$html .= '</div>';
 	$html .= '</div>';
 
 

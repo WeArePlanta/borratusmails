@@ -17,14 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         },
         {
-            threshold: 0.3, // Trigger when at least 50% of the slide is visible
+            threshold: [0.1, 0.5, 0.9], // Evalúa múltiples puntos de visibilidad
+            
         }
     );
+
 
     // Observe each slide
     slides.forEach((slide) => observer.observe(slide));
 
-
+  
 
     // Función para manejar el cambio de estado de los checkboxes
     function setupCheckbox(labelId, checkboxId) {

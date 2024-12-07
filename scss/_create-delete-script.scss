@@ -219,7 +219,7 @@ body.page.page-crea-tu-limpiador-de-mails {
         }
         div.checkboxs-div {
           width: 442px;
-          padding-bottom: 167px;
+          padding-bottom: 80px;
           label {
             font-size: 26px;
             padding: 10px 10px;
@@ -305,17 +305,7 @@ body.page.page-crea-tu-limpiador-de-mails {
           }
         }
         input[type="submit"] {
-          display: block;
-          margin-top: 49px;
-          margin-bottom: 49px;
-          padding: 12px 30px;
-          background-color: $theme-yellow;
-          border-radius: 60px;
-          color: black;
-          font-size: 16px;
-          text-align: center;
-          border: none;
-          cursor: pointer;
+          @include script-btns;
         }
       }
       #generated-script {
@@ -324,7 +314,7 @@ body.page.page-crea-tu-limpiador-de-mails {
       #generated-script.generated {
         display: block;
         width: 100%;
-        height: 500px;
+        height: 600px;
         border-radius: 27px;
         background-color: transparent;
         border: solid 2px white;
@@ -340,6 +330,45 @@ body.page.page-crea-tu-limpiador-de-mails {
         font-weight: 400;
         margin-bottom: 15px;
       }
+      #copy-script-button {
+        display: none;
+      }
+      #copy-script-button.copy-btn-generated {
+        display: block;
+        @include script-btns;
+        margin-bottom: 0;
+      }
+      #copy-success-message {
+        text-align: left;
+      }
+      div#copy-container {
+        display: none;
+      }
+      div#copy-container.show-container {
+        display: block;
+        background: linear-gradient(to right, #904ca3, #c05277, #dd5353);
+        padding: 84px 32px 29px;
+        border-radius: 20px;
+        padding-top: 30px;
+        text-align: center;
+        margin-top: 100px;
+        #text-viva {
+          @include dkp-biger-title;
+          text-align: center;
+          color: white;
+          text-align: center;
+          padding-bottom: 20px;
+          width: auto;
+          padding-top: 0;
+        }
+        #text-viva-card {
+          font-size: 20px;
+          text-align: center;
+          color: white;
+          text-align: center;
+          width: auto;
+        }
+      }
     }
   }
 }
@@ -347,7 +376,7 @@ body.page.page-crea-tu-limpiador-de-mails {
 body {
   &.slide-1-active {
     #slide-1 {
-      padding-bottom: 350px;
+      padding-bottom: 750px;
       scroll-margin-top: 50px; /* Ajusta según lo que necesites */
       opacity: 1;
       background: linear-gradient(

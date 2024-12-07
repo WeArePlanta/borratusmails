@@ -110,6 +110,22 @@
     }
 }
 
+/* CREATE DELETE SCRIPT BTNS */
+
+@mixin script-btns {
+    display: block;
+    margin-top: 49px;
+    margin-bottom: 49px;
+    padding: 12px 30px;
+    background-color: #ffba49;
+    border-radius: 60px;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
 /* FONTS MOBILE */
 
 @mixin mob-smaller-title {
