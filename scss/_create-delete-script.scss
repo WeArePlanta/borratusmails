@@ -318,6 +318,15 @@ body.page.page-crea-tu-limpiador-de-mails {
           cursor: pointer;
         }
       }
+      #generated-script {
+        width: 100%;
+        height: 500px;
+        border-radius: 27px;
+        background-color: transparent;
+        border: solid 2px white;
+        color: white;
+        padding: 20px;
+      }
     }
   }
 }

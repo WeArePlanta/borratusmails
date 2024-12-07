@@ -597,7 +597,7 @@ function email_script_generator_shortcode()
 	$html .= '<input type="submit" id="generate-script-button" value="Generar Script">';
 	$html .= '</form>';
 	$html .= '<h3>Script Generado:</h3>';
-	$html .= '<textarea id="generated-script" readonly style="width: 100%; height: 200px;"></textarea>';
+	$html .= '<textarea id="generated-script" readonly style="width: 100%;"></textarea>';
 	$html .= '</div>';
 
 
