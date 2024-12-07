@@ -170,6 +170,90 @@ body.page.page-crea-tu-limpiador-de-mails {
       right: 44px;
       z-index: 1;
     }
+    section.newsletter {
+      padding: 140px 34px 80px;
+      text-align: center;
+    
+      p:nth-of-type(1) {
+        font-size: 20px;
+        margin-bottom: 20px;
+        @media (min-width: 1450px) {
+          font-size: 26px;
+        }
+      }
+      p.two-text {
+        color: $theme-yellow;
+        margin-bottom: 20px;
+        font-family: $theme-second-font;
+        @include mob-biger-title;
+        text-transform: uppercase;
+        padding: 0 50px;
+        @media (min-width: 1450px) {
+          @include dkp-big-title;
+        }
+      }
+      p:nth-of-type(3) {
+        font-size: 20px;
+        margin-bottom: 34px;
+        @media (min-width: 1450px) {
+          font-size: 26px;
+        }
+      }
+    
+      .form-newsletter {
+        p {
+          font-size: 14px;
+          margin-bottom: 34px;
+          font-style: italic;
+          padding: 34px 0;
+          @media (min-width: 1450px) {
+            width: 456px;
+            margin: 0 auto;
+            text-align: center;
+          }
+    
+          a {
+            color: $theme-lila;
+          }
+        }
+        input {
+          color: white;
+          background-color: transparent;
+          border: solid 1px #d7e9f4;
+          padding: 13px 20px;
+          border-radius: 50px;
+          width: 100%;
+          @media (min-width: 1450px) {
+            width: 456px;
+            margin: 0 auto;
+          }
+    
+          &::placeholder {
+            color: white;
+          }
+          &::-webkit-input-placeholder {
+            color: white;
+          }
+    
+          &:-moz-placeholder {
+            color: white;
+          }
+    
+          &::-moz-placeholder {
+            color: #ff5733; /* Firefox 19+ */
+          }
+    
+          &:-ms-input-placeholder {
+            color: white;
+          }
+        }
+        button {
+          @include lila-button;
+          top: 0;
+          border: none;
+        }
+      }
+    }
   }
   div.slide-container {
     div.email-script-generator {
@@ -443,6 +527,106 @@ body.page.page-crea-tu-limpiador-de-mails {
         border: solid 1px $theme-lila;
       }
     }
+    section.slide-three-container {
+      background: linear-gradient(to bottom, $theme-coral);
+      width: 700px;
+      margin: 0 auto;
+      p:nth-of-type(1) {
+        font-size: 17px;
+        padding: 0;
+        padding-top: 130px;
+      }
+      h2 {
+        @include dkp-biger-title;
+        text-align: center;
+        color: $theme-coral;
+        text-align: center;
+        padding-bottom: 204px;
+        text-transform: uppercase;
+        font-family: $theme-second-font;
+      }
+      p.steps-titles {
+        @include dkp-middle-title;
+        font-family: $theme-second-font;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 0;
+        color: $theme-coral;
+      }
+      p.steps-subtitles {
+        @include dkp-middle-title;
+        font-family: $theme-second-font;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 0;
+        color: white;
+        padding-bottom: 70px;
+      }
+      p:nth-of-type(4) {
+        font-size: 20px;
+        text-align: left;
+        padding: 0 0 30px;
+        color: white;
+      }
+
+      a {
+        @include script-btns;
+        display: block;
+        width: 200px;
+        background-color: $theme-coral;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 70px;
+      }
+
+      p.text-finished-first-step {
+        font-size: 28px;
+        color: white;
+        background: linear-gradient(to right, #d0bdf0, #744fc6, #3b2563);
+        padding: 22px 30px;
+        margin-bottom: 70px;
+        border-radius: 20px;
+        text-align: center;
+      }
+      p.text-finished-snd-step {
+        font-size: 28px;
+        color: $theme-lila;
+        background: transparent;
+        padding: 22px 30px;
+        margin-bottom: 70px;
+        border-radius: 20px;
+        text-align: center;
+        border: solid 1px $theme-coral;
+      }
+
+      div.you-did-it {
+        display: block;
+        background: linear-gradient(to right, #EF6461, #8B2E2B);
+        padding: 84px 32px 29px;
+        border-radius: 20px;
+        padding-top: 30px;
+        text-align: center;
+        margin-top: 100px;
+        p.text-viva {
+          @include dkp-biger-title;
+          text-align: center;
+          color: white;
+          text-align: center;
+          padding-bottom: 20px;
+          width: auto;
+          padding-top: 0;
+          font-family: $theme-second-font;
+          text-transform: uppercase;
+        }
+        p.text-viva-card {
+          font-size: 20px;
+          text-align: center;
+          color: white;
+          text-align: center;
+          width: auto;
+        }
+      }
+    }
   }
   p.instructions-text {
     padding: 0;
@@ -454,7 +638,6 @@ body.page.page-crea-tu-limpiador-de-mails {
 }
 #section-main-slide-two {
   scroll-margin-top: 50px; /* Ajusta según lo que necesites */
-
 }
 body {
   &.slide-1-active {
@@ -479,17 +662,28 @@ body {
       opacity: 1;
       background: linear-gradient(
         to bottom,
-        #2E1950, /* Color inicial */
-        rgba(151, 71, 255, 0) 33% /* Transparente al final del primer tercio */
+        #2e1950,
+        /* Color inicial */ rgba(151, 71, 255, 0) 33% /* Transparente al final del primer tercio */
       );
-      
     }
     .slide-two-li {
       color: $theme-dark-lila;
     }
   }
   &.slide-3-active {
-    color: blue !important;
+    #slide-3 {
+      padding-bottom: 350px;
+      scroll-margin-top: 100px; /* Ajusta según lo que necesites */
+      opacity: 1;
+      background: linear-gradient(
+        to bottom,
+        #2e1950,
+        /* Color inicial */ rgba(151, 71, 255, 0) 33% /* Transparente al final del primer tercio */
+      );
+    }
+    .slide-three-li {
+      color: $theme-coral;
+    }
   }
 }
 
@@ -559,4 +753,26 @@ body.page.page-crea-tu-limpiador-de-mails {
       }
     }
   }
+  
+  
 }
+body.page.page-crea-tu-limpiador-de-mails {
+  section.slide-three-container {
+    figure.instructions-figure-container {
+      margin-bottom: 70px;
+      figcaption {
+        p.instructions-text {
+          padding: 0;
+          margin: 0;
+          text-align: left;
+          padding-bottom: 17px;
+          font-size: 20px;
+        }
+      }
+      img {
+        width: 580px;
+      }
+    }
+  }
+}
+

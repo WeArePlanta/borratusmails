@@ -174,7 +174,7 @@ get_header();
                 <figure class="instructions-figure-container">
                     <figcaption>
                         <p class="instructions-text">Haz clic en "Añadir un desencadenador" (un botón azul en la esquina inferior derecha).</p>
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/crear-script/crear-script13.jpg'); ?>" alt="Imagen ilustrativa de la indicación">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/crear-script/crear-script14.jpg'); ?>" alt="Imagen ilustrativa de la indicación">
                     </figcaption>
                 </figure>
 
@@ -184,23 +184,73 @@ get_header();
                         <p class="instructions-text">1. En el primer menú desplegable, selecciona la función BorraTusMails.</p>
                         <p class="instructions-text">2. En el segundo menú, selecciona "Tiempo".</p>
                         <p class="instructions-text">3. En el tercer menú, selecciona la frecuencia con la que quieres que el script se ejecute (por ejemplo, "Diario" si quieres que se envíe un correo todos los días).</p>
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/crear-script/crear-script14.jpg'); ?>" alt="Imagen ilustrativa de la indicación">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/crear-script/crear-script15.jpg'); ?>" alt="Imagen ilustrativa de la indicación">
                     </figcaption>
                 </figure>
 
                 <figure class="instructions-figure-container">
                     <figcaption>
                         <p class="instructions-text">Haz clic en "Guardar".</p>
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/crear-script/crear-script15.jpg'); ?>" alt="Imagen ilustrativa de la indicación">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/crear-script/crear-script16.jpg'); ?>" alt="Imagen ilustrativa de la indicación">
                     </figcaption>
                 </figure>
 
             </section>
         </div>
         <div class="slide" id="slide-3">
-            <span>SLIDE 3</span>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quas eaque molestias esse nemo quod in consectetur aliquam qui laborum repudiandae, quam unde nam, aut fugit placeat. Eligendi, culpa iusto.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quas eaque molestias esse nemo quod in consectetur aliquam qui laborum repudiandae, quam unde nam, aut fugit placeat. Eligendi, culpa iusto.</p>
+            <section class="slide-three-container" id="section-main-slide-three">
+                <p>Acabemos con esto</p>
+                <h2>BORRA TUS MAILS</h2>
+                <p class="steps-titles">Paso 1.</p>
+                <p class="steps-subtitles">selecciona la carpeta</p>
+                <p>Primero Abre Gmail en tu navegador.</p>
+                <a href="https://mail.google.com/">Abrir Gmail</a>
+                <figure class="instructions-figure-container">
+                    <figcaption>
+                        <p class="instructions-text">A continuación selecciona la etiqueta “borra tus mails”.</p>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/crear-script/crear-script17.jpg'); ?>" alt="Imagen ilustrativa de la indicación">
+                    </figcaption>
+                </figure>
+
+                <p class="steps-titles">Paso 2.</p>
+                <p class="steps-subtitles">Selecciona los mails</p>
+                <figure class="instructions-figure-container">
+                    <figcaption>
+                        <p class="instructions-text">Pulsa en el selector superior para se que aparezca con el “check” y los mails seleccionados.</p>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/crear-script/crear-script18.jpg'); ?>" alt="Imagen ilustrativa de la indicación">
+                    </figcaption>
+                </figure>
+
+                <figure class="instructions-figure-container">
+                    <figcaption>
+                        <p class="instructions-text">Verás que aparece una barra encima de los mails donde aparece el texto “Seleccionar las [xxx] conversaciones...” haz clic ahí.</p>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/crear-script/crear-script19.jpg'); ?>" alt="Imagen ilustrativa de la indicación">
+                    </figcaption>
+                </figure>
+
+                <p class="steps-titles">Paso 3.</p>
+                <p class="steps-subtitles">borra los mails</p>
+                <figure class="instructions-figure-container">
+                    <figcaption>
+                        <p class="instructions-text">Pulsa el botón borrar.</p>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/crear-script/crear-script20.jpg'); ?>" alt="Imagen ilustrativa de la indicación">
+                    </figcaption>
+                </figure>
+
+                <p class="steps-titles">Paso 4.</p>
+                <p class="steps-subtitles">vacía la papelera</p>
+                <figure class="instructions-figure-container">
+                    <figcaption>
+                        <p class="instructions-text">Sabemos que da pereza pero es necesario.</p>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/crear-script/crear-script21.jpg'); ?>" alt="Imagen ilustrativa de la indicación">
+                    </figcaption>
+                </figure>
+
+                <div class="you-did-it">
+                    <p class="text-viva">¡lo conseguiste!</p>
+                    <p class="text-viva-card">Mails eliminados. Porque cargar con tantos años de newsletters no era un hobby sostenible.</p>
+                </div>
+            </section>
         </div>
 
     </div>
@@ -208,7 +258,7 @@ get_header();
     <ul class="bullets">
         <li class="slide-one-li"><a href="#slide-1">1. Crea tu script</a></li>
         <li class="slide-two-li"><a href="#section-main-slide-two">2. Pégalo en tu mail</a></li>
-        <li class="slide-three-li"><a href="#slide-3">3. Borra tus mails</a></li>
+        <li class="slide-three-li"><a href="#section-main-slide-three">3. Borra tus mails</a></li>
     </ul>
 
 
@@ -220,8 +270,7 @@ get_header();
 
 
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <article>
+    <article style="display: none;">
         <h2>4. Las etiquetas ya están capturando tus mails. Ahora tan solo te queda borrarlos.</h2>
         <p>Revisa los mails etiquetados y elimínalos.</p>
 
@@ -247,6 +296,15 @@ get_header();
         <p id="result-grco2e">GrCO2e: -</p>
         <p id="result-km">Kilómetros en auto: -</p>
     </article>
+
+
+    <section class="newsletter">
+        <p class="one-text"> Compártenos tu mail para recibir </p>
+        <p class="two-text"> más tips</p>
+        <p> para mejorar tu huella de carbono digital. </p>
+        <?php echo do_shortcode('[correo_formulario]'); ?>
+
+    </section>
 
 </section>
 
