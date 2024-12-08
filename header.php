@@ -34,7 +34,7 @@
 			<?php empty_base_print_menu('header'); ?>
 			<section class="social-media-footer header">
 
-				<div class="languages">
+				<div class="languages"  style="display: none;">
 					<p>Idioma:</p>
 					<details>
 						<summary>
@@ -58,7 +58,7 @@
 			<div id="hamburger-menu-container">
 				<?php empty_base_print_menu('hamburger'); ?>
 				<section class="social-media-footer">
-					<div class="languages">
+					<div class="languages"  style="display: none;">
 						<p>Idioma:</p>
 						<details>
 							<summary>
