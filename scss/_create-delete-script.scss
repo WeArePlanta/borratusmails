@@ -173,7 +173,7 @@ body.page.page-crea-tu-limpiador-de-mails {
     section.newsletter {
       padding: 140px 34px 80px;
       text-align: center;
-    
+
       p:nth-of-type(1) {
         font-size: 20px;
         margin-bottom: 20px;
@@ -199,7 +199,7 @@ body.page.page-crea-tu-limpiador-de-mails {
           font-size: 26px;
         }
       }
-    
+
       .form-newsletter {
         p {
           font-size: 14px;
@@ -211,7 +211,7 @@ body.page.page-crea-tu-limpiador-de-mails {
             margin: 0 auto;
             text-align: center;
           }
-    
+
           a {
             color: $theme-lila;
           }
@@ -227,22 +227,22 @@ body.page.page-crea-tu-limpiador-de-mails {
             width: 456px;
             margin: 0 auto;
           }
-    
+
           &::placeholder {
             color: white;
           }
           &::-webkit-input-placeholder {
             color: white;
           }
-    
+
           &:-moz-placeholder {
             color: white;
           }
-    
+
           &::-moz-placeholder {
             color: #ff5733; /* Firefox 19+ */
           }
-    
+
           &:-ms-input-placeholder {
             color: white;
           }
@@ -601,7 +601,7 @@ body.page.page-crea-tu-limpiador-de-mails {
 
       div.you-did-it {
         display: block;
-        background: linear-gradient(to right, #EF6461, #8B2E2B);
+        background: linear-gradient(to right, #ef6461, #8b2e2b);
         padding: 84px 32px 29px;
         border-radius: 20px;
         padding-top: 30px;
@@ -730,7 +730,157 @@ body.page.page-desinstala-tu-script {
       display: none;
       @media (min-width: 1450px) {
         display: block;
+        article.title {
+          width: 740px;
+          margin: 0 auto;
+          padding: 200px 0;
+          h1 {
+            @include dkp-big-two-title;
+            font-family: $theme-second-font;
+            text-transform: uppercase;
+            text-align: center;
+            color: $theme-coral;
+            padding-bottom: 0;
+            margin-bottom: 0;
+          }
+          p {
+            font-size: 40px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            font-weight: 400;
+            color: white;
+          }
+        }
       }
+    }
+    div.inner-article-delete-container {
+      background: linear-gradient(
+        to bottom,
+        rgba(101, 175, 255, 0.6), /* Celeste semi-transparente */
+        rgba(101, 175, 255, 0) 33% /* Transparente al final del primer tercio */
+      );
+      div.you-did-it {
+        background: linear-gradient(to right, #A3D4FF, #65AFFF, #1A78C2);
+        padding: 84px 32px 29px;
+        border-radius: 20px;
+        padding-top: 30px;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 178px;
+        width: 580px;
+
+        .text-viva {
+          @include dkp-biger-title;
+          font-family: $theme-second-font;
+          text-transform: uppercase;
+          text-align: center;
+          color: white;
+          text-align: center;
+          padding-bottom: 20px;
+          width: auto;
+          padding-top: 0;
+        }
+        .text-viva-card {
+          font-size: 20px;
+          text-align: center;
+          color: white;
+          text-align: center;
+          width: auto;
+        }
+      }
+    }
+    article.delete-container-article {
+      width: 750px;
+      margin: 0 auto;
+      p:nth-of-type(1) {
+        font-size: 17px;
+        padding: 0;
+        padding-top: 130px;
+        text-align: center;
+      }
+      h2 {
+        @include dkp-biger-title;
+        text-align: center;
+        color: $theme-light-blue;
+        text-align: center;
+        padding-bottom: 204px;
+        text-transform: uppercase;
+        font-family: $theme-second-font;
+      }
+      p.steps-titles {
+        @include dkp-middle-title;
+        font-family: $theme-second-font;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 0;
+        color: $theme-light-blue;
+      }
+      p.steps-subtitles {
+        @include dkp-middle-title;
+        font-family: $theme-second-font;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 0;
+        color: white;
+        padding-bottom: 70px;
+      }
+      p:nth-of-type(4) {
+        font-size: 20px;
+        text-align: left;
+        padding: 0 0 30px;
+        color: white;
+      }
+
+      a {
+        @include script-btns;
+        display: block;
+        width: 200px;
+        background-color: $theme-light-blue;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 70px;
+      }
+
+      p.text-finished-first-step {
+        font-size: 28px;
+        color: white;
+        background: linear-gradient(to right, #A3D4FF, #65AFFF, #1A78C2);
+        padding: 22px 30px;
+        margin-bottom: 70px;
+        border-radius: 20px;
+        text-align: center;
+        width: 580px;
+      }
+      p.text-finished-snd-step {
+        font-size: 28px;
+        color: $theme-lila;
+        background: transparent;
+        padding: 22px 30px;
+        margin-bottom: 70px;
+        border-radius: 20px;
+        text-align: center;
+        border: solid 1px $theme-lila;
+      }
+
+      figure.instructions-figure-container {
+        margin-bottom: 70px;
+        figcaption {
+          p.instructions-text {
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            padding-bottom: 17px;
+            font-size: 20px;
+            width: 580px;
+          }
+        }
+        img {
+          width: 580px;
+        }
+      }
+
+      
     }
   }
 }
@@ -753,8 +903,6 @@ body.page.page-crea-tu-limpiador-de-mails {
       }
     }
   }
-  
-  
 }
 body.page.page-crea-tu-limpiador-de-mails {
   section.slide-three-container {
@@ -775,4 +923,3 @@ body.page.page-crea-tu-limpiador-de-mails {
     }
   }
 }
-

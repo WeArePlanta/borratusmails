@@ -65,7 +65,7 @@ get_header();
                 <p class="steps-titles">Paso 1.</p>
                 <p class="steps-subtitles">abre Google Apps Script</p>
                 <p>Primero Abre Google Drive en tu navegador.</p>
-                <a href="https://drive.google.com/drive/u/0/home">Abrir Google drive</a>
+                <a href="https://drive.google.com/drive/u/0/home" target="_blank">Abrir Google drive</a>
                 <figure class="instructions-figure-container">
                     <figcaption>
                         <p class="instructions-text">A continuación, haz clic en "Nuevo" en la esquina superior izquierda.</p>
@@ -204,7 +204,7 @@ get_header();
                 <p class="steps-titles">Paso 1.</p>
                 <p class="steps-subtitles">selecciona la carpeta</p>
                 <p>Primero Abre Gmail en tu navegador.</p>
-                <a href="https://mail.google.com/">Abrir Gmail</a>
+                <a href="https://mail.google.com/" target="_blank">Abrir Gmail</a>
                 <figure class="instructions-figure-container">
                     <figcaption>
                         <p class="instructions-text">A continuación selecciona la etiqueta “borra tus mails”.</p>
