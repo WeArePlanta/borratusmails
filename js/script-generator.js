@@ -39,7 +39,7 @@ jQuery(document).ready(function($) {
                     $('#generated-script').addClass('generated');
                     $('#horabuena').text('¡Enhorabuena! Has generado tu script'); // Cambia el contenido del h3
                     $('#copy-container').addClass('show-container');
-                    $('#text-viva').text('Viva');
+                    $('#text-viva').text('¡Viva!');
                     $('#text-viva-card').text('Ya has creado tu script, ahora vamos a pegarlo en tu mail');                    
                     
                     // Asociar funcionalidad al botón de copiado

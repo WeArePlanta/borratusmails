@@ -189,7 +189,7 @@ get_header();
                         <p> Hacker por un ratito: </p>
                         <p>Crea tu propio seleccionador automático de mails que no necesitas.</p>
                         <p>Elige las palabras y haz que automáticamente se seleccionen mails listos para ser borrados.</p>
-                        <a target="_blank" href="<?php echo esc_url(get_permalink(get_page_by_path('create-script'))); ?>">Crea tu limpiador</a>
+                        <a target="_blank" href="<?php echo esc_url(get_permalink(get_page_by_path('crea-tu-limpiador-de-mails'))); ?>">Crea tu limpiador</a>
                     </figcaption>
                 </figure>
             </article>

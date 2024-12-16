@@ -59,9 +59,9 @@
 
 
 			<ul>
-				<li><a href="https://www.facebook.com/people/Borra-Tus-Mails/61569560641770/"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/facebook.png'); ?>" alt="Facebook"></a></li>
-				<li><a href="https://www.instagram.com/borratusmails/"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/instagram.png'); ?>" alt="Instagram"></a></li>
-				<li><a href="https://bsky.app/profile/borratusmails.bsky.social"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/bluesky-logo.png'); ?>" alt="bluesky"></a></li>
+				<li><a href="https://www.facebook.com/people/Borra-Tus-Mails/61569560641770/" target="_blank"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/facebook.png'); ?>" alt="Facebook"></a></li>
+				<li><a href="https://www.instagram.com/borratusmails/" target="_blank"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/instagram.png'); ?>" alt="Instagram"></a></li>
+				<li><a href="https://bsky.app/profile/borratusmails.bsky.social" target="_blank"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/bluesky-logo.png'); ?>" alt="bluesky"></a></li>
 			</ul>
 		</section>
 	</div>

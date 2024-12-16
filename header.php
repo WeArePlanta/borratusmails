@@ -23,6 +23,12 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/calculator.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/scroll.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/swiper-bundle.min.js"></script>
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="<?php bloginfo('name'); ?>" />
+	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+	<meta property="og:url" content="<?php echo home_url(); ?>" />
+	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/logo_nube_430x196.png" />
+
 </head>
 
 <body <?php empty_base_print_body_class(); ?>>
@@ -34,7 +40,7 @@
 			<?php empty_base_print_menu('header'); ?>
 			<section class="social-media-footer header">
 
-				<div class="languages"  style="display: none;">
+				<div class="languages" style="display: none;">
 					<p>Idioma:</p>
 					<details>
 						<summary>
@@ -58,7 +64,7 @@
 			<div id="hamburger-menu-container">
 				<?php empty_base_print_menu('hamburger'); ?>
 				<section class="social-media-footer">
-					<div class="languages"  style="display: none;">
+					<div class="languages" style="display: none;">
 						<p>Idioma:</p>
 						<details>
 							<summary>
@@ -75,9 +81,9 @@
 
 
 					<ul>
-						<li><a href="https://www.facebook.com/people/Borra-Tus-Mails/"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/facebook.png'); ?>" alt="Facebook"></a></li>
-						<li><a href="https://www.instagram.com/borratusmails/"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/instagram.png'); ?>" alt="Instagram"></a></li>
-						<li><a href="https://bsky.app/profile/borratusmails.bsky.social"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/bluesky-logo.png'); ?>" alt="bluesky"></a></li>
+						<li><a href="https://www.facebook.com/people/Borra-Tus-Mails/" target="_blank"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/facebook.png'); ?>" alt="Facebook"></a></li>
+						<li><a href="https://www.instagram.com/borratusmails/" target="_blank"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/instagram.png'); ?>" alt="Instagram"></a></li>
+						<li><a href="https://bsky.app/profile/borratusmails.bsky.social" target="_blank"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/bluesky-logo.png'); ?>" alt="bluesky"></a></li>
 					</ul>
 				</section>
 			</div>

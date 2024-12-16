@@ -262,6 +262,9 @@ body.page.page-sign {
 		@media (min-width: 1450px) {
 			font-size: 20px;
 		}
+		a {
+			color: $theme-yellow;
+		}
 	}
 
 	section.sumate-section {
@@ -305,6 +308,7 @@ body.page.page-sign {
 		}
 		form#form-petitorio {
 			input {
+				color: white;
 				background-color: transparent;
 				border-radius: 20px;
 				border: solid 1px white;

@@ -25,7 +25,7 @@ get_header();
         <p>personas pidiendo a las empresas que tomen acción para unas bandejas de mail más limpias</p>
     </article>
     <article class="article-intro-counter">
-        <p>Somos un movimiento de personas que, como tú, acumula correos en sus bandejas de entrada que fueron útiles en su momento pero que ya no necesita. Estos correos requieren servidores funcionando 24/7, consumiendo energía y recursos. Empresas y personas unidas, podemos reducir este impacto</p>
+        <p>Somos un movimiento de personas que, como tú, acumula correos en sus bandejas de entrada que fueron útiles en su momento pero que ya no necesita. Estos correos requieren servidores funcionando 24/7, consumiendo energía y recursos. Empresas y personas unidas, podemos reducir este impacto.</p>
     </article>
 </section>
 
