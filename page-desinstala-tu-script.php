@@ -95,11 +95,11 @@ get_header();
             </figcaption>
          </figure>
 
-         <div class="you-did-it">
-            <p class="text-viva">¡lo conseguiste!</p>
-            <p class="text-viva-card">Ya has desinstalado el script.</p>
-         </div>
       </article>
+      <div class="you-did-it">
+         <p class="text-viva">¡lo conseguiste!</p>
+         <p class="text-viva-card">Ya has desinstalado el script.</p>
+      </div>
    </div>
 </section>
 </main>

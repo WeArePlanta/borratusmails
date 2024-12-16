@@ -9,7 +9,7 @@
  */
 
 if (! defined('EMPTY_BASE_VERSION')) {
-	define('EMPTY_BASE_VERSION', '1.6.5');
+	define('EMPTY_BASE_VERSION', '1.6.6');
 }
 
 add_action('wp_enqueue_scripts', function () {
