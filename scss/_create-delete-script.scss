@@ -757,11 +757,11 @@ body.page.page-desinstala-tu-script {
     div.inner-article-delete-container {
       background: linear-gradient(
         to bottom,
-        rgba(101, 175, 255, 0.6), /* Celeste semi-transparente */
-        rgba(101, 175, 255, 0) 33% /* Transparente al final del primer tercio */
+        rgba(101, 175, 255, 0.6),
+        /* Celeste semi-transparente */ rgba(101, 175, 255, 0) 33% /* Transparente al final del primer tercio */
       );
       div.you-did-it {
-        background: linear-gradient(to right, #A3D4FF, #65AFFF, #1A78C2);
+        background: linear-gradient(to right, #a3d4ff, #65afff, #1a78c2);
         padding: 84px 32px 29px;
         border-radius: 20px;
         padding-top: 30px;
@@ -845,7 +845,7 @@ body.page.page-desinstala-tu-script {
       p.text-finished-first-step {
         font-size: 28px;
         color: white;
-        background: linear-gradient(to right, #A3D4FF, #65AFFF, #1A78C2);
+        background: linear-gradient(to right, #a3d4ff, #65afff, #1a78c2);
         padding: 22px 30px;
         margin-bottom: 70px;
         border-radius: 20px;
@@ -879,8 +879,6 @@ body.page.page-desinstala-tu-script {
           width: 580px;
         }
       }
-
-      
     }
   }
 }
@@ -922,4 +920,32 @@ body.page.page-crea-tu-limpiador-de-mails {
       }
     }
   }
+}
+#email-script-form {
+  position: relative;
+}
+#email-script-form::before {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/linea-paso1.png");
+  width: 73px;
+  height: 1133px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+}
+#email-script-form::after {
+  position: absolute;
+  content: " ";
+  background-image: url(./img/crear-script/linea-paso1.png);
+  width: 73px;
+  height: 120px;
+  left: -62px;
+  bottom: -1px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
 }
