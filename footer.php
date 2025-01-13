@@ -42,7 +42,7 @@
 			</ul>
 		</section>
 		<section class="social-media-footer">
-			<div class="languages"  style="display: none;">
+			<div class="languages"  >
 				<p>Idioma:</p>
 				<details>
 					<summary>

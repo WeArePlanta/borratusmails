@@ -35,12 +35,12 @@
 	<header class="main-theme-header">
 		<div class="inner-container">
 			<a href="<?php bloginfo('url'); ?>" class="site-icon" aria-label="Ir a la sección de inicio del sitio">
-				<img src="<?php echo esc_url(get_template_directory_uri() . '/img/logo_web.png'); ?>">
+				<img src="<?php echo esc_url(get_template_directory_uri() . '/img/logo_web.png'); ?>" alt="Logotipo de Borra tus mails by Planta, compuesto por bloques geométricos en colores rojo, amarillo y gris. " >
 			</a>
 			<?php delete_youremails_print_menu('header'); ?>
 			<section class="social-media-footer header">
 
-				<div class="languages" style="display: none;">
+				<div class="languages" >
 					<p>Idioma:</p>
 					<details>
 						<summary>
@@ -64,7 +64,7 @@
 			<div id="hamburger-menu-container">
 				<?php delete_youremails_print_menu('hamburger'); ?>
 				<section class="social-media-footer">
-					<div class="languages" style="display: none;">
+					<div class="languages" >
 						<p>Idioma:</p>
 						<details>
 							<summary>
