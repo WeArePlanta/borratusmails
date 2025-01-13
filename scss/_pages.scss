@@ -344,3 +344,33 @@ body.page.page-sign {
 		}
 	}
 }
+
+.mensaje {
+	max-width: 363px;
+    height: 243px;
+    border: solid 1px #744fc6;
+    box-shadow: 0 0 6px #744fc6;
+    border-radius: 15px;
+    margin: 0 20px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    margin-top: 35px;
+}
+.succes-one {
+	font-weight: bold;
+	line-height: 110%;
+	font-size: 40px;
+	color: #ffba49;
+}
+.succes-two {
+	font-size: 25px;
+    font-weight: bold;
+    margin: 0 25px;
+	color: white;
+}
+
+#mensaje-error {
+	background-color: #f8d7da;
+	color: #721c24;
+}

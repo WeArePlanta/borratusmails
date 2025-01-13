@@ -65,6 +65,10 @@ get_header();
         <input type="email" id="email" name="email" placeholder="Tu email" required>
         <button type="submit">Firmar Petitorio</button>
     </form>
+
+    <!-- Mensajes de éxito y error -->
+    <div id="mensaje-exito" class="mensaje" style="display: none; color: green;"></div>
+    <div id="mensaje-error" class="mensaje" style="display: none; color: red;"></div>
 </section>
 
 
