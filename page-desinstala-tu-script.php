@@ -30,7 +30,7 @@ get_header();
       <article class="delete-container-article">
          <p>Empecemos</p>
          <h2>Desinstala tu script</h2>
-         <p class="steps-titles">Paso 1.</p>
+         <p class="steps-titles" id="uninstal-script-step-one">Paso 1.</p>
          <p class="steps-subtitles">Ve a mis proyectos</p>
          <p>Primero abre el menú de AppScript como vimos en el tutorial de instalación.</p>
          <a href="https://drive.google.com/drive/u/0/home" target="_blank">Abrir Google drive</a>
@@ -67,7 +67,7 @@ get_header();
             </figcaption>
          </figure>
 
-         <p class="steps-titles">Paso 2.</p>
+         <p class="steps-titles" id="uninstal-script-step-two">Paso 2.</p>
          <p class="steps-subtitles">Selecciona el proyecto</p>
 
          <figure class="instructions-figure-container">

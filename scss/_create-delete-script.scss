@@ -763,6 +763,7 @@ body.page.page-desinstala-tu-script {
       }
     }
     div.inner-article-delete-container {
+      position: relative;
       background: linear-gradient(
         to bottom,
         rgba(101, 175, 255, 0.6),
@@ -776,7 +777,14 @@ body.page.page-desinstala-tu-script {
         text-align: center;
         margin-top: 100px;
         margin-bottom: 178px;
-        width: 580px;
+        width: 80%;
+        margin: auto;
+        margin-left: 180px;
+        margin-right: 180px;
+        padding-top: 204px;
+        padding-bottom: 200px;
+        margin-bottom: 180px;
+        margin-top: 180px;
 
         .text-viva {
           @include dkp-biger-title;
@@ -788,9 +796,10 @@ body.page.page-desinstala-tu-script {
           padding-bottom: 20px;
           width: auto;
           padding-top: 0;
+          font-size: 115px;
         }
         .text-viva-card {
-          font-size: 20px;
+          font-size: 40px;
           text-align: center;
           color: white;
           text-align: center;
@@ -928,6 +937,10 @@ body.page.page-crea-tu-limpiador-de-mails {
       }
     }
   }
+}
+
+#slide-3 {
+  position: relative;
 }
 
 /*DECORATIVE SLIDE LINE*/
@@ -1162,8 +1175,66 @@ body.page.page-crea-tu-limpiador-de-mails {
   top: 611px;
 }
 
-/*----------------------------*/
+/*Line delete*/
 
-#slide-3 {
+#uninstal-script-step-one {
   position: relative;
 }
+#uninstal-script-step-one::before {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/linea-paso1.png");
+  width: 73px;
+  height: 1133px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+}
+#uninstal-script-step-one::after {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/line.png");
+  width: 73px;
+  height: 1192px;
+  left: -62px;
+  bottom: -1px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+  top: 1133px;
+}
+#uninstal-script-step-two {
+  position: relative;
+}
+#uninstal-script-step-two::before {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/linea-paso1.png");
+  width: 73px;
+  height: 1088px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+}
+#uninstal-script-step-two::after {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/linea-paso1.png");
+  width: 73px;
+  height: 550px;
+  left: -62px;
+  bottom: -1px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+  top: 1087px;
+}
+
+/*----------------------------*/
+
