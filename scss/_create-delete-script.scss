@@ -921,6 +921,8 @@ body.page.page-crea-tu-limpiador-de-mails {
     }
   }
 }
+
+/*DECORATIVE SLIDE LINE*/
 #email-script-form {
   position: relative;
 }
@@ -939,7 +941,7 @@ body.page.page-crea-tu-limpiador-de-mails {
 #email-script-form::after {
   position: absolute;
   content: " ";
-  background-image: url(./img/crear-script/linea-paso1.png);
+  background-image: url("./img/crear-script/linea-paso1.png");
   width: 73px;
   height: 120px;
   left: -62px;
@@ -948,4 +950,150 @@ body.page.page-crea-tu-limpiador-de-mails {
   display: block;
   background-repeat: no-repeat;
   background-size: 34px;
+}
+#slide-two-first-step {
+  position: relative;
+}
+#slide-two-first-step::before {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/linea-paso1.png");
+  width: 73px;
+  height: 1133px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+}
+#slide-two-first-step::after {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/linea-paso1.png");
+  width: 73px;
+  height: 645px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+  top: 1371px;
+}
+#slide-two-second-step {
+  position: relative;
+}
+#slide-two-second-step::before {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/line.png");
+  width: 73px;
+  height: 249px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+  top: -244px;
+}
+
+#slide-two-third-step {
+  position: relative;
+}
+#slide-two-third-step::before {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/linea-paso1.png");
+  width: 73px;
+  height: 742px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+}
+#slide-two-third-step::after {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/linea-paso1.png");
+  width: 73px;
+  height: 1029px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+  top: 742px;
+}
+#slide-two-fifth-step {
+  position: relative;
+}
+#slide-two-fifth-step::before {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/linea-paso1.png");
+  width: 73px;
+  height: 1205px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+}
+#slide-two-fifth-step::after {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/line.png");
+  width: 73px;
+  height: 1205px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+  top: 1205px;
+}
+#slide-two-sixth-step {
+  position: relative;
+}
+#slide-two-sixth-step::before {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/line.png");
+  width: 73px;
+  height: 249px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+  top: -244px;
+}
+#slide-two-sixth-step::after {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/linea-paso1.png");
+  width: 73px;
+  height: 1205px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+  top: 4px;
+}
+#slide-two-sixth-step-subtitles {
+  position: relative;
+}
+#slide-two-sixth-step-subtitles::before {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/line.png");
+  width: 73px;
+  height: 1205px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+  top: 832px;
 }

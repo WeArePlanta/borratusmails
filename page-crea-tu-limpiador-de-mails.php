@@ -62,7 +62,7 @@ get_header();
             <section class="slide-two-container" id="section-main-slide-two">
                 <p>¡Seguimos!</p>
                 <h2>PÉGALO en tu mail</h2>
-                <p class="steps-titles">Paso 1.</p>
+                <p class="steps-titles" id="slide-two-first-step">Paso 1.</p>
                 <p class="steps-subtitles">abre Google Apps Script</p>
                 <p>Primero Abre Google Drive en tu navegador.</p>
                 <a href="https://drive.google.com/drive/u/0/home" target="_blank">Abrir Google drive</a>
@@ -79,7 +79,7 @@ get_header();
                     </figcaption>
                 </figure>
                 <p class="text-finished-first-step">¡Bien! Ya estás en <strong> Google Apps Script </strong></p>
-                <p class="steps-titles">Paso 2.</p>
+                <p class="steps-titles" id="slide-two-second-step">Paso 2.</p>
                 <p class="steps-subtitles">Crea un nuevo proyecto</p>
                 <figure class="instructions-figure-container">
                     <figcaption>
@@ -88,7 +88,7 @@ get_header();
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/img/crear-script/crear-script3.jpg'); ?>" alt="Imagen ilustrativa de la indicación">
                     </figcaption>
                 </figure>
-                <p class="steps-titles">Paso 3.</p>
+                <p class="steps-titles" id="slide-two-third-step">Paso 3.</p>
                 <p class="steps-subtitles">Pega el script</p>
                 <p class="instructions-text">Copia el script que has generado.</p>
                 <a href="#generated-script">Copiar el código</a>
@@ -120,7 +120,7 @@ get_header();
                 </figure>
 
 
-                <p class="steps-titles">Paso 5.</p>
+                <p class="steps-titles" id="slide-two-fifth-step">Paso 5.</p>
                 <p class="steps-subtitles">ACEPTA permisos</p>
                 <figure class="instructions-figure-container">
                     <figcaption>
@@ -161,8 +161,8 @@ get_header();
                 <p class="text-finished-snd-step">¡Bieeen! Ya has ejecutado el script.</p>
                 <p class="instructions-text">Revisa tu bandeja de entrada y busca una carpeta que tenga el nombre que le has asignado “borra tus mails”.</p>
 
-                <p class="steps-titles">paso 6 (opcional)</p>
-                <p class="steps-subtitles">automatiza el script</p>
+                <p class="steps-titles" id="slide-two-sixth-step">paso 6 (opcional)</p>
+                <p class="steps-subtitles" id="slide-two-sixth-step-subtitles">automatiza el script</p>
 
                 <figure class="instructions-figure-container">
                     <figcaption>
