@@ -171,7 +171,7 @@ body.page.page-crea-tu-limpiador-de-mails {
       z-index: 1;
     }
     section.newsletter {
-      padding: 140px 34px 80px;
+      padding: 740px 34px 80px;
       text-align: center;
 
       p:nth-of-type(1) {
@@ -604,9 +604,15 @@ body.page.page-crea-tu-limpiador-de-mails {
         background: linear-gradient(to right, #ef6461, #8b2e2b);
         padding: 84px 32px 29px;
         border-radius: 20px;
-        padding-top: 30px;
         text-align: center;
         margin-top: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: 180px;
+        margin-right: 180px;
+        padding-top: 204px;
+        padding-bottom: 200px;
         p.text-viva {
           @include dkp-biger-title;
           text-align: center;
@@ -617,13 +623,15 @@ body.page.page-crea-tu-limpiador-de-mails {
           padding-top: 0;
           font-family: $theme-second-font;
           text-transform: uppercase;
+          font: 115px;
         }
         p.text-viva-card {
-          font-size: 20px;
+          font-size: 40px;
           text-align: center;
-          color: white;
+          color: #fff;
           text-align: center;
           width: auto;
+          max-width: 977px;
         }
       }
     }
@@ -1096,4 +1104,66 @@ body.page.page-crea-tu-limpiador-de-mails {
   background-repeat: no-repeat;
   background-size: 34px;
   top: 832px;
+}
+#slide-three-first-step {
+  position: relative;
+}
+#slide-three-first-step::before {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/linea-paso1.png");
+  width: 73px;
+  height: 774px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+}
+#slide-three-first-step::after {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/linea-paso1.png");
+  width: 73px;
+  height: 1116px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+  top: 774px;
+}
+#slide-three-third-step {
+  position: relative;
+}
+#slide-three-third-step::before {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/linea-paso1.png");
+  width: 73px;
+  height: 611px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+}
+#slide-three-third-step::after {
+  position: absolute;
+  content: " ";
+  background-image: url("./img/crear-script/linea-paso1.png");
+  width: 73px;
+  height: 522px;
+  left: -62px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 34px;
+  top: 611px;
+}
+
+/*----------------------------*/
+
+#slide-3 {
+  position: relative;
 }

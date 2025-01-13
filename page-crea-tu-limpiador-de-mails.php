@@ -201,7 +201,7 @@ get_header();
             <section class="slide-three-container" id="section-main-slide-three">
                 <p>Acabemos con esto</p>
                 <h2>BORRA TUS MAILS</h2>
-                <p class="steps-titles">Paso 1.</p>
+                <p class="steps-titles" id="slide-three-first-step">Paso 1.</p>
                 <p class="steps-subtitles">selecciona la carpeta</p>
                 <p>Primero Abre Gmail en tu navegador.</p>
                 <a href="https://mail.google.com/" target="_blank">Abrir Gmail</a>
@@ -228,7 +228,7 @@ get_header();
                     </figcaption>
                 </figure>
 
-                <p class="steps-titles">Paso 3.</p>
+                <p class="steps-titles" id="slide-three-third-step">Paso 3.</p>
                 <p class="steps-subtitles">borra los mails</p>
                 <figure class="instructions-figure-container">
                     <figcaption>
