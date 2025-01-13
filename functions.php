@@ -1,29 +1,29 @@
 <?php
 
 /**
- * Empty Base Theme functions and definitions
+ * Delete YourEmails Theme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Empty_Theme
+ * @package Delete_youremails
  */
 
-if (! defined('EMPTY_BASE_VERSION')) {
-	define('EMPTY_BASE_VERSION', '1.7.0');
+if (! defined('DELETE_YOUREMAILS_VERSION')) {
+	define('DELETE_YOUREMAILS_VERSION', '1.7.0');
 }
 
 add_action('wp_enqueue_scripts', function () {
 	// Encolar el estilo principal
-	wp_enqueue_style('empty_base', get_stylesheet_directory_uri() . '/style.min.css', array(), EMPTY_BASE_VERSION);
+	wp_enqueue_style('delete_youremails', get_stylesheet_directory_uri() . '/style.min.css', array(), DELETE_YOUREMAILS_VERSION);
 
 	// Encolar el script principal
-	wp_enqueue_script('empty_base', get_stylesheet_directory_uri() . '/js/main.js', array(), EMPTY_BASE_VERSION, true);
+	wp_enqueue_script('delete_youremails', get_stylesheet_directory_uri() . '/js/main.js', array(), DELETE_YOUREMAILS_VERSION, true);
 
 	// Encolar el script del formulario de peticiones
-	wp_enqueue_script('firma_petitorio', get_stylesheet_directory_uri() . '/js/firma-petitorio.js', array(), EMPTY_BASE_VERSION, true);
+	wp_enqueue_script('firma_petitorio', get_stylesheet_directory_uri() . '/js/firma-petitorio.js', array(), DELETE_YOUREMAILS_VERSION, true);
 
 	// Encolar el script del scroll de create your script
-	wp_enqueue_script('firma_petitorio', get_stylesheet_directory_uri() . '/js/scroll.js', array(), EMPTY_BASE_VERSION, true);
+	wp_enqueue_script('firma_petitorio', get_stylesheet_directory_uri() . '/js/scroll.js', array(), DELETE_YOUREMAILS_VERSION, true);
 
 	// Obtener el contador actual de firmas
 	$contador_firmas = get_option('contador_firmas', 0);
@@ -77,7 +77,7 @@ add_action(
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 */
-		load_theme_textdomain('empty-base', get_template_directory() . '/languages');
+		load_theme_textdomain('delete-youremails', get_template_directory() . '/languages');
 
 		/*
 		 * Let WordPress manage the document title.
@@ -100,9 +100,9 @@ add_action(
 
 		register_nav_menus(
 			array(
-				'header'    => esc_html__('Header Menu', 'empty-base'),
-				'hamburger' => esc_html__('Hamburger Menu (Mobile)', 'empty-base'),
-				'footer'    => esc_html__('Footer Menu', 'empty-base'),
+				'header'    => esc_html__('Header Menu', 'delete-youremails'),
+				'hamburger' => esc_html__('Hamburger Menu (Mobile)', 'delete-youremails'),
+				'footer'    => esc_html__('Footer Menu', 'delete-youremails'),
 			)
 		);
 	}
@@ -123,10 +123,10 @@ add_action(
 	function () {
 		register_sidebar(
 			array(
-				'name'          => 'Empty Base',
-				'id'            => 'empty-base',
+				'name'          => 'Delete YourEmails',
+				'id'            => 'delete-youremails',
 				'class'         => '',
-				'before_widget' => '<div class="widget empty-base">',
+				'before_widget' => '<div class="widget delete-youremails">',
 				'after_widget'  => '</div>',
 				'before_title'  => '<h3>',
 				'after_title'   => '</h3>',
@@ -152,7 +152,7 @@ if ($disable_gutenberg) {
  *
  * @return array The menu.
  */
-function empty_base_get_menu($location)
+function delete_youremails_get_menu($location)
 {
 	global $wp;
 	$menu = null;
@@ -212,7 +212,7 @@ function empty_base_get_menu($location)
  *
  * @return string Post excerpt.
  */
-function empty_base_get_excerpt($post, $num_words = 55)
+function delete_youremails_get_excerpt($post, $num_words = 55)
 {
 	if (! empty($post->post_excerpt)) {
 		$excerpt = $post->post_excerpt;
@@ -229,7 +229,7 @@ function empty_base_get_excerpt($post, $num_words = 55)
 /**
  * Prints the menu body class.
  */
-function empty_base_print_body_class()
+function delete_youremails_print_body_class()
 {
 	global $wp_query;
 
@@ -297,14 +297,14 @@ function empty_base_print_body_class()
  *
  * @param int $menu_id The ID identifying the menu.
  */
-function empty_base_print_menu($menu_id)
+function delete_youremails_print_menu($menu_id)
 {
-	$menu   = empty_base_get_menu($menu_id);
+	$menu   = delete_youremails_get_menu($menu_id);
 	$output = '';
 
 	if ($menu) {
 		$output  = '<nav id="menu-' . esc_attr($menu_id) . '">';
-		$output .= empty_base_print_menu_object($menu);
+		$output .= delete_youremails_print_menu_object($menu);
 	}
 
 	$output .= '</nav>';
@@ -321,7 +321,7 @@ function empty_base_print_menu($menu_id)
  *
  * @return string The HTML representing the menu.
  */
-function empty_base_print_menu_object($menu)
+function delete_youremails_print_menu_object($menu)
 {
 	$output = '<ul>';
 
@@ -347,7 +347,7 @@ function empty_base_print_menu_object($menu)
 		}
 
 		if (! empty($item['submenu'])) {
-			$output .= empty_base_print_menu_object($item['submenu']);
+			$output .= delete_youremails_print_menu_object($item['submenu']);
 		}
 
 		$output .= '</li>';
@@ -374,7 +374,7 @@ function empty_base_print_menu_object($menu)
  * @return void|string The HTML representing the post if $atts['output'] is
  *                     true.
  */
-function empty_base_print_post($post_id = null, $atts = array())
+function delete_youremails_print_post($post_id = null, $atts = array())
 {
 	$html = '';
 
@@ -434,10 +434,10 @@ function empty_base_print_post($post_id = null, $atts = array())
 			if ($post->post_excerpt) {
 				$html .= '<div class="content">';
 
-				$html .= empty_base_print_excerpt($post, 100, false);
+				$html .= delete_youremails_print_excerpt($post, 100, false);
 
 				$html .= '<a href="' . esc_url($link) . '" title="' . esc_attr($title) . '" class="read-more">';
-				$html .= esc_html__('More', 'empty-base') . '</a>';
+				$html .= esc_html__('More', 'delete-youremails') . '</a>';
 				$html .= '</div>';
 			} elseif ($post->post_content) {
 				$html .= '<div class="content">';
@@ -445,7 +445,7 @@ function empty_base_print_post($post_id = null, $atts = array())
 				$html .= wp_kses_post(apply_filters('the_content', $post->post_content));
 
 				$html .= '<a href="' . esc_url($link) . '" title="' . esc_attr($title) . '" class="read-more">';
-				$html .= esc_html__('More', 'empty-base') . '</a>';
+				$html .= esc_html__('More', 'delete-youremails') . '</a>';
 				$html .= '</div>';
 			}
 		}
@@ -471,12 +471,12 @@ function empty_base_print_post($post_id = null, $atts = array())
  *
  * @return void|string Post excerpt if $output is true.
  */
-function empty_base_print_excerpt($post, $num_words = 100, $output = true)
+function delete_youremails_print_excerpt($post, $num_words = 100, $output = true)
 {
 	if ($output) {
-		echo esc_html(empty_base_get_excerpt($post, $num_words));
+		echo esc_html(delete_youremails_get_excerpt($post, $num_words));
 	} else {
-		return esc_html(empty_base_get_excerpt($post, $num_words));
+		return esc_html(delete_youremails_get_excerpt($post, $num_words));
 	}
 }
 

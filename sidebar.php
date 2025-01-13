@@ -4,9 +4,9 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Empty_Base
+ * @package delete_youremails
  */
 
 ?>
 
-<aside><?php dynamic_sidebar( 'empty-base' ); ?></aside>
+<aside><?php dynamic_sidebar( 'delete-youremails' ); ?></aside>

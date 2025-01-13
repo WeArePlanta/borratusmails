@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Empty_Base
+ * @package delete_youremails
  */
 
 ?>
@@ -31,13 +31,13 @@
 
 </head>
 
-<body <?php empty_base_print_body_class(); ?>>
+<body <?php delete_youremails_print_body_class(); ?>>
 	<header class="main-theme-header">
 		<div class="inner-container">
 			<a href="<?php bloginfo('url'); ?>" class="site-icon" aria-label="Ir a la sección de inicio del sitio">
 				<img src="<?php echo esc_url(get_template_directory_uri() . '/img/logo_web.png'); ?>">
 			</a>
-			<?php empty_base_print_menu('header'); ?>
+			<?php delete_youremails_print_menu('header'); ?>
 			<section class="social-media-footer header">
 
 				<div class="languages" style="display: none;">
@@ -62,7 +62,7 @@
 				<div class="bar"></div>
 			</button>
 			<div id="hamburger-menu-container">
-				<?php empty_base_print_menu('hamburger'); ?>
+				<?php delete_youremails_print_menu('hamburger'); ?>
 				<section class="social-media-footer">
 					<div class="languages" style="display: none;">
 						<p>Idioma:</p>
