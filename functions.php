@@ -9,7 +9,7 @@
  */
 
 if (! defined('DELETE_YOUREMAILS_VERSION')) {
-	define('DELETE_YOUREMAILS_VERSION', '1.7.0');
+	define('DELETE_YOUREMAILS_VERSION', '1.7.1');
 }
 
 add_action('wp_enqueue_scripts', function () {
@@ -671,30 +671,26 @@ function handle_generate_email_script()
 
 	// Generar el script con las palabras clave
 	$script = "
-function labelEmailsFromInput() {
-  var query = '$query';
-  var labelName = 'BORRAR notificaciones viejas'; // Nombre de la etiqueta
+				function labelEmailsFromInput() {
+				var query = '$query';
+				var labelName = 'BorraTusMails'; 
 
-  // Obtener la etiqueta, si no existe, crearla
-  var label = GmailApp.getUserLabelByName(labelName);
-  if (!label) {
-    label = GmailApp.createLabel(labelName);
-  }
+				var label = GmailApp.getUserLabelByName(labelName);
+				if (!label) {
+					label = GmailApp.createLabel(labelName);
+				}
 
-  // Buscar correos que coinciden con la consulta
-  var threads = GmailApp.search(query);
+				var threads = GmailApp.search(query);
 
-  // Etiquetar cada hilo de correo encontrado
-  for (var i = 0; i < threads.length; i++) {
-    threads[i].addLabel(label);
-  }
+				for (var i = 0; i < threads.length; i++) {
+					threads[i].addLabel(label);
+				}
 
-  // Enviar un correo de notificación con la cantidad de hilos etiquetados
-  GmailApp.sendEmail('info@borratusmails.weareplanta.com', 'Correos Etiquetados', 'Se etiquetaron ' + threads.length + ' correos con la etiqueta ' + labelName);
+				GmailApp.sendEmail('info@borratusmails.weareplanta.com', 'Correos Etiquetados', 'Se etiquetaron ' + threads.length + ' correos con la etiqueta ' + labelName);
 
-  Logger.log('Etiquetados ' + threads.length + ' correos con la etiqueta ' + labelName);
-}
-";
+				Logger.log('Etiquetados ' + threads.length + ' correos con la etiqueta ' + labelName);
+				}
+				";
 
 	// Crear un nuevo post en el Custom Post Type 'registro'
 	$post_id = wp_insert_post(array(
@@ -878,7 +874,7 @@ function correo_formulario_shortcode()
 ?>
 	<form method="post" class="form-newsletter" id="form-newsletter" action="#form-newsletter">
 		<input type="email" name="correo_usuario" placeholder="Ingresa tu correo" required>
-		<p>Disclaimer: No te enviaremos bullshit, contenido promocional ni usaremos tu correo para usos comerciales. Te ayudaremos a entrenar buenas prácticas digitales: <a href=""> léela y bórrala.</a></p>
+		<p>Disclaimer: No te enviaremos bullshit, contenido promocional ni usaremos tu correo para usos comerciales. Te ayudaremos a entrenar buenas prácticas digitales: <span class="link-style"> léela y bórrala.</span></p>
 		<button type="submit">Añade tu correo</button>
 	</form>
 	<?php echo $mensaje; ?>
