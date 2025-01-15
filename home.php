@@ -141,7 +141,7 @@ get_header();
             <p>estos mails</p>
             <span>CONSUMEN ENERGÍA</span>
             <p>al escribirse, enviarse, leerse y almacenarse en servidores tan feos como este:</p>
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/img/server.png'); ?>" alt="Fotografía aerea de un complejo que aloja servidores. Sale una flecha de adentro con la leyenda: Ese mail de tu ex que nunca mas vas a volver a abrir">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/img/server_ESP.png'); ?>" alt="Fotografía aerea de un complejo que aloja servidores. Sale una flecha de adentro con la leyenda: Ese mail de tu ex que nunca mas vas a volver a abrir">
             <p>¿Sigues sin creerme? Sin problema, </p>
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>">aquí la fuente</a>
         </div>
