@@ -9,7 +9,7 @@
  */
 
 if (! defined('DELETE_YOUREMAILS_VERSION')) {
-	define('DELETE_YOUREMAILS_VERSION', '1.7.2');
+	define('DELETE_YOUREMAILS_VERSION', '1.7.3');
 }
 
 add_action('wp_enqueue_scripts', function () {
