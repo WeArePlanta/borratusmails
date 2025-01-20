@@ -13,7 +13,6 @@ get_header();
 
 <!-- <h1 class="page-title">Campaña Delete your emails</h1> -->
 
-
 <p class="top-title-pages">Firma la petición</p>
 
 <section class="section-count-signers">
@@ -46,33 +45,32 @@ get_header();
 
 </section>
 <section class="mail-to">
-    <p>Si formas parte de una empresa que quiere tomar acción, escríbenos a <a href="mailto:borratusmails@weareplanta.com">borratusmails@weareplanta.com </a> </p>
+    <p>Si formas parte de una empresa que quiere tomar acción, escríbenos a 
+        <a href="mailto:borratusmails@weareplanta.com" title="Enviar un correo a borratusmails@weareplanta.com" aria-label="Enviar un correo a borratusmails@weareplanta.com">borratusmails@weareplanta.com</a>
+    </p>
 </section>
 
 <section class="sumate-section">
-    <p>Súmate </p>
-    <p> para que las empresas formen parte del movimiento.</p>
-    <p> Agrega tu voz para impulsar prácticas digitales más sostenibles y motivar a las empresas a ser parte del cambio.</p>
+    <p>Súmate</p>
+    <p>para que las empresas formen parte del movimiento.</p>
+    <p>Agrega tu voz para impulsar prácticas digitales más sostenibles y motivar a las empresas a ser parte del cambio.</p>
 </section>
-
-
 
 <section class="form-section">
     <form id="form-petitorio">
-        <label>Tu nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-        <label>Tu email</label>
-        <input type="email" id="email" name="email" placeholder="Tu email" required>
-        <button type="submit">Firmar Petitorio</button>
+        <label for="nombre">Tu nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required aria-required="true" title="Ingresa tu nombre aquí">
+        
+        <label for="email">Tu email</label>
+        <input type="email" id="email" name="email" placeholder="Tu email" required aria-required="true" title="Ingresa tu correo electrónico aquí">
+        
+        <button type="submit" aria-label="Firmar petitorio" title="Haz clic para firmar el petitorio">Firmar Petitorio</button>
     </form>
 
     <!-- Mensajes de éxito y error -->
     <div id="mensaje-exito" class="mensaje" style="display: none; color: green;"></div>
     <div id="mensaje-error" class="mensaje" style="display: none; color: red;"></div>
 </section>
-
-
-
 
 <?php
 get_sidebar();

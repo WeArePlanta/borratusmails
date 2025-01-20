@@ -65,7 +65,7 @@ get_header();
                 <p class="steps-titles" id="slide-two-first-step">Paso 1.</p>
                 <p class="steps-subtitles">abre Google Apps Script</p>
                 <p>Primero Abre Google Drive en tu navegador.</p>
-                <a href="https://drive.google.com/drive/u/0/home" target="_blank">Abrir Google drive</a>
+                <a href="https://drive.google.com/drive/u/0/home" target="_blank" aria-label="Abrir Google Drive en una nueva pestaña" title="Abrir Google Drive en una nueva pestaña">Abrir Google drive</a>
                 <figure class="instructions-figure-container">
                     <figcaption>
                         <p class="instructions-text">A continuación, haz clic en "Nuevo" en la esquina superior izquierda.</p>
@@ -91,7 +91,7 @@ get_header();
                 <p class="steps-titles" id="slide-two-third-step">Paso 3.</p>
                 <p class="steps-subtitles">Pega el script</p>
                 <p class="instructions-text">Copia el script que has generado.</p>
-                <a href="#generated-script">Copiar el código</a>
+                <a href="#generated-script" aria-label="Copiar el código generado" title="Copiar el código generado">Copiar el código</a>
                 <figure class="instructions-figure-container">
                     <figcaption>
                         <p class="instructions-text">Pega el script en el archivo Código.gs que dejaste vacío en el paso anterior.</p>
@@ -204,7 +204,7 @@ get_header();
                 <p class="steps-titles" id="slide-three-first-step">Paso 1.</p>
                 <p class="steps-subtitles">selecciona la carpeta</p>
                 <p>Primero Abre Gmail en tu navegador.</p>
-                <a href="https://mail.google.com/" target="_blank">Abrir Gmail</a>
+                <a href="https://mail.google.com/" target="_blank" aria-label="Abrir Gmail en una nueva pestaña" title="Abrir Gmail en una nueva pestaña">Abrir Gmail</a>
                 <figure class="instructions-figure-container">
                     <figcaption>
                         <p class="instructions-text">A continuación selecciona la etiqueta “borra tus mails”.</p>
@@ -256,9 +256,16 @@ get_header();
     </div>
 
     <ul class="bullets">
-        <li class="slide-one-li"><a href="#slide-1">1. Crea tu script</a></li>
-        <li class="slide-two-li"><a href="#section-main-slide-two">2. Pégalo en tu mail</a></li>
-        <li class="slide-three-li"><a href="#section-main-slide-three">3. Borra tus mails</a></li>
+        <li class="slide-one-li">
+            <a href="#slide-1" aria-label="Ir a la sección 1: Crea tu script" title="Ir a la sección 1: Crea tu script">1. Crea tu script</a>
+        </li>
+        <li class="slide-two-li">
+            <a href="#section-main-slide-two" aria-label="Ir a la sección 2: Pégalo en tu mail" title="Ir a la sección 2: Pégalo en tu mail">2. Pégalo en tu mail</a>
+        </li>
+        <li class="slide-three-li">
+            <a href="#section-main-slide-three" aria-label="Ir a la sección 3: Borra tus mails" title="Ir a la sección 3: Borra tus mails">3. Borra tus mails</a>
+        </li>
+
     </ul>
 
 

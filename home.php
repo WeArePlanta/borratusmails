@@ -23,15 +23,19 @@ get_header();
     <section class="only-dkp-banner">
         <figure>
             <div class="first-figure-inner-container">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/img/cloud-dkp.png'); ?>" alt="Ilustración de una nube con expresión facial">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/img/cloud-dkp.png'); ?>"
+                    alt="Ilustración de una nube con expresión facial">
                 <figcaption>
                     <h2>Borra tus mails</h2>
-                    <p> porque, aunque se llame “nube”, ni flota ni es ligera.</p>
+                    <p>porque, aunque se llame “nube”, ni flota ni es ligera.</p>
                 </figcaption>
             </div>
-            <a href="#divider-take-action">Empieza a limpiar</a>
+            <a href="#divider-take-action"
+                title="Haz clic para empezar a limpiar tus correos"
+                aria-label="Empieza a limpiar tus correos">Empieza a limpiar</a>
         </figure>
     </section>
+
 
     <section class="banners">
         <div class="paragraphs-inner-container">
@@ -87,7 +91,9 @@ get_header();
             </section>
 
 
-            <a href="#divider-take-action">Empieza a limpiar</a>
+            <a href="#divider-take-action"
+                title="Haz clic para empezar a limpiar tus correos"
+                aria-label="Empieza a limpiar tus correos">Empieza a limpiar</a>
         </div>
 
     </section>
@@ -106,7 +112,9 @@ get_header();
             <p>tu refri funcionando</p>
             <p> 1,9 millones de años</p>
             <p>¿No te lo crees?</p>
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>">Aquí la fuente.</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"
+                title="Ir a la página de fuentes"
+                aria-label="Aquí la fuente">Aquí la fuente.</a>
         </div>
     </section>
 
@@ -135,7 +143,9 @@ get_header();
             <span>50.000</span>
             <p>mails al año*</p>
             <p>Es el promedio oficinista, si no me crees </p>
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"> pincha aquí para la fuente.</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"
+                title="Ir a la página de fuentes"
+                aria-label="Aquí la fuente">Aquí la fuente.</a>
         </div>
         <div>
             <p>estos mails</p>
@@ -143,12 +153,16 @@ get_header();
             <p>al escribirse, enviarse, leerse y almacenarse en servidores tan feos como este:</p>
             <img src="<?php echo esc_url(get_template_directory_uri() . '/img/server_ESP.png'); ?>" alt="Fotografía aerea de un complejo que aloja servidores. Sale una flecha de adentro con la leyenda: Ese mail de tu ex que nunca mas vas a volver a abrir">
             <p>¿Sigues sin creerme? Sin problema, </p>
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>">aquí la fuente</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"
+                title="Ir a la página de fuentes"
+                aria-label="Aquí la fuente">aquí la fuente</a>
         </div>
         <div class="years-div">
             <p>Equivale a dejar una bombilla LED de 10 W encendida durante</p>
             <p>4 años</p>
-            <p>En serio, me sobran <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>">las fuentes. </a></p>
+            <p>En serio, me sobran <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"
+                    title="Ir a la página de fuentes"
+                    aria-label="Aquí la fuente">las fuentes. </a></p>
         </div>
     </section>
 
@@ -175,7 +189,11 @@ get_header();
                         <p> Novata/o pero con calle:</p>
                         <p> Añade un recordatorio en tu calendario.</p>
                         <p>Si estás empezando en esto de limpiar tu basura digital, esto te tomará solo unos segundos. Compártelo con los tuyos y ya serás pro.</p>
-                        <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NzA1N3Y5b21ucjA0anE1bXRxaG42cTVoMnRfMjAyNDEwMjVUMjEwMDAwWiBjYW1pQHdlYXJlcGxhbnRhLmNvbQ&amp;tmsrc=cami%40weareplanta.com&amp;scp=ALL">Crea tu evento</a>
+                        <a target="_blank"
+                            href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NzA1N3Y5b21ucjA0anE1bXRxaG42cTVoMnRfMjAyNDEwMjVUMjEwMDAwWiBjYW1pQHdlYXJlcGxhbnRhLmNvbQ&amp;tmsrc=cami%40weareplanta.com&amp;scp=ALL"
+                            title="Crea tu evento en Google Calendar"
+                            aria-label="Crea tu evento en Google Calendar"
+                            rel="noopener noreferrer">Crea tu evento</a>
                     </figcaption>
                 </figure>
             </article>
@@ -189,7 +207,10 @@ get_header();
                         <p> Hacker por un ratito: </p>
                         <p>Crea tu propio seleccionador automático de mails que no necesitas.</p>
                         <p>Elige las palabras y haz que automáticamente se seleccionen mails listos para ser borrados.</p>
-                        <a target="_blank" href="<?php echo esc_url(get_permalink(get_page_by_path('crea-tu-limpiador-de-mails'))); ?>">Crea tu limpiador</a>
+                        <a target="_blank"
+                            href="<?php echo esc_url(get_permalink(get_page_by_path('crea-tu-limpiador-de-mails'))); ?>"
+                            title="Ir a la página para crear tu limpiador de mails"
+                            aria-label="Crea tu limpiador de mails">Crea tu limpiador</a>
                     </figcaption>
                 </figure>
             </article>
@@ -204,7 +225,11 @@ get_header();
                         <p> Una voz entre la multitud:</p>
                         <p>Firma la petición para que las grandes marcas tomen acción y reduzcan su huella </p>
                         <p>Demostremos que somos cada vez más quienes queremos reducir residuos digitales e invitemos a las marcas a comunicar prácticas sostenibles, como cuando nos piden reciclar un producto</p>
-                        <a target="_blank" href="<?php echo esc_url(get_permalink(get_page_by_path('sign'))); ?>">Súmate al contador</a>
+                        <a target="_blank"
+                            href="<?php echo esc_url(get_permalink(get_page_by_path('sign'))); ?>"
+                            title="Ir a la página para sumarte al contador"
+                            aria-label="Súmate al contador">Súmate al contador</a>
+
                     </figcaption>
                 </figure>
             </article>
@@ -241,8 +266,11 @@ get_header();
                 <article class="swiper-slide">
 
                     <div class="content-div one">
-                        <p class="highlight-text">Porque se envían 361,6 mil millones de mails al día,</p><p> que equivalen a que pongas la lavadora 1600 millones de veces.</p>
-                        <p>Que sí, que siempre tengo fuente, <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"> aquí. </a></p>
+                        <p class="highlight-text">Porque se envían 361,6 mil millones de mails al día,</p>
+                        <p> que equivalen a que pongas la lavadora 1600 millones de veces.</p>
+                        <p>Que sí, que siempre tengo fuente, <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"
+                                title="Ir a la página de fuentes"
+                                aria-label="Aquí la fuente"> aquí. </a></p>
                     </div>
                 </article>
 
@@ -250,8 +278,11 @@ get_header();
                 <article class="swiper-slide">
 
                     <div class="content-div two">
-                        <p class="highlight-text">Porque la basura digital sigue siendo basura:</p> <p>1000 mails consumen como una bombilla LED de 10W encendida durante 29 días. </p>
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>">Y aquí la fuente.</a>
+                        <p class="highlight-text">Porque la basura digital sigue siendo basura:</p>
+                        <p>1000 mails consumen como una bombilla LED de 10W encendida durante 29 días. </p>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"
+                            title="Ir a la página de fuentes"
+                            aria-label="Aquí la fuente">Y aquí la fuente.</a>
                     </div>
                 </article>
 
@@ -259,8 +290,11 @@ get_header();
                 <article class="swiper-slide">
 
                     <div class="content-div three">
-                        <p class="highlight-text">Porque Black Friday es el día del año que más mails se envían,</p><p> y cuando la promoción expire seguirá gastando energía.</p>
-                        <p>Lee la fuente <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"> aquí </a> y ya tienes un motivo más para tomar acción. </p>
+                        <p class="highlight-text">Porque Black Friday es el día del año que más mails se envían,</p>
+                        <p> y cuando la promoción expire seguirá gastando energía.</p>
+                        <p>Lee la fuente <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"
+                                title="Ir a la página de fuentes"
+                                aria-label="Aquí la fuente"> aquí </a> y ya tienes un motivo más para tomar acción. </p>
                     </div>
                 </article>
 
@@ -274,14 +308,18 @@ get_header();
 
     <section class="three-steps-section">
         <p> ¿No sabes por dónde empezar?</p>
-        <a href="#divider-take-action">Aquí tres pasos</a>
+        <a href="#divider-take-action"
+            title="Haz clic para empezar a limpiar tus correos"
+            aria-label="Empieza a limpiar tus correos">Aquí tres pasos</a>
     </section>
 
 
     <section class="fuentes-section">
         <h4> ¿Todavía no te lo crees? </h4>
         <p>Tranqui, tenemos las fuentes.</p>
-        <a target="_blank" href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>">Ver todas las fuentes</a>
+        <a href="<?php echo esc_url(get_permalink(get_page_by_path('fuentes'))); ?>"
+            title="Ir a la página de fuentes"
+            aria-label="Aquí la fuente">Ver todas las fuentes</a>
 
     </section>
     <section class="sponsors">

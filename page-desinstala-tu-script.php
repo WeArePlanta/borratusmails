@@ -33,7 +33,7 @@ get_header();
          <p class="steps-titles" id="uninstal-script-step-one">Paso 1.</p>
          <p class="steps-subtitles">Ve a mis proyectos</p>
          <p>Primero abre el menú de AppScript como vimos en el tutorial de instalación.</p>
-         <a href="https://drive.google.com/drive/u/0/home" target="_blank">Abrir Google drive</a>
+         <a href="https://drive.google.com/drive/u/0/home" target="_blank" aria-label="Abrir Google Drive en una nueva pestaña" title="Abrir Google Drive en una nueva pestaña">Abrir Google drive</a>
 
          <figure class="instructions-figure-container">
             <figcaption>
