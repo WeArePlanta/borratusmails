@@ -9,7 +9,7 @@
  */
 
 if (! defined('DELETE_YOUREMAILS_VERSION')) {
-	define('DELETE_YOUREMAILS_VERSION', '1.7.3');
+	define('DELETE_YOUREMAILS_VERSION', '1.7.6');
 }
 
 add_action('wp_enqueue_scripts', function () {
@@ -23,7 +23,7 @@ add_action('wp_enqueue_scripts', function () {
 	wp_enqueue_script('firma_petitorio', get_stylesheet_directory_uri() . '/js/firma-petitorio.js', array(), DELETE_YOUREMAILS_VERSION, true);
 
 	// Encolar el script del scroll de create your script
-	wp_enqueue_script('firma_petitorio', get_stylesheet_directory_uri() . '/js/scroll.js', array(), DELETE_YOUREMAILS_VERSION, true);
+	wp_enqueue_script('scroll', get_stylesheet_directory_uri() . '/js/scroll.js', array(), DELETE_YOUREMAILS_VERSION, true);
 
 	// Obtener el contador actual de firmas
 	$contador_firmas = get_option('contador_firmas', 0);
@@ -863,7 +863,7 @@ function correo_formulario_shortcode()
 			if ($resultado) {
 				$mensaje = '<p style="color: white; font-size: 20px; padding-top: 25px;">Correo guardado exitosamente, muchas gracias.</p>';
 			} else {
-				$mensaje = '<p style="color: red; font-size: 20px; padding-top: 25px;">Error al enviar el correo.</p>';
+				$mensaje = '<p style="color: red; font-size: 20px; padding-top: 25px;">Error al guardar el correo.</p>';
 			}
 		} else {
 			$mensaje = '<p style="color: red; font-size: 20px; padding-top: 25px;">Por favor, ingresa un correo válido.</p>';
@@ -901,7 +901,8 @@ function crear_tabla_correos()
 	require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 	dbDelta($sql);
 }
-add_action('after_switch_theme', 'crear_tabla_correos'); // Cambiar a `register_activation_hook` si es un plugin
+
+add_action( 'init', 'crear_tabla_correos' );
 
 // Mostrar los correos en el admin
 function agregar_pagina_admin_correos()

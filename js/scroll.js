@@ -32,15 +32,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const checkbox = document.getElementById(checkboxId);
         const label = document.getElementById(labelId);
 
-        checkbox.addEventListener('change', function () {
-            if (checkbox.checked) {
-                label.style.backgroundColor = '#FFBA49'; // Fondo amarillo si está marcado
-                label.style.color = '#1A1030'; // Color de texto
-            } else {
-                label.style.backgroundColor = '#1A1030'; // Fondo original si no está marcado
-                label.style.color = 'white'; // Color de texto original
-            }
-        });
+        if ( checkbox ) {
+            checkbox.addEventListener('change', function () {
+                if (checkbox.checked) {
+                    label.style.backgroundColor = '#FFBA49'; // Fondo amarillo si está marcado
+                    label.style.color = '#1A1030'; // Color de texto
+                } else {
+                    label.style.backgroundColor = '#1A1030'; // Fondo original si no está marcado
+                    label.style.color = 'white'; // Color de texto original
+                }
+            });
+        }
     }
 
     // Configuración para todos los checkboxes
