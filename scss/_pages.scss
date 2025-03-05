@@ -6,7 +6,7 @@ p.top-title-pages {
 	text-transform: uppercase;
 	background-color: $theme-darker-lila;
 	padding: 10px 0;
-	@media (min-width: 1450px) {
+	@media (min-width: 1400px) {
 		@include dkp-smaller-title;
 	}
 }
@@ -14,7 +14,7 @@ p.top-title-pages {
 body.page.error404 {
 	padding-top: 60px;
 	font-family: $theme-main-font;
-	@media (min-width: 1450px) {
+	@media (min-width: 1400px) {
 		padding-top: 120px;
 	}
 
@@ -28,7 +28,7 @@ body.page.error404 {
 			text-align: center;
 			color: $theme-coral;
 			-webkit-text-stroke: 0.2px #1a1030;
-			@media (min-width: 1450px) {
+			@media (min-width: 1400px) {
 				@include dkp-big-two-title;
 			}
 		}
@@ -41,7 +41,7 @@ body.page.error404 {
 			margin-bottom: 90px;
 			margin-top: 28px;
 			-webkit-text-stroke: 0.2px #1a1030;
-			@media (min-width: 1450px) {
+			@media (min-width: 1400px) {
 				@include dkp-error-font;
 			}
 		}
@@ -54,7 +54,7 @@ body.page.error404 {
 			-webkit-text-stroke: 0.2px #1a1030;
 			margin: 0 auto;
 			margin-bottom: 60px;
-			@media (min-width: 1450px) {
+			@media (min-width: 1400px) {
 				@include dkp-big-two-title;
 				max-width: 740px;
 			}
@@ -62,7 +62,7 @@ body.page.error404 {
 		p {
 			font-size: 28px;
 			text-align: center;
-			@media (min-width: 1450px) {
+			@media (min-width: 1400px) {
 				font-size: 34px;
 			}
 		}
@@ -95,7 +95,7 @@ body.page.error404 {
 body.page.page-fuentes {
 	padding-top: 60px;
 	font-family: $theme-main-font;
-	@media (min-width: 1450px) {
+	@media (min-width: 1400px) {
 		padding-top: 120px;
 	}
 	main {
@@ -118,7 +118,7 @@ body.page.page-fuentes {
 			margin: 0 auto;
 			margin-bottom: 17px;
 			-webkit-text-stroke: 0.2px #1a1030;
-			@media (min-width: 1450px) {
+			@media (min-width: 1400px) {
 				@include dkp-big-title;
 				max-width: 572px;
 			}
@@ -132,14 +132,14 @@ body.page.page-fuentes {
 			display: block;
 			margin: 0 auto;
 			margin-bottom: 100px;
-			@media (min-width: 1450px) {
+			@media (min-width: 1400px) {
 				max-width: 333px;
 			}
 		}
 		section.source-inner-container {
 			margin-top: 130px 0 30px;
 
-			@media (min-width: 1450px) {
+			@media (min-width: 1400px) {
 				display: flex;
 				flex-direction: row;
 				align-items: center;
@@ -152,7 +152,7 @@ body.page.page-fuentes {
 
 			article.source-card {
 				margin-bottom: 100px;
-				@media (min-width: 1450px) {
+				@media (min-width: 1400px) {
 					height: 250px;
 					width: 562px;
 					margin-bottom: 135px;
@@ -162,7 +162,7 @@ body.page.page-fuentes {
 					text-align: center;
 					color: $theme-yellow;
 					margin-bottom: 20px;
-					@media (min-width: 1450px) {
+					@media (min-width: 1400px) {
 						font-size: 27px;
 					}
 				}
@@ -171,7 +171,7 @@ body.page.page-fuentes {
 					text-align: center;
 					color: $theme-lila;
 					margin-bottom: 12px;
-					@media (min-width: 1450px) {
+					@media (min-width: 1400px) {
 						font-size: 50px;
 					}
 				}
@@ -180,7 +180,7 @@ body.page.page-fuentes {
 					text-align: center;
 					color: white;
 					margin-bottom: 20px;
-					@media (min-width: 1450px) {
+					@media (min-width: 1400px) {
 						font-size: 34px;
 					}
 				}
@@ -197,14 +197,14 @@ body.page.page-fuentes {
 
 body.page.page-sign {
 	margin-top: 60px;
-	@media (min-width: 1450px) {
+	@media (min-width: 1400px) {
 		margin-top: 120px;
 	}
 
 	section.section-count-signers {
 		background: linear-gradient(to right, #dd5353, #c05277, #904ca3);
 		padding: 84px 32px 29px;
-		@media (min-width: 1450px) {
+		@media (min-width: 1400px) {
 			padding: 120px 340px;
 		}
 		article.article-counter {
@@ -214,7 +214,7 @@ body.page.page-sign {
 			p {
 				font-size: 20px;
 				text-align: center;
-				@media (min-width: 1450px) {
+				@media (min-width: 1400px) {
 					font-size: 40px;
 				}
 			}
@@ -225,7 +225,7 @@ body.page.page-sign {
 		padding: 150px 30px 80px;
 		article {
 			padding-bottom: 70px;
-			@media (min-width: 1450px) {
+			@media (min-width: 1400px) {
 				width: 391px;
 			}
 			h5 {
@@ -235,7 +235,7 @@ body.page.page-sign {
 				text-transform: uppercase;
 				color: $theme-yellow;
 				padding-bottom: 30px;
-				@media (min-width: 1450px) {
+				@media (min-width: 1400px) {
 					font-size: 36px;
 				}
 			}
@@ -243,12 +243,12 @@ body.page.page-sign {
 				font-size: 16px;
 				text-align: center;
 				line-height: 130%;
-				@media (min-width: 1450px) {
+				@media (min-width: 1400px) {
 					font-size: 20px;
 				}
 			}
 		}
-		@media (min-width: 1450px) {
+		@media (min-width: 1400px) {
 			display: flex;
 			align-items: first baseline;
 			justify-content: space-between;
@@ -259,7 +259,7 @@ body.page.page-sign {
 	section.mail-to {
 		text-align: center;
 		padding: 0 30px 150px;
-		@media (min-width: 1450px) {
+		@media (min-width: 1400px) {
 			font-size: 20px;
 		}
 		a {
@@ -275,7 +275,7 @@ body.page.page-sign {
 			color: $theme-yellow;
 			font-family: $theme-second-font;
 			text-transform: uppercase;
-			@media (min-width: 1450px) {
+			@media (min-width: 1400px) {
 				@include dkp-big-title;
 				width: 638px;
 				margin: 0 auto;
@@ -284,7 +284,7 @@ body.page.page-sign {
 		p:nth-of-type(2) {
 			font-size: 28px;
 			margin-bottom: 30px;
-			@media (min-width: 1450px) {
+			@media (min-width: 1400px) {
 				width: 400px;
 				margin: 0 auto;
 				margin-bottom: 24px;
@@ -292,7 +292,7 @@ body.page.page-sign {
 		}
 		p:nth-of-type(3) {
 			font-size: 16px;
-			@media (min-width: 1450px) {
+			@media (min-width: 1400px) {
 				width: 500px;
 				margin: 0 auto;
 				margin-bottom: 24px;
@@ -303,7 +303,7 @@ body.page.page-sign {
 
 	section.form-section {
 		padding: 30px 40px 180px;
-		@media (min-width: 1450px) {
+		@media (min-width: 1400px) {
 			padding-bottom: 160px;
 		}
 		form#form-petitorio {
@@ -316,7 +316,7 @@ body.page.page-sign {
 				display: block;
 				margin: 0 auto;
 				margin-bottom: 30px;
-				@media (min-width: 1450px) {
+				@media (min-width: 1400px) {
 					width: 480px;
 				}
 			}
@@ -325,7 +325,7 @@ body.page.page-sign {
 				display: block;
 				text-align: center;
 
-				@media (min-width: 1450px) {
+				@media (min-width: 1400px) {
 					width: 480px;
 					font-size: 20px;
 					width: 480px;

@@ -3,7 +3,7 @@ body.page.page-crea-tu-limpiador-de-mails {
   height: 100%;
   margin-top: 60px;
   font-family: $theme-main-font;
-  @media (min-width: 1450px) {
+  @media (min-width: 1400px) {
     margin-top: 120px;
   }
   main {
@@ -14,7 +14,7 @@ body.page.page-crea-tu-limpiador-de-mails {
       p:nth-of-type(1) {
         font-size: 28px;
         text-align: center;
-        @media (min-width: 1450px) {
+        @media (min-width: 1400px) {
           width: 776px;
           font-size: 26px;
           margin: 0 auto;
@@ -27,7 +27,7 @@ body.page.page-crea-tu-limpiador-de-mails {
         text-align: center;
         color: $theme-coral;
         padding: 20px 0 50px;
-        @media (min-width: 1450px) {
+        @media (min-width: 1400px) {
           width: 776px;
           font-size: 95px;
           margin: 0 auto;
@@ -44,28 +44,28 @@ body.page.page-crea-tu-limpiador-de-mails {
         @include mob-middle-title;
         text-align: center;
         color: $theme-yellow;
-        @media (min-width: 1450px) {
+        @media (min-width: 1400px) {
           width: 776px;
           font-size: 95px;
           margin: 0 auto;
         }
       }
 
-      @media (min-width: 1450px) {
+      @media (min-width: 1400px) {
         display: none;
       }
     }
 
     section#programa-su-eliminacion {
       display: none;
-      @media (min-width: 1450px) {
+      @media (min-width: 1400px) {
         display: block;
       }
     }
 
     section.desktop-create-script {
       display: none;
-      @media (min-width: 1450px) {
+      @media (min-width: 1400px) {
         display: block;
       }
     }
@@ -177,7 +177,7 @@ body.page.page-crea-tu-limpiador-de-mails {
       p:nth-of-type(1) {
         font-size: 20px;
         margin-bottom: 20px;
-        @media (min-width: 1450px) {
+        @media (min-width: 1400px) {
           font-size: 26px;
         }
       }
@@ -188,14 +188,14 @@ body.page.page-crea-tu-limpiador-de-mails {
         @include mob-biger-title;
         text-transform: uppercase;
         padding: 0 50px;
-        @media (min-width: 1450px) {
+        @media (min-width: 1400px) {
           @include dkp-big-title;
         }
       }
       p:nth-of-type(3) {
         font-size: 20px;
         margin-bottom: 34px;
-        @media (min-width: 1450px) {
+        @media (min-width: 1400px) {
           font-size: 26px;
         }
       }
@@ -206,7 +206,7 @@ body.page.page-crea-tu-limpiador-de-mails {
           margin-bottom: 34px;
           font-style: italic;
           padding: 34px 0;
-          @media (min-width: 1450px) {
+          @media (min-width: 1400px) {
             width: 456px;
             margin: 0 auto;
             text-align: center;
@@ -223,7 +223,7 @@ body.page.page-crea-tu-limpiador-de-mails {
           padding: 13px 20px;
           border-radius: 50px;
           width: 100%;
-          @media (min-width: 1450px) {
+          @media (min-width: 1400px) {
             width: 456px;
             margin: 0 auto;
           }
@@ -698,7 +698,7 @@ body {
 body.page.page-desinstala-tu-script {
   margin-top: 60px;
   font-family: $theme-main-font;
-  @media (min-width: 1450px) {
+  @media (min-width: 1400px) {
     margin-top: 120px;
   }
   main {
@@ -729,14 +729,14 @@ body.page.page-desinstala-tu-script {
         text-decoration: underline;
         padding-top: 30px;
       }
-      @media (min-width: 1450px) {
+      @media (min-width: 1400px) {
         display: none;
       }
     }
 
     section.delete-script {
       display: none;
-      @media (min-width: 1450px) {
+      @media (min-width: 1400px) {
         display: block;
         article.title {
           width: 740px;

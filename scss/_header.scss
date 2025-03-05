@@ -210,7 +210,7 @@ section.social-media-footer {
 
     &.header {
         display: none;
-        @media (min-width: 1450px) {
+        @media (min-width: 1400px) {
             display: block;
         }
     }
@@ -221,7 +221,7 @@ section.social-media-footer {
 
 /*DESKTOP*/
 
-@media (min-width: 1450px) {
+@media (min-width: 1400px) {
     header {
         &.main-theme-header {
             background-color: $theme-dark-blue;
